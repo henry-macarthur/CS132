@@ -1,0 +1,467 @@
+.equiv @sbrk, 9
+.equiv @print_string, 4
+.equiv @print_char, 11
+.equiv @print_int, 1
+.equiv @exit, 10
+.equiv @exit2, 17
+
+.text
+jal Main
+li a0, @exit
+ecall
+
+.globl Main
+Main:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 16
+sub sp, sp, t6
+sw ra, -4(fp)
+la t3, f
+sw t3, -12(fp)
+jalr t3
+mv t0, a0
+lw t3, -12(fp)
+sw t0, -16(fp)
+lw t1, -16(fp)
+mv a1, t1
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+lw a0, -16(fp)
+addi sp, sp, 16
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl f
+f:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 252
+sub sp, sp, t6
+sw ra, -4(fp)
+sw s1, -12(fp)
+sw s2, -16(fp)
+sw s3, -20(fp)
+sw s4, -24(fp)
+sw s5, -28(fp)
+sw s6, -32(fp)
+sw s7, -36(fp)
+sw s8, -40(fp)
+sw s9, -44(fp)
+sw s10, -48(fp)
+sw s11, -52(fp)
+li t3, 10
+li t0, 20
+sw t0, -116(fp)
+lw t2, -116(fp)
+add t0, t3, t2
+sw t0, -200(fp)
+li t4, 30
+slt t5, t3, t4
+beqz t5, f_L8_1_0
+jal f_L8_2_0
+f_L8_1_0:
+jal f_L8
+f_L8_2_0:
+lw t2, -200(fp)
+add t0, t3, t2
+sw t0, -100(fp)
+lw t2, -116(fp)
+add t0, t3, t2
+sw t0, -112(fp)
+jal f_L10
+f_L8:
+lw t1, -116(fp)
+lw t2, -200(fp)
+add t0, t1, t2
+sw t0, -124(fp)
+jal f_L14
+f_L10:
+li s1, 50
+lw t1, -100(fp)
+add t0, t1, s1
+sw t0, -116(fp)
+lw t1, -200(fp)
+lw t2, -100(fp)
+add s2, t1, t2
+lw t2, -112(fp)
+add s3, s2, t2
+mv a1, s3
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+lw t1, -200(fp)
+lw t2, -112(fp)
+add t0, t1, t2
+sw t0, -124(fp)
+li s4, 40
+lw t1, -116(fp)
+add t0, t1, s4
+sw t0, -116(fp)
+jal f_L8
+f_L14:
+li s5, 10
+add t0, t3, s5
+sw t0, -112(fp)
+f_L22:
+li t0, 55
+sw t0, -116(fp)
+li s6, 20
+sub t0, t3, s6
+sw t0, -200(fp)
+lw t1, -116(fp)
+lw t2, -200(fp)
+slt s7, t1, t2
+beqz s7, f_L20_1_1
+jal f_L20_2_1
+f_L20_1_1:
+jal f_L20
+f_L20_2_1:
+lw t1, -200(fp)
+lw t2, -116(fp)
+add t0, t1, t2
+sw t0, -100(fp)
+lw t1, -100(fp)
+sub t0, t1, s5
+sw t0, -124(fp)
+lw t1, -100(fp)
+lw t2, -124(fp)
+add s8, t1, t2
+mv a1, s8
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+lw t1, -200(fp)
+lw t2, -124(fp)
+add t0, t1, t2
+sw t0, -116(fp)
+li s9, 2
+lw t2, -116(fp)
+sub t0, s9, t2
+sw t0, -112(fp)
+jal f_L22
+f_L20:
+li s10, 7
+lw t1, -112(fp)
+add t0, t1, s10
+sw t0, -116(fp)
+lw t1, -200(fp)
+lw t2, -116(fp)
+add t0, t1, t2
+sw t0, -200(fp)
+li s9, 2
+lw t2, -200(fp)
+mul t0, s9, t2
+sw t0, -124(fp)
+lw t1, -112(fp)
+add t0, t1, s5
+sw t0, -252(fp)
+li s11, 55
+sw s11, -156(fp)
+la t0, g
+sw t0, -136(fp)
+lw t1, -252(fp)
+lw t2, -156(fp)
+slt t4, t1, t2
+beqz t4, f_L27_1_2
+jal f_L27_2_2
+f_L27_1_2:
+jal f_L27
+f_L27_2_2:
+lw t1, -252(fp)
+sub t0, t1, s6
+sw t0, -196(fp)
+sw t3, -144(fp)
+sw t4, -148(fp)
+sw t5, -152(fp)
+lw t1, -136(fp)
+li t6, 32
+sub sp, sp, t6
+lw t6, -116(fp)
+sw t6, 0(sp)
+lw t6, -200(fp)
+sw t6, 4(sp)
+lw t6, -100(fp)
+sw t6, 8(sp)
+lw t6, -124(fp)
+sw t6, 12(sp)
+lw t6, -112(fp)
+sw t6, 16(sp)
+lw t6, -252(fp)
+sw t6, 20(sp)
+lw t6, -156(fp)
+sw t6, 24(sp)
+lw t6, -196(fp)
+sw t6, 28(sp)
+jalr t1
+sw fp, -32(sp)
+mv t0, a0
+lw t4, -148(fp)
+lw t5, -152(fp)
+lw t3, -144(fp)
+sw t0, -156(fp)
+lw t1, -196(fp)
+lw t2, -156(fp)
+add t0, t1, t2
+sw t0, -172(fp)
+jal f_L29
+f_L27:
+li t0, 1
+sw t0, -164(fp)
+lw t1, -252(fp)
+lw t2, -164(fp)
+add t0, t1, t2
+sw t0, -184(fp)
+lw t2, -184(fp)
+mul t0, s9, t2
+sw t0, -172(fp)
+f_L29:
+li t0, 5
+sw t0, -176(fp)
+lw t1, -172(fp)
+lw t2, -176(fp)
+sub t0, t1, t2
+sw t0, -180(fp)
+lw t1, -252(fp)
+lw t2, -180(fp)
+add t0, t1, t2
+sw t0, -184(fp)
+lw t1, -172(fp)
+lw t2, -184(fp)
+sub t0, t1, t2
+sw t0, -188(fp)
+lw t1, -188(fp)
+lw t2, -180(fp)
+add t0, t1, t2
+sw t0, -192(fp)
+lw t1, -192(fp)
+mv a1, t1
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+lw t1, -172(fp)
+lw t2, -184(fp)
+add t0, t1, t2
+sw t0, -196(fp)
+lw t1, -200(fp)
+lw t2, -100(fp)
+add t0, t1, t2
+sw t0, -200(fp)
+lw t1, -100(fp)
+add t0, t1, s6
+sw t0, -236(fp)
+lw t1, -196(fp)
+lw t2, -236(fp)
+add t0, t1, t2
+sw t0, -240(fp)
+lw t1, -100(fp)
+lw t2, -240(fp)
+slt s2, t1, t2
+f_L3:
+beqz s2, f_L12_1_3
+jal f_L12_2_3
+f_L12_1_3:
+jal f_L12
+f_L12_2_3:
+lw t1, -100(fp)
+lw t2, -236(fp)
+add t0, t1, t2
+sw t0, -212(fp)
+li t0, 30
+sw t0, -216(fp)
+lw t1, -212(fp)
+lw t2, -216(fp)
+add t0, t1, t2
+sw t0, -224(fp)
+lw t1, -196(fp)
+lw t2, -224(fp)
+sub t0, t1, t2
+sw t0, -224(fp)
+lw t1, -212(fp)
+lw t2, -224(fp)
+sub t0, t1, t2
+sw t0, -240(fp)
+li t0, 0
+sw t0, -232(fp)
+lw t1, -240(fp)
+lw t2, -232(fp)
+mul s2, t1, t2
+lw t1, -200(fp)
+lw t2, -252(fp)
+add t0, t1, t2
+sw t0, -236(fp)
+lw t1, -212(fp)
+lw t2, -240(fp)
+add t0, t1, t2
+sw t0, -240(fp)
+lw t1, -236(fp)
+lw t2, -240(fp)
+sub t0, t1, t2
+sw t0, -244(fp)
+lw t1, -244(fp)
+mv a1, t1
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+jal f_L3
+f_L12:
+lw t1, -184(fp)
+lw t2, -240(fp)
+sub t0, t1, t2
+sw t0, -252(fp)
+lw t1, -212(fp)
+lw t2, -252(fp)
+add t0, t1, t2
+sw t0, -252(fp)
+lw s3, -20(fp)
+lw s4, -24(fp)
+lw s5, -28(fp)
+lw s11, -52(fp)
+lw s6, -32(fp)
+lw s10, -48(fp)
+lw s7, -36(fp)
+lw s8, -40(fp)
+lw s9, -44(fp)
+lw s1, -12(fp)
+lw s2, -16(fp)
+lw a0, -252(fp)
+addi sp, sp, 252
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl g
+g:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 60
+sub sp, sp, t6
+sw ra, -4(fp)
+sw s1, -12(fp)
+sw s2, -16(fp)
+sw s3, -20(fp)
+sw s4, -24(fp)
+sw s5, -28(fp)
+sw s6, -32(fp)
+sw s7, -36(fp)
+lw t1, 0(fp)
+lw t2, 4(fp)
+add t3, t1, t2
+lw t1, 8(fp)
+lw t2, 12(fp)
+add t4, t1, t2
+lw t1, 16(fp)
+lw t2, 20(fp)
+add t5, t1, t2
+lw t1, 24(fp)
+lw t2, 28(fp)
+add s1, t1, t2
+li t0, 10
+sw t0, -40(fp)
+lw t1, -40(fp)
+mv s2, t1
+lw t1, 28(fp)
+lw t2, 0(fp)
+slt t0, t1, t2
+sw t0, -44(fp)
+lw t1, -44(fp)
+beqz t1, g_L42_1_4
+jal g_L42_2_4
+g_L42_1_4:
+jal g_L42
+g_L42_2_4:
+la s3, g
+sw t3, -48(fp)
+sw t4, -52(fp)
+sw t5, -56(fp)
+li t6, 32
+sub sp, sp, t6
+lw t6, -44(fp)
+sw t6, 0(sp)
+lw t6, 24(fp)
+sw t6, 4(sp)
+lw t6, -44(fp)
+sw t6, 8(sp)
+lw t6, 16(fp)
+sw t6, 12(sp)
+lw t6, -40(fp)
+sw t6, 16(sp)
+lw t6, -44(fp)
+sw t6, 20(sp)
+lw t6, 4(fp)
+sw t6, 24(sp)
+lw t6, -40(fp)
+sw t6, 28(sp)
+jalr s3
+sw fp, -32(sp)
+mv t0, a0
+lw t4, -52(fp)
+lw t5, -56(fp)
+lw t3, -48(fp)
+mv t3, t0
+g_L42:
+sub s2, s1, t3
+mul s4, t4, s2
+sub s5, t5, s4
+add s6, s1, s2
+add s7, s2, s4
+add t0, s5, s6
+sw t0, -60(fp)
+lw s3, -20(fp)
+lw s4, -24(fp)
+lw s5, -28(fp)
+lw s6, -32(fp)
+lw s7, -36(fp)
+lw s1, -12(fp)
+lw s2, -16(fp)
+lw a0, -60(fp)
+addi sp, sp, 60
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl error
+error:
+mv a1, a0
+li a0, @print_string
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+li a0, @exit
+ecall
+abort_17:
+j abort_17
+
+.globl alloc
+alloc:
+mv a1, a0
+li a0, @sbrk
+ecall
+jr ra
+
+.data
+
+.globl msg_0
+msg_0:
+.asciiz "null pointer"
+.align 2
+
+.globl msg_1
+msg_1:
+.asciiz "array index out of bounds"
+.align 2
+
+

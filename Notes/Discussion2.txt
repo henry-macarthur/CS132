@@ -1,0 +1,29 @@
+Goal root = new MiniJavaParser(system.in).Goal(); 
+    gives a pointer to the goal node 
+    we can access main class and the rest of the class 
+    rest of pointers in the syntax tree 
+
+TypecheckVisitor()
+    this is where we right the type check
+
+
+Strategy for hw2
+    type check a single function 
+        main class and main method 
+        assignment statements and simple set of expressions 
+    single main class and multiple functions 
+    type checking for objects and classes (no inheritence)
+        no subtyping allowed 
+    allow subtyping 
+
+do not need to worry about jtb and javacc, can get it as a library 
+    located in lib 
+
+SymbolTableVisitor 
+    * methods and variables so we can build the symbol table 
+
+expressions and statements would be under type checker 
+we need visitors for everything when it comes to type checking 
+
+symbol table 
+    <id, type> is ok for basic table 

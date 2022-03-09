@@ -1,0 +1,72 @@
+
+func Main()
+t5 = 4
+t0 = t5
+t4 = alloc(t0)
+t0 = t5
+t3 = alloc(t0)
+nullt0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t3
+t5 = t0
+t0 = t4
+t1 = t5
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null1
+t0 = t4
+t3 = [t0 + 0]
+t0 = t3
+t3 = [t0 + 0]
+t5 = 6
+t0 = t3
+t3 = call t0(w0 v0)
+t0 = t3
+print(t0)
+goto main_end
+null1:
+error("null pointer")
+main_end:
+return v0
+
+
+func FacComputeFac(this num)
+t3 = 1
+t0 = t4
+t1 = t3
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto if1_else
+t2 = 1
+goto if1_end
+if1_else:
+loop:
+t0 = t5
+s11 = [t0 + 0]
+t0 = s11
+s11 = [t0 + 0]
+t3 = 1
+t0 = t4
+t1 = t3
+s10 = t0 - t1
+t0 = s11
+s9 = call t0(this w2)
+t0 = t4
+t1 = s9
+t2 = t0 * t1
+goto loop
+goto if1_else
+if1_end:
+return num_aux
+
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 854ms
+2 actionable tasks: 1 executed, 1 up-to-date

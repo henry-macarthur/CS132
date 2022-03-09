@@ -1,0 +1,110 @@
+func Main()
+t5 = 4
+t0 = t5
+t4 = alloc(t0)
+t5 = 4
+t0 = t5
+t3 = alloc(t0)
+t5 = @Fac_ComputeFac
+t0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null8
+t0 = t4
+t3 = [t0 + 0]
+t0 = t3
+t5 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t3 = 10
+t0 = t5
+Main_t17 = t5
+Main_t8 = t4
+Main_t18 = t3
+a2 = t4
+a3 = t3
+t2 = call t0()
+t5 = Main_t17
+t4 = Main_t8
+t3 = Main_t18
+t0 = t2
+print(t0)
+t3 = 1
+goto main_end
+main_end:
+t19 = t3
+return t19
+
+func Fac_ComputeFac()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t0 = t5
+t2 = t0
+s11 = 1
+t0 = t2
+t1 = s11
+s10 = t0 < t1
+t0 = s10
+if0 t0 goto else22
+s11 = 1
+t0 = s11
+t3 = t0
+goto end22
+else22:
+t0 = t5
+s11 = t0
+t0 = t4
+s10 = t0
+t0 = s10
+if0 t0 goto null33
+t0 = s10
+t4 = [t0 + 0]
+t0 = t4
+t2 = [t0 + 0]
+goto null_end33
+null33:
+error("null pointer")
+null_end33:
+t0 = t5
+t4 = t0
+t5 = 1
+t0 = t4
+t1 = t5
+s9 = t0 - t1
+t0 = t2
+Fac_ComputeFac_Fac_num_aux = t3
+Fac_ComputeFac_t37 = t2
+Fac_ComputeFac_t29 = s11
+Fac_ComputeFac_t38 = s9
+Fac_ComputeFac_t33 = s10
+a2 = s10
+a3 = s9
+t4 = call t0()
+t3 = Fac_ComputeFac_Fac_num_aux
+t2 = Fac_ComputeFac_t37
+s11 = Fac_ComputeFac_t29
+s9 = Fac_ComputeFac_t38
+s10 = Fac_ComputeFac_t33
+t0 = s11
+t1 = t4
+s9 = t0 * t1
+t0 = s9
+t3 = t0
+end22:
+t0 = t3
+s9 = t0
+goto ComputeFac_end
+ComputeFac_end:
+t42 = s9
+return t42
+
+

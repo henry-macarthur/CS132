@@ -1,0 +1,20 @@
+LR PARSING: 
+    * Bottom up parsing 
+        * leaves -> root 
+    * works on right most derivation 
+        * right sentential form 
+    * build a rightmost derivation, in reverse 
+    * why is this more powerful?
+
+    * trying to find a substring a of the trees upper fronteir that matches some A -> a where reducing a to A is 
+        one step in the reverse of a rightmost derivation 
+    * If the grammar is unambiguous then every right sentential form has a unique handle 
+    * cant handl right recursion 
+
+    * need to identify the handle and replace the B with the A 
+
+    * left recursion for bottum up parsers 
+    right recursion for top down parsers 
+
+    * LR grammars are a proper superset of the langauges recognized by LL parsers 
+

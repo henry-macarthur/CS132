@@ -1,0 +1,55 @@
+
+func Main() 
+t9 = 4
+t8 = alloc(t9)
+t11 = 4
+t12 = alloc(t11)
+t13 = @Fac_ComputeFac
+[t12 + 0] = t13
+[t8 + 0] = t12
+if0 t8 goto null8
+t16 = [t8 + 0]
+t17 = [t16 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t18 = 10
+t6 = call t17(t8 t18)
+print(t6)
+t19 = 1
+goto main_end
+main_end:
+return t19
+
+func Fac_ComputeFac(this Fac_num)
+Fac_num_aux = 0
+t20 = Fac_num_aux
+t24 = Fac_num
+t26 = 1
+t23 = t24 < t26
+if0 t23 goto else22
+t27 = 1
+Fac_num_aux = t27
+goto end22
+else22:
+t29 = Fac_num
+t33 = this
+if0 t33 goto null33
+t36 = [t33 + 0]
+t37 = [t36 + 0]
+goto null_end33
+null33:
+error("null pointer")
+null_end33:
+t39 = Fac_num
+t41 = 1
+t38 = t39 - t41
+t31 = call t37(t33 t38)
+t28 = t29 * t31
+Fac_num_aux = t28
+end22:
+t42 = Fac_num_aux
+goto ComputeFac_end
+ComputeFac_end:
+return t42

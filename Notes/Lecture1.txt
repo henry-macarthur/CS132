@@ -1,0 +1,117 @@
+COMPILERS
+    what is a compiler? 
+        * a program that translates an exec program into one language into an exec program in another language 
+        * we expect the program produced by the compiler to be better in some way 
+    what is an interpreter? 
+        * a program that reads an exec program and produces the results of running that program 
+        usually, this involves executing the source program in some fashion 
+
+MOTIVATION 
+    * microcosm of CS 
+        * AI 
+        * algorithms 
+        * Theory
+        * Systems
+        * Architecture 
+
+ISNT IT SOLVED?
+    * machines are constantly changing 
+    * changes in architecture -> changes in compilers 
+    * new features pose new problems 
+    * changing costs lead to different concerts 
+    * old solutions need re-engineering 
+
+    * changes in compilers should prompt changes in architecture 
+
+INTRINSIC MERIT 
+    * compiler construction is challenging and fun 
+    * have an impact on how computers are used 
+
+
+FRONT END: depends on the language 
+    * SCANNER
+        * maps characters into tokens 
+            x = x + y; 
+            becomes 
+            <id, x> = <id, x> + <id, y>; 
+        * character string value for a token is a lexeme 
+        * eliminates white space etc 
+        * speed is the key issue 
+        * transform stream of ascii characters into tokens 
+    * PARSER 
+        * recognize context free syntax 
+        * mechanize much of the work 
+
+BACK END : depends on architectue 
+    * translate IR into target machine code 
+    * choose instructions for each IR operation 
+    * decide what to keep in registers at each point 
+    * ensure conformance with system interfaces 
+    * automation has been less successful here 
+    * INSTRUCTION SELECTION
+        * fast and compact code 
+        * use available addressing modes 
+        * what does each instruction do and what do we pick 
+        * can use pattern matching 
+            * can we come up with machine code that implement the given pattern 
+        * lighter cost 
+
+    * REGISTER ALLOCAITON 
+        * have value in register when used 
+        * limited resources 
+        * changes instruction choices 
+        * can move loads and stores 
+        * optimal allocation is difficult 
+        * graph coloring 
+
+OPTIMIZING COMPILER 
+    * code improvement 
+    * analyzes and changes IR 
+    * reduce runtime but preserve value 
+
+OPTIMIZER MIDDLE END 
+    * set of passes 
+    * propagation and folding 
+    * code motion 
+    * reduction of operator strength 
+
+
+CHAPTER 2: Lexical Analysis 
+---------------------------
+applied regex 
+    * elimiate stuff we dont want 
+    * have a token for every building block 
+
+    * specify patterns 
+        * a scanner must recognize various parts of the languages syntax 
+        * easy 
+            * white space 
+            * keywords and operators : while, do, etc 
+            * comments 
+            * opening / closing delimiters 
+        * these are harder 
+            * identifiers 
+            * alphabetic followed by k alphanumerics 
+            * numbers 
+                * ints 
+                * decimals 
+                    * reals 
+            * complex 
+    * most programming language tokens can be described with REs we can use REs to build scanners automatically 
+
+    * AUTOMATIC CONSTRUCTION 
+        * scanner generators auto construct code from regex like descriptions 
+            * construct  dfa 
+            * use state minimization techniques 
+            * emit code for the scanner 
+            * a key issue in automation is an interface to the parser 
+        * lex is a scanner generator supplied with UNIX 
+            * emits C code for scanner 
+            * providers macro definitions for each token 
+
+    Can use tables for recognizers 
+        * if we change language just change the table 
+
+CAHPTER 3: LL Parsing 
+    * ROLE OF THE PARSER 
+        * 

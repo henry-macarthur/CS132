@@ -1,0 +1,74 @@
+
+func Main() 
+t9 = 4
+t8 = alloc(t9)
+t11 = 8
+t12 = alloc(t11)
+t13 = @A_run
+t14 = @A_helper
+[t12 + 0] = t13
+[t12 + 4] = t14
+[t8 + 0] = t12
+if0 t8 goto null8
+t17 = [t8 + 0]
+t18 = [t17 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t6 = call t18(t8)
+print(t6)
+t19 = 1
+goto main_end
+main_end:
+return t19
+
+func A_run(this)
+A_a = 0
+t20 = A_a
+A_b = 0
+t22 = A_b
+t26 = this
+if0 t26 goto null26
+t29 = [t26 + 0]
+t30 = [t29 + 4]
+goto null_end26
+null26:
+error("null pointer")
+null_end26:
+t31 = 12
+t24 = call t30(t26 t31)
+A_a = t24
+t34 = this
+if0 t34 goto null34
+t37 = [t34 + 0]
+t38 = [t37 + 4]
+goto null_end34
+null34:
+error("null pointer")
+null_end34:
+t39 = 15
+t32 = call t38(t34 t39)
+A_b = t32
+t41 = A_a
+t43 = A_b
+t40 = t41 + t43
+goto run_end
+run_end:
+return t40
+
+func A_helper(this A_param)
+A_x = 0
+t45 = A_x
+t47 = A_param
+A_x = t47
+t50 = A_param
+t52 = 1
+t49 = t50 + t52
+A_param = t49
+t53 = A_x
+print(t53)
+t55 = A_x
+goto helper_end
+helper_end:
+return t55

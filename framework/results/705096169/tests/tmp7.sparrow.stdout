@@ -1,0 +1,1176 @@
+func Main()
+t5 = 12
+t0 = t5
+t4 = alloc(t0)
+t5 = 16
+t0 = t5
+t3 = alloc(t0)
+t5 = @BBS_Start
+t2 = @BBS_Sort
+s11 = @BBS_Print
+s10 = @BBS_Init
+t0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t3
+t1 = t2
+[t0 + 4] = t1
+t0 = t3
+t1 = s11
+[t0 + 8] = t1
+t0 = t3
+t1 = s10
+[t0 + 12] = t1
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null8
+t0 = t4
+t2 = [t0 + 0]
+t0 = t2
+s10 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t2 = 10
+t0 = s10
+Main_t8 = t4
+Main_t21 = t2
+Main_t20 = s10
+a2 = t4
+a3 = t2
+t3 = call t0()
+t4 = Main_t8
+t2 = Main_t21
+s10 = Main_t20
+t0 = t3
+print(t0)
+s10 = 1
+goto main_end
+main_end:
+t22 = s10
+return t22
+
+func BBS_Start()
+t5 = a2
+t4 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t0 = t5
+t2 = t0
+t0 = t2
+if0 t0 goto null31
+t0 = t2
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 12]
+goto null_end31
+null31:
+error("null pointer")
+null_end31:
+t0 = t4
+s11 = t0
+t0 = s10
+BBS_Start_this = t5
+BBS_Start_BBS_aux01 = t3
+BBS_Start_t31 = t2
+BBS_Start_t36 = s11
+BBS_Start_t35 = s10
+a2 = t2
+a3 = s11
+t4 = call t0()
+t5 = BBS_Start_this
+t3 = BBS_Start_BBS_aux01
+t2 = BBS_Start_t31
+s11 = BBS_Start_t36
+s10 = BBS_Start_t35
+t0 = t4
+t3 = t0
+t0 = t5
+t4 = t0
+t0 = t4
+if0 t0 goto null40
+t0 = t4
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 8]
+goto null_end40
+null40:
+error("null pointer")
+null_end40:
+t0 = s10
+BBS_Start_this = t5
+BBS_Start_t40 = t4
+BBS_Start_BBS_aux01 = t3
+BBS_Start_t44 = s10
+a2 = t4
+s11 = call t0()
+t5 = BBS_Start_this
+t4 = BBS_Start_t40
+t3 = BBS_Start_BBS_aux01
+s10 = BBS_Start_t44
+t0 = s11
+t3 = t0
+s11 = 99999
+t0 = s11
+print(t0)
+t0 = t5
+s11 = t0
+t0 = s11
+if0 t0 goto null48
+t0 = s11
+s10 = [t0 + 0]
+t0 = s10
+t4 = [t0 + 4]
+goto null_end48
+null48:
+error("null pointer")
+null_end48:
+t0 = t4
+BBS_Start_this = t5
+BBS_Start_t52 = t4
+BBS_Start_BBS_aux01 = t3
+BBS_Start_t48 = s11
+a2 = s11
+s10 = call t0()
+t5 = BBS_Start_this
+t4 = BBS_Start_t52
+t3 = BBS_Start_BBS_aux01
+s11 = BBS_Start_t48
+t0 = s10
+t3 = t0
+t0 = t5
+s10 = t0
+t0 = s10
+if0 t0 goto null55
+t0 = s10
+t5 = [t0 + 0]
+t0 = t5
+s11 = [t0 + 8]
+goto null_end55
+null55:
+error("null pointer")
+null_end55:
+t0 = s11
+BBS_Start_BBS_aux01 = t3
+BBS_Start_t59 = s11
+BBS_Start_t55 = s10
+a2 = s10
+t5 = call t0()
+t3 = BBS_Start_BBS_aux01
+s11 = BBS_Start_t59
+s10 = BBS_Start_t55
+t0 = t5
+t3 = t0
+t5 = 0
+goto Start_end
+Start_end:
+t60 = t5
+return t60
+
+func BBS_Sort()
+t5 = a2
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 0
+t0 = s9
+s8 = t0
+s8 = 0
+t0 = s8
+s7 = t0
+s7 = 0
+t0 = s7
+s6 = t0
+s6 = 0
+t0 = s6
+s5 = t0
+t0 = t5
+s5 = [t0 + 8]
+s4 = 1
+t0 = s5
+t1 = s4
+s3 = t0 - t1
+t0 = s3
+t3 = t0
+s3 = 0
+s4 = 1
+t0 = s3
+t1 = s4
+s5 = t0 - t1
+t0 = s5
+t2 = t0
+loop86:
+t0 = t2
+s5 = t0
+t0 = t3
+s3 = t0
+t0 = s5
+t1 = s3
+s4 = t0 < t1
+t0 = s4
+if0 t0 goto end86
+s2 = 1
+t0 = s2
+s7 = t0
+loop93:
+t0 = s7
+s1 = t0
+t0 = t3
+t0 = t0
+BBS_Sort_t98 = t0
+t0 = 1
+BBS_Sort_t100 = t0
+t0 = BBS_Sort_t98
+t1 = BBS_Sort_t100
+t0 = t0 + t1
+BBS_Sort_t97 = t0
+t0 = s1
+t1 = BBS_Sort_t97
+t0 = t0 < t1
+BBS_Sort_t94 = t0
+t0 = BBS_Sort_t94
+if0 t0 goto end93
+t0 = s7
+t0 = t0
+BBS_Sort_t102 = t0
+t0 = 1
+BBS_Sort_t104 = t0
+t0 = BBS_Sort_t102
+t1 = BBS_Sort_t104
+t0 = t0 - t1
+BBS_Sort_t101 = t0
+t0 = BBS_Sort_t101
+s8 = t0
+t0 = t5
+t0 = [t0 + 4]
+BBS_Sort_t116 = t0
+t0 = s8
+t0 = t0
+BBS_Sort_t118 = t0
+t0 = 1
+BBS_Sort_t114 = t0
+t0 = 4
+BBS_Sort_t115 = t0
+t0 = BBS_Sort_t118
+t1 = BBS_Sort_t114
+t0 = t0 + t1
+BBS_Sort_t106 = t0
+t0 = BBS_Sort_t106
+t1 = BBS_Sort_t115
+t0 = t0 * t1
+BBS_Sort_t107 = t0
+t0 = BBS_Sort_t116
+t1 = BBS_Sort_t107
+t0 = t0 + t1
+BBS_Sort_t108 = t0
+t0 = 1
+BBS_Sort_t109 = t0
+t0 = 2
+BBS_Sort_t113 = t0
+t0 = BBS_Sort_t109
+t1 = BBS_Sort_t113
+t0 = t0 - t1
+BBS_Sort_t113 = t0
+t0 = BBS_Sort_t113
+t1 = BBS_Sort_t118
+t0 = t0 < t1
+BBS_Sort_t110 = t0
+t0 = BBS_Sort_t110
+if0 t0 goto Error105
+t0 = BBS_Sort_t116
+t0 = [t0 + 0]
+BBS_Sort_t111 = t0
+t0 = BBS_Sort_t118
+t1 = BBS_Sort_t111
+t0 = t0 < t1
+BBS_Sort_t112 = t0
+t0 = BBS_Sort_t112
+if0 t0 goto Error105
+t0 = BBS_Sort_t108
+t0 = [t0 + 0]
+BBS_Sort_t105 = t0
+goto end105
+Error105:
+error("array index out of bounds")
+end105:
+t0 = BBS_Sort_t105
+s11 = t0
+t0 = t5
+t0 = [t0 + 4]
+BBS_Sort_t131 = t0
+t0 = s7
+t0 = t0
+BBS_Sort_t133 = t0
+t0 = 1
+BBS_Sort_t129 = t0
+t0 = 4
+BBS_Sort_t130 = t0
+t0 = BBS_Sort_t133
+t1 = BBS_Sort_t129
+t0 = t0 + t1
+BBS_Sort_t121 = t0
+t0 = BBS_Sort_t121
+t1 = BBS_Sort_t130
+t0 = t0 * t1
+BBS_Sort_t122 = t0
+t0 = BBS_Sort_t131
+t1 = BBS_Sort_t122
+t0 = t0 + t1
+BBS_Sort_t123 = t0
+t0 = 1
+BBS_Sort_t124 = t0
+t0 = 2
+BBS_Sort_t128 = t0
+t0 = BBS_Sort_t124
+t1 = BBS_Sort_t128
+t0 = t0 - t1
+BBS_Sort_t128 = t0
+t0 = BBS_Sort_t128
+t1 = BBS_Sort_t133
+t0 = t0 < t1
+BBS_Sort_t125 = t0
+t0 = BBS_Sort_t125
+if0 t0 goto Error120
+t0 = BBS_Sort_t131
+t0 = [t0 + 0]
+BBS_Sort_t126 = t0
+t0 = BBS_Sort_t133
+t1 = BBS_Sort_t126
+t0 = t0 < t1
+BBS_Sort_t127 = t0
+t0 = BBS_Sort_t127
+if0 t0 goto Error120
+t0 = BBS_Sort_t123
+t0 = [t0 + 0]
+BBS_Sort_t120 = t0
+goto end120
+Error120:
+error("array index out of bounds")
+end120:
+t0 = BBS_Sort_t120
+s10 = t0
+t0 = s10
+t0 = t0
+BBS_Sort_t137 = t0
+t0 = s11
+t0 = t0
+BBS_Sort_t139 = t0
+t0 = BBS_Sort_t137
+t1 = BBS_Sort_t139
+t0 = t0 < t1
+BBS_Sort_t136 = t0
+t0 = BBS_Sort_t136
+if0 t0 goto else135
+t0 = s7
+t0 = t0
+BBS_Sort_t142 = t0
+t0 = 1
+BBS_Sort_t144 = t0
+t0 = BBS_Sort_t142
+t1 = BBS_Sort_t144
+t0 = t0 - t1
+BBS_Sort_t141 = t0
+t0 = BBS_Sort_t141
+s9 = t0
+t0 = t5
+t0 = [t0 + 4]
+BBS_Sort_t156 = t0
+t0 = s9
+t0 = t0
+BBS_Sort_t158 = t0
+t0 = 1
+BBS_Sort_t154 = t0
+t0 = 4
+BBS_Sort_t155 = t0
+t0 = BBS_Sort_t158
+t1 = BBS_Sort_t154
+t0 = t0 + t1
+BBS_Sort_t146 = t0
+t0 = BBS_Sort_t146
+t1 = BBS_Sort_t155
+t0 = t0 * t1
+BBS_Sort_t147 = t0
+t0 = BBS_Sort_t156
+t1 = BBS_Sort_t147
+t0 = t0 + t1
+BBS_Sort_t148 = t0
+t0 = 1
+BBS_Sort_t149 = t0
+t0 = 2
+BBS_Sort_t153 = t0
+t0 = BBS_Sort_t149
+t1 = BBS_Sort_t153
+t0 = t0 - t1
+BBS_Sort_t153 = t0
+t0 = BBS_Sort_t153
+t1 = BBS_Sort_t158
+t0 = t0 < t1
+BBS_Sort_t150 = t0
+t0 = BBS_Sort_t150
+if0 t0 goto Error145
+t0 = BBS_Sort_t156
+t0 = [t0 + 0]
+BBS_Sort_t151 = t0
+t0 = BBS_Sort_t158
+t1 = BBS_Sort_t151
+t0 = t0 < t1
+BBS_Sort_t152 = t0
+t0 = BBS_Sort_t152
+if0 t0 goto Error145
+t0 = BBS_Sort_t148
+t0 = [t0 + 0]
+BBS_Sort_t145 = t0
+goto end145
+Error145:
+error("array index out of bounds")
+end145:
+t0 = BBS_Sort_t145
+s6 = t0
+t0 = t5
+t0 = [t0 + 4]
+BBS_Sort_t170 = t0
+t0 = s9
+t0 = t0
+BBS_Sort_t172 = t0
+t0 = t5
+t0 = [t0 + 4]
+BBS_Sort_t185 = t0
+t0 = s7
+t0 = t0
+BBS_Sort_t187 = t0
+t0 = 1
+BBS_Sort_t183 = t0
+t0 = 4
+BBS_Sort_t184 = t0
+t0 = BBS_Sort_t187
+t1 = BBS_Sort_t183
+t0 = t0 + t1
+BBS_Sort_t175 = t0
+t0 = BBS_Sort_t175
+t1 = BBS_Sort_t184
+t0 = t0 * t1
+BBS_Sort_t176 = t0
+t0 = BBS_Sort_t185
+t1 = BBS_Sort_t176
+t0 = t0 + t1
+BBS_Sort_t177 = t0
+t0 = 1
+BBS_Sort_t178 = t0
+t0 = 2
+BBS_Sort_t182 = t0
+t0 = BBS_Sort_t178
+t1 = BBS_Sort_t182
+t0 = t0 - t1
+BBS_Sort_t182 = t0
+t0 = BBS_Sort_t182
+t1 = BBS_Sort_t187
+t0 = t0 < t1
+BBS_Sort_t179 = t0
+t0 = BBS_Sort_t179
+if0 t0 goto Error174
+t0 = BBS_Sort_t185
+t0 = [t0 + 0]
+BBS_Sort_t180 = t0
+t0 = BBS_Sort_t187
+t1 = BBS_Sort_t180
+t0 = t0 < t1
+BBS_Sort_t181 = t0
+t0 = BBS_Sort_t181
+if0 t0 goto Error174
+t0 = BBS_Sort_t177
+t0 = [t0 + 0]
+BBS_Sort_t174 = t0
+goto end174
+Error174:
+error("array index out of bounds")
+end174:
+t0 = 1
+BBS_Sort_t169 = t0
+t0 = BBS_Sort_t172
+t1 = BBS_Sort_t169
+t0 = t0 + t1
+BBS_Sort_t161 = t0
+t0 = 4
+BBS_Sort_t169 = t0
+t0 = BBS_Sort_t161
+t1 = BBS_Sort_t169
+t0 = t0 * t1
+BBS_Sort_t162 = t0
+t0 = BBS_Sort_t170
+t1 = BBS_Sort_t162
+t0 = t0 + t1
+BBS_Sort_t163 = t0
+t0 = BBS_Sort_t170
+t0 = [t0 + 0]
+BBS_Sort_t189 = t0
+t0 = 1
+BBS_Sort_t164 = t0
+t0 = 2
+BBS_Sort_t168 = t0
+t0 = BBS_Sort_t164
+t1 = BBS_Sort_t168
+t0 = t0 - t1
+BBS_Sort_t168 = t0
+t0 = BBS_Sort_t168
+t1 = BBS_Sort_t174
+t0 = t0 < t1
+BBS_Sort_t165 = t0
+t0 = BBS_Sort_t165
+if0 t0 goto Error160
+t0 = BBS_Sort_t170
+t0 = [t0 + 0]
+BBS_Sort_t166 = t0
+t0 = BBS_Sort_t172
+t1 = BBS_Sort_t189
+t0 = t0 < t1
+BBS_Sort_t167 = t0
+t0 = BBS_Sort_t167
+if0 t0 goto Error160
+t0 = BBS_Sort_t163
+t1 = BBS_Sort_t174
+[t0 + 0] = t1
+goto end160
+Error160:
+error("array index out of bounds")
+end160:
+t0 = t5
+t0 = [t0 + 4]
+BBS_Sort_t200 = t0
+t0 = s7
+t0 = t0
+BBS_Sort_t202 = t0
+t0 = s6
+t0 = t0
+BBS_Sort_t204 = t0
+t0 = 1
+BBS_Sort_t199 = t0
+t0 = BBS_Sort_t202
+t1 = BBS_Sort_t199
+t0 = t0 + t1
+BBS_Sort_t191 = t0
+t0 = 4
+BBS_Sort_t199 = t0
+t0 = BBS_Sort_t191
+t1 = BBS_Sort_t199
+t0 = t0 * t1
+BBS_Sort_t192 = t0
+t0 = BBS_Sort_t200
+t1 = BBS_Sort_t192
+t0 = t0 + t1
+BBS_Sort_t193 = t0
+t0 = BBS_Sort_t200
+t0 = [t0 + 0]
+BBS_Sort_t206 = t0
+t0 = 1
+BBS_Sort_t194 = t0
+t0 = 2
+BBS_Sort_t198 = t0
+t0 = BBS_Sort_t194
+t1 = BBS_Sort_t198
+t0 = t0 - t1
+BBS_Sort_t198 = t0
+t0 = BBS_Sort_t198
+t1 = BBS_Sort_t204
+t0 = t0 < t1
+BBS_Sort_t195 = t0
+t0 = BBS_Sort_t195
+if0 t0 goto Error190
+t0 = BBS_Sort_t200
+t0 = [t0 + 0]
+BBS_Sort_t196 = t0
+t0 = BBS_Sort_t202
+t1 = BBS_Sort_t206
+t0 = t0 < t1
+BBS_Sort_t197 = t0
+t0 = BBS_Sort_t197
+if0 t0 goto Error190
+t0 = BBS_Sort_t193
+t1 = BBS_Sort_t204
+[t0 + 0] = t1
+goto end190
+Error190:
+error("array index out of bounds")
+end190:
+goto end135
+else135:
+t0 = 0
+BBS_Sort_t207 = t0
+t0 = BBS_Sort_t207
+t4 = t0
+end135:
+t0 = s7
+t0 = t0
+BBS_Sort_t209 = t0
+t0 = 1
+BBS_Sort_t211 = t0
+t0 = BBS_Sort_t209
+t1 = BBS_Sort_t211
+t0 = t0 + t1
+BBS_Sort_t208 = t0
+t0 = BBS_Sort_t208
+s7 = t0
+goto loop93
+end93:
+t0 = t3
+t0 = t0
+BBS_Sort_t213 = t0
+t0 = 1
+BBS_Sort_t215 = t0
+t0 = BBS_Sort_t213
+t1 = BBS_Sort_t215
+t0 = t0 - t1
+BBS_Sort_t212 = t0
+t0 = BBS_Sort_t212
+t3 = t0
+goto loop86
+end86:
+s10 = 0
+goto Sort_end
+Sort_end:
+t216 = s10
+return t216
+
+func BBS_Print()
+t5 = a2
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t4 = t0
+loop220:
+t0 = t4
+t3 = t0
+t0 = t5
+t2 = [t0 + 8]
+t0 = t3
+t1 = t2
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto end220
+t0 = t5
+s10 = [t0 + 4]
+t0 = t4
+s9 = t0
+s8 = 1
+s7 = 4
+t0 = s9
+t1 = s8
+s6 = t0 + t1
+t0 = s6
+t1 = s7
+s5 = t0 * t1
+t0 = s10
+t1 = s5
+s4 = t0 + t1
+s3 = 1
+s2 = 2
+t0 = s3
+t1 = s2
+s2 = t0 - t1
+t0 = s2
+t1 = s9
+s1 = t0 < t1
+t0 = s1
+if0 t0 goto Error226
+t0 = s10
+t0 = [t0 + 0]
+BBS_Print_t232 = t0
+t0 = s9
+t1 = BBS_Print_t232
+t0 = t0 < t1
+BBS_Print_t233 = t0
+t0 = BBS_Print_t233
+if0 t0 goto Error226
+t0 = s4
+t0 = [t0 + 0]
+BBS_Print_t226 = t0
+goto end226
+Error226:
+error("array index out of bounds")
+end226:
+t0 = BBS_Print_t226
+print(t0)
+t0 = t4
+t0 = t0
+BBS_Print_t242 = t0
+t0 = 1
+BBS_Print_t244 = t0
+t0 = BBS_Print_t242
+t1 = BBS_Print_t244
+t0 = t0 + t1
+BBS_Print_t241 = t0
+t0 = BBS_Print_t241
+t4 = t0
+goto loop220
+end220:
+s10 = 0
+goto Print_end
+Print_end:
+t245 = s10
+return t245
+
+func BBS_Init()
+t4 = a2
+t5 = a3
+t0 = t5
+t3 = t0
+t0 = t3
+t2 = t0
+t0 = t4
+t1 = t3
+[t0 + 8] = t1
+t0 = t5
+t3 = t0
+t5 = 1
+t2 = 4
+t0 = t3
+t1 = t5
+s11 = t0 + t1
+t0 = s11
+t1 = t2
+t5 = t0 * t1
+t0 = t5
+t2 = alloc(t0)
+s11 = 0
+t0 = t2
+t1 = t3
+[t0 + 0] = t1
+t0 = t2
+t3 = t0
+t0 = t4
+t1 = t2
+[t0 + 4] = t1
+t0 = t4
+t2 = [t0 + 4]
+t3 = 0
+s11 = 20
+t5 = 1
+t0 = t3
+t1 = t5
+s10 = t0 + t1
+t5 = 4
+t0 = s10
+t1 = t5
+s9 = t0 * t1
+t0 = t2
+t1 = s9
+s10 = t0 + t1
+t0 = t2
+s9 = [t0 + 0]
+t5 = 1
+s8 = 2
+t0 = t5
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s11
+t5 = t0 < t1
+t0 = t5
+if0 t0 goto Error255
+t0 = t2
+t5 = [t0 + 0]
+t0 = t3
+t1 = s9
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto Error255
+t0 = s10
+t1 = s11
+[t0 + 0] = t1
+goto end255
+Error255:
+error("array index out of bounds")
+end255:
+t0 = t4
+s9 = [t0 + 4]
+s11 = 1
+s10 = 7
+t2 = 1
+t0 = s11
+t1 = t2
+t3 = t0 + t1
+t2 = 4
+t0 = t3
+t1 = t2
+t5 = t0 * t1
+t0 = s9
+t1 = t5
+t2 = t0 + t1
+t0 = s9
+t5 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error270
+t0 = s9
+t3 = [t0 + 0]
+t0 = s11
+t1 = t5
+s9 = t0 < t1
+t0 = s9
+if0 t0 goto Error270
+t0 = t2
+t1 = s10
+[t0 + 0] = t1
+goto end270
+Error270:
+error("array index out of bounds")
+end270:
+t0 = t4
+s11 = [t0 + 4]
+t2 = 2
+s10 = 12
+s9 = 1
+t0 = t2
+t1 = s9
+t5 = t0 + t1
+s9 = 4
+t0 = t5
+t1 = s9
+t3 = t0 * t1
+t0 = s11
+t1 = t3
+s9 = t0 + t1
+t0 = s11
+t3 = [t0 + 0]
+t5 = 1
+s8 = 2
+t0 = t5
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t5 = t0 < t1
+t0 = t5
+if0 t0 goto Error285
+t0 = s11
+t5 = [t0 + 0]
+t0 = t2
+t1 = t3
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error285
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+goto end285
+Error285:
+error("array index out of bounds")
+end285:
+t0 = t4
+t2 = [t0 + 4]
+s9 = 3
+s10 = 18
+s11 = 1
+t0 = s9
+t1 = s11
+t3 = t0 + t1
+s11 = 4
+t0 = t3
+t1 = s11
+t5 = t0 * t1
+t0 = t2
+t1 = t5
+s11 = t0 + t1
+t0 = t2
+t5 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error300
+t0 = t2
+t3 = [t0 + 0]
+t0 = s9
+t1 = t5
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto Error300
+t0 = s11
+t1 = s10
+[t0 + 0] = t1
+goto end300
+Error300:
+error("array index out of bounds")
+end300:
+t0 = t4
+s9 = [t0 + 4]
+s11 = 4
+s10 = 2
+t2 = 1
+t0 = s11
+t1 = t2
+t5 = t0 + t1
+t2 = 4
+t0 = t5
+t1 = t2
+t3 = t0 * t1
+t0 = s9
+t1 = t3
+t2 = t0 + t1
+t0 = s9
+t3 = [t0 + 0]
+t5 = 1
+s8 = 2
+t0 = t5
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t5 = t0 < t1
+t0 = t5
+if0 t0 goto Error315
+t0 = s9
+t5 = [t0 + 0]
+t0 = s11
+t1 = t3
+s9 = t0 < t1
+t0 = s9
+if0 t0 goto Error315
+t0 = t2
+t1 = s10
+[t0 + 0] = t1
+goto end315
+Error315:
+error("array index out of bounds")
+end315:
+t0 = t4
+s11 = [t0 + 4]
+t2 = 5
+s10 = 11
+s9 = 1
+t0 = t2
+t1 = s9
+t3 = t0 + t1
+s9 = 4
+t0 = t3
+t1 = s9
+t5 = t0 * t1
+t0 = s11
+t1 = t5
+s9 = t0 + t1
+t0 = s11
+t5 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error330
+t0 = s11
+t3 = [t0 + 0]
+t0 = t2
+t1 = t5
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error330
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+goto end330
+Error330:
+error("array index out of bounds")
+end330:
+t0 = t4
+t2 = [t0 + 4]
+s9 = 6
+s10 = 6
+s11 = 1
+t0 = s9
+t1 = s11
+t5 = t0 + t1
+s11 = 4
+t0 = t5
+t1 = s11
+t3 = t0 * t1
+t0 = t2
+t1 = t3
+s11 = t0 + t1
+t0 = t2
+t3 = [t0 + 0]
+t5 = 1
+s8 = 2
+t0 = t5
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t5 = t0 < t1
+t0 = t5
+if0 t0 goto Error345
+t0 = t2
+t5 = [t0 + 0]
+t0 = s9
+t1 = t3
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto Error345
+t0 = s11
+t1 = s10
+[t0 + 0] = t1
+goto end345
+Error345:
+error("array index out of bounds")
+end345:
+t0 = t4
+s9 = [t0 + 4]
+s11 = 7
+s10 = 9
+t2 = 1
+t0 = s11
+t1 = t2
+t3 = t0 + t1
+t2 = 4
+t0 = t3
+t1 = t2
+t5 = t0 * t1
+t0 = s9
+t1 = t5
+t2 = t0 + t1
+t0 = s9
+t5 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error360
+t0 = s9
+t3 = [t0 + 0]
+t0 = s11
+t1 = t5
+s9 = t0 < t1
+t0 = s9
+if0 t0 goto Error360
+t0 = t2
+t1 = s10
+[t0 + 0] = t1
+goto end360
+Error360:
+error("array index out of bounds")
+end360:
+t0 = t4
+s11 = [t0 + 4]
+t2 = 8
+s10 = 19
+s9 = 1
+t0 = t2
+t1 = s9
+t5 = t0 + t1
+s9 = 4
+t0 = t5
+t1 = s9
+t3 = t0 * t1
+t0 = s11
+t1 = t3
+s9 = t0 + t1
+t0 = s11
+t3 = [t0 + 0]
+t5 = 1
+s8 = 2
+t0 = t5
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t5 = t0 < t1
+t0 = t5
+if0 t0 goto Error375
+t0 = s11
+t5 = [t0 + 0]
+t0 = t2
+t1 = t3
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error375
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+goto end375
+Error375:
+error("array index out of bounds")
+end375:
+t0 = t4
+t2 = [t0 + 4]
+t4 = 9
+s9 = 5
+s10 = 1
+t0 = t4
+t1 = s10
+s11 = t0 + t1
+s10 = 4
+t0 = s11
+t1 = s10
+t3 = t0 * t1
+t0 = t2
+t1 = t3
+s10 = t0 + t1
+t0 = t2
+t3 = [t0 + 0]
+s11 = 1
+t5 = 2
+t0 = s11
+t1 = t5
+t5 = t0 - t1
+t0 = t5
+t1 = s9
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error390
+t0 = t2
+s11 = [t0 + 0]
+t0 = t4
+t1 = t3
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error390
+t0 = s10
+t1 = s9
+[t0 + 0] = t1
+goto end390
+Error390:
+error("array index out of bounds")
+end390:
+s10 = 0
+goto Init_end
+Init_end:
+t405 = s10
+return t405
+
+

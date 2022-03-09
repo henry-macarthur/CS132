@@ -1,0 +1,79 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :run
+func Main()
+ = 4
+t0 = Main_v0
+ = alloc(t0)
+t0 = Main_v0
+ = alloc(t0)
+ = @FacComputeFac
+t0 = Main_vmt_Fac
+t1 = Main_v0
+[t0 + 0] = t1
+t0 = Main_vmt_Fac
+ = t0
+t0 = Main_w0
+t1 = Main_v0
+[t0 + 0] = t1
+t0 = Main_w0
+if0 t0 goto null1
+t0 = Main_w0
+ = [t0 + 0]
+t0 = Main_w1
+ = [t0 + 0]
+ = 6
+t0 = Main_w1
+a2 = Main_w0
+a3 = Main_v0
+ = call t0()
+t0 = Main_w2
+print(t0)
+goto main_end
+null1:
+error("null pointer")
+main_end:
+return Main_v0
+
+func FacComputeFac()
+ = a2
+ = a3
+ = 1
+t0 = FacComputeFac_num
+t1 = FacComputeFac_v0
+ = t0 < t1
+t0 = FacComputeFac_w0
+if0 t0 goto if1_else
+ = 1
+goto if1_end
+if1_else:
+t0 = FacComputeFac_this
+ = [t0 + 0]
+t0 = FacComputeFac_w1
+ = [t0 + 0]
+ = 1
+t0 = FacComputeFac_num
+t1 = FacComputeFac_v0
+ = t0 - t1
+t0 = FacComputeFac_w1
+a2 = FacComputeFac_this
+a3 = FacComputeFac_w2
+ = call t0()
+t0 = FacComputeFac_num
+t1 = FacComputeFac_w3
+ = t0 * t1
+if1_end:
+return FacComputeFac_num_aux
+
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 599ms
+2 actionable tasks: 1 executed, 1 up-to-date

@@ -1,0 +1,65 @@
+CHAPTER 4: JAVACC and JTB 
+=========================
+* the java compiler compiler transforms an EBNF grammar into an ll(k) parser 
+
+JavaCC input format 
+-------------------
+* one file 
+    header 
+    token specifications for lexical analysis 
+    grammar 
+
+Generating a parser with JavaCC
+-------------------------------
+ javacc fortran.jj  // generates a parser witha specified name 
+ javac Main.java    //Main.java containes a call of thje parser 
+ java Main < prog.f //parses the program prog.f 
+
+
+The Visitor Pattern 
+-------------------
+* for oop it enables the definition of a new operation on an object structure without changing the classes of the classes 
+* so we want to add a new method without changing the class - seems counter intuitive 
+* dont want to change the classes since they are already there and compile to byte code 
+    might not even have the source 
+
+could use instance of and type casts but we have to use type casts and instance of to determine what we are looking at 
+    * this is not oop 
+
+could use dedicated methods 
+    * no type casts 
+    * we are changing the interface and classes - have to recompile 
+
+the visitor pattern - how its implemented 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* the IDEA: 
+    * divide the code into an object structure and a visitor - like fp 
+    * insert an accept method in each class 
+        takes in a visitor as an argument 
+    * a visitor contains a visit method for each class (overloading) 
+        a method for a class C takes an argument of type C 
+    * the purpse of the accept methods is to invoke the visit method in the visitor which can handle the current object 
+    * the control flow goes back and forth between the visit methods in the visitor and the accept methods in the object structure 
+* the visit methods are saying the core tasks 
+* accessing the sub objects via binding 
+* this is called double dispatching 
+
+1. new methods without recompilation! 
+2. all classes must have an accept method 
+3. just need to write a new visitor 
+
+
+The Java Tree Builder 
+---------------------
+* JTB is the frontend for the jaca compiler compiler 
+* supports the building of syntax trees which can be traversed using visitors 
+* transforms a bare JavaCC grammar into 3 components 
+    1. javacc grammar w embedded java code for building a syntax tree 
+    2. one class for every form of syntax tree node and 
+    3. a default visitor which can do a dfs traversal of a syntax tree 
+* puts java code into the grammar that creates syntax tree nodes and builds a tree out of it 
+    * they all have accept methods so we can now visit them 
+    * this code is run when we run the parser and it creates the syntax tree with accept methods 
+
+most of the code will be in the visitor functionality 
+

@@ -1,0 +1,58 @@
+TYPE CHECKING
+=============
+* goes through bits of reason to determine what the type is 
+
+(H1 ^ H2) => C 
+    and   implication 
+
+class TypeChecker extends DepthFirstVisitor {
+    
+    // what does visit return? 
+    // Type is a class that represents the type we can encounter 
+    // want to type check integer constants and say what type it is 
+    // integers have no hypothesis so it is always an integer 
+
+    Type visit (Integer Constant n) {
+        return "int"
+    }
+
+    // f0 : Exp (lhs)
+    // f2 : Exp (rhs)
+    // call type checkers recursivley on each side and hope we get a type 
+    // yes : check it 
+    // no : return error 
+    // cant call visit recursivley have to call accept 
+    Type visit (Plus_expression n) {
+        // need to do recursive calls on n.f0 and n.f2 
+        // this refers to the type checker 
+        Type t0 = n.f0.accept(this) //these are the recursive calls
+        Type t2 = n.f2.accept(this)
+
+        if (t0 != "int") throw new Exception(); //these are the type checks 
+        if (t1 != "int") throw new Exception();
+
+        return "int" //this is the conclusion 
+    }
+
+    /* 
+        This is the idea for hw2 but it wont be as easy 
+        we arent just gonna deal with expressions, there are going to be 
+        variables and fields 
+
+    */
+}
+
+
+
+STATEMENTS
+----------
+* introduces variables, assignments, etc 
+* statements do not have a type / value 
+
+Symbol Table: 
+    * names that we need to know something about 
+    * want to cache all declerations we need to see 
+    * right rable at right time 
+    * Id -> Type 
+
+    

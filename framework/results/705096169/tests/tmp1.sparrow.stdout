@@ -1,0 +1,11 @@
+func Main()
+t5 = 12
+t0 = t5
+print(t0)
+t5 = 1
+goto main_end
+main_end:
+t7 = t5
+return t7
+
+

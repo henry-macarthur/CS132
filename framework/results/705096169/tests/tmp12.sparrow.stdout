@@ -1,0 +1,1581 @@
+func Main()
+t5 = 12
+t0 = t5
+t4 = alloc(t0)
+t5 = 16
+t0 = t5
+t3 = alloc(t0)
+t5 = @QS_Start
+t2 = @QS_Sort
+s11 = @QS_Print
+s10 = @QS_Init
+t0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t3
+t1 = t2
+[t0 + 4] = t1
+t0 = t3
+t1 = s11
+[t0 + 8] = t1
+t0 = t3
+t1 = s10
+[t0 + 12] = t1
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null8
+t0 = t4
+t2 = [t0 + 0]
+t0 = t2
+s10 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t2 = 10
+t0 = s10
+Main_t8 = t4
+Main_t21 = t2
+Main_t20 = s10
+a2 = t4
+a3 = t2
+t3 = call t0()
+t4 = Main_t8
+t2 = Main_t21
+s10 = Main_t20
+t0 = t3
+print(t0)
+s10 = 1
+goto main_end
+main_end:
+t22 = s10
+return t22
+
+func QS_Start()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t0 = t4
+t2 = t0
+t0 = t2
+if0 t0 goto null31
+t0 = t2
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 12]
+goto null_end31
+null31:
+error("null pointer")
+null_end31:
+t0 = t5
+s11 = t0
+t0 = s10
+QS_Start_this = t4
+QS_Start_QS_aux01 = t3
+QS_Start_t31 = t2
+QS_Start_t36 = s11
+QS_Start_t35 = s10
+a2 = t2
+a3 = s11
+t5 = call t0()
+t4 = QS_Start_this
+t3 = QS_Start_QS_aux01
+t2 = QS_Start_t31
+s11 = QS_Start_t36
+s10 = QS_Start_t35
+t0 = t5
+t3 = t0
+t0 = t4
+t5 = t0
+t0 = t5
+if0 t0 goto null40
+t0 = t5
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 8]
+goto null_end40
+null40:
+error("null pointer")
+null_end40:
+t0 = s10
+QS_Start_t40 = t5
+QS_Start_this = t4
+QS_Start_QS_aux01 = t3
+QS_Start_t44 = s10
+a2 = t5
+s11 = call t0()
+t5 = QS_Start_t40
+t4 = QS_Start_this
+t3 = QS_Start_QS_aux01
+s10 = QS_Start_t44
+t0 = s11
+t3 = t0
+s11 = 9999
+t0 = s11
+print(t0)
+t0 = t4
+s11 = [t0 + 8]
+s10 = 1
+t0 = s11
+t1 = s10
+t5 = t0 - t1
+t0 = t5
+t3 = t0
+t0 = t4
+t5 = t0
+t0 = t5
+if0 t0 goto null52
+t0 = t5
+s10 = [t0 + 0]
+t0 = s10
+s11 = [t0 + 4]
+goto null_end52
+null52:
+error("null pointer")
+null_end52:
+s10 = 0
+t0 = t3
+t2 = t0
+t0 = s11
+QS_Start_t52 = t5
+QS_Start_this = t4
+QS_Start_QS_aux01 = t3
+QS_Start_t58 = t2
+QS_Start_t56 = s11
+QS_Start_t57 = s10
+a2 = t5
+a3 = s10
+a4 = t2
+s9 = call t0()
+t5 = QS_Start_t52
+t4 = QS_Start_this
+t3 = QS_Start_QS_aux01
+t2 = QS_Start_t58
+s11 = QS_Start_t56
+s10 = QS_Start_t57
+t0 = s9
+t3 = t0
+t0 = t4
+s9 = t0
+t0 = s9
+if0 t0 goto null62
+t0 = s9
+t4 = [t0 + 0]
+t0 = t4
+s10 = [t0 + 8]
+goto null_end62
+null62:
+error("null pointer")
+null_end62:
+t0 = s10
+QS_Start_QS_aux01 = t3
+QS_Start_t66 = s10
+QS_Start_t62 = s9
+a2 = s9
+t4 = call t0()
+t3 = QS_Start_QS_aux01
+s10 = QS_Start_t66
+s9 = QS_Start_t62
+t0 = t4
+t3 = t0
+t4 = 0
+goto Start_end
+Start_end:
+t67 = t4
+return t67
+
+func QS_Sort()
+t4 = a2
+t5 = a3
+t3 = a4
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 0
+t0 = s9
+s8 = t0
+s8 = 0
+t0 = s8
+s7 = t0
+s7 = 0
+t0 = s7
+s6 = t0
+s6 = 0
+t0 = s6
+s5 = t0
+s5 = 0
+t0 = s5
+s4 = t0
+s4 = 0
+t0 = s4
+s8 = t0
+t0 = t5
+s4 = t0
+t0 = t3
+s3 = t0
+t0 = s4
+t1 = s3
+s2 = t0 < t1
+t0 = s2
+if0 t0 goto else85
+t0 = t4
+s3 = [t0 + 4]
+t0 = t3
+s2 = t0
+s4 = 1
+s1 = 4
+t0 = s2
+t1 = s4
+t0 = t0 + t1
+QS_Sort_t92 = t0
+t0 = QS_Sort_t92
+t1 = s1
+t0 = t0 * t1
+QS_Sort_t93 = t0
+t0 = s3
+t1 = QS_Sort_t93
+s4 = t0 + t1
+s1 = 1
+t0 = 2
+QS_Sort_t99 = t0
+t0 = s1
+t1 = QS_Sort_t99
+t0 = t0 - t1
+QS_Sort_t99 = t0
+t0 = QS_Sort_t99
+t1 = s2
+t0 = t0 < t1
+QS_Sort_t96 = t0
+t0 = QS_Sort_t96
+if0 t0 goto Error91
+t0 = s3
+s1 = [t0 + 0]
+t0 = s2
+t1 = s1
+s3 = t0 < t1
+t0 = s3
+if0 t0 goto Error91
+t0 = s4
+s1 = [t0 + 0]
+goto end91
+Error91:
+error("array index out of bounds")
+end91:
+t0 = s1
+t2 = t0
+t0 = t5
+s1 = t0
+s4 = 1
+t0 = s1
+t1 = s4
+s3 = t0 - t1
+t0 = s3
+s11 = t0
+t0 = t3
+s3 = t0
+t0 = s3
+s10 = t0
+s3 = 1
+t0 = s3
+s7 = t0
+loop113:
+t0 = s7
+s3 = t0
+t0 = s3
+if0 t0 goto end113
+s1 = 1
+t0 = s1
+s6 = t0
+loop117:
+t0 = s6
+s4 = t0
+t0 = s4
+if0 t0 goto end117
+t0 = s11
+s2 = t0
+t0 = 1
+QS_Sort_t123 = t0
+t0 = s2
+t1 = QS_Sort_t123
+t0 = t0 + t1
+QS_Sort_t120 = t0
+t0 = QS_Sort_t120
+s11 = t0
+t0 = t4
+t0 = [t0 + 4]
+QS_Sort_t135 = t0
+t0 = s11
+t0 = t0
+QS_Sort_t137 = t0
+t0 = 1
+QS_Sort_t133 = t0
+t0 = 4
+QS_Sort_t134 = t0
+t0 = QS_Sort_t137
+t1 = QS_Sort_t133
+t0 = t0 + t1
+QS_Sort_t125 = t0
+t0 = QS_Sort_t125
+t1 = QS_Sort_t134
+t0 = t0 * t1
+QS_Sort_t126 = t0
+t0 = QS_Sort_t135
+t1 = QS_Sort_t126
+t0 = t0 + t1
+QS_Sort_t127 = t0
+t0 = 1
+QS_Sort_t128 = t0
+t0 = 2
+QS_Sort_t132 = t0
+t0 = QS_Sort_t128
+t1 = QS_Sort_t132
+t0 = t0 - t1
+QS_Sort_t132 = t0
+t0 = QS_Sort_t132
+t1 = QS_Sort_t137
+t0 = t0 < t1
+QS_Sort_t129 = t0
+t0 = QS_Sort_t129
+if0 t0 goto Error124
+t0 = QS_Sort_t135
+t0 = [t0 + 0]
+QS_Sort_t130 = t0
+t0 = QS_Sort_t137
+t1 = QS_Sort_t130
+t0 = t0 < t1
+QS_Sort_t131 = t0
+t0 = QS_Sort_t131
+if0 t0 goto Error124
+t0 = QS_Sort_t127
+t0 = [t0 + 0]
+QS_Sort_t124 = t0
+goto end124
+Error124:
+error("array index out of bounds")
+end124:
+t0 = QS_Sort_t124
+s5 = t0
+t0 = s5
+t0 = t0
+QS_Sort_t142 = t0
+t0 = t2
+t0 = t0
+QS_Sort_t144 = t0
+t0 = QS_Sort_t142
+t1 = QS_Sort_t144
+t0 = t0 < t1
+QS_Sort_t141 = t0
+t0 = QS_Sort_t141
+if0 t0 goto else140
+t0 = 0
+QS_Sort_t140 = t0
+goto end140
+else140:
+t0 = 1
+QS_Sort_t140 = t0
+end140:
+t0 = QS_Sort_t140
+if0 t0 goto else139
+t0 = 0
+QS_Sort_t146 = t0
+t0 = QS_Sort_t146
+s6 = t0
+goto end139
+else139:
+t0 = 1
+QS_Sort_t147 = t0
+t0 = QS_Sort_t147
+s6 = t0
+end139:
+goto loop117
+end117:
+t0 = 1
+QS_Sort_t148 = t0
+t0 = QS_Sort_t148
+s6 = t0
+loop149:
+t0 = s6
+t0 = t0
+QS_Sort_t150 = t0
+t0 = QS_Sort_t150
+if0 t0 goto end149
+t0 = s10
+t0 = t0
+QS_Sort_t153 = t0
+t0 = 1
+QS_Sort_t155 = t0
+t0 = QS_Sort_t153
+t1 = QS_Sort_t155
+t0 = t0 - t1
+QS_Sort_t152 = t0
+t0 = QS_Sort_t152
+s10 = t0
+t0 = t4
+t0 = [t0 + 4]
+QS_Sort_t167 = t0
+t0 = s10
+t0 = t0
+QS_Sort_t169 = t0
+t0 = 1
+QS_Sort_t165 = t0
+t0 = 4
+QS_Sort_t166 = t0
+t0 = QS_Sort_t169
+t1 = QS_Sort_t165
+t0 = t0 + t1
+QS_Sort_t157 = t0
+t0 = QS_Sort_t157
+t1 = QS_Sort_t166
+t0 = t0 * t1
+QS_Sort_t158 = t0
+t0 = QS_Sort_t167
+t1 = QS_Sort_t158
+t0 = t0 + t1
+QS_Sort_t159 = t0
+t0 = 1
+QS_Sort_t160 = t0
+t0 = 2
+QS_Sort_t164 = t0
+t0 = QS_Sort_t160
+t1 = QS_Sort_t164
+t0 = t0 - t1
+QS_Sort_t164 = t0
+t0 = QS_Sort_t164
+t1 = QS_Sort_t169
+t0 = t0 < t1
+QS_Sort_t161 = t0
+t0 = QS_Sort_t161
+if0 t0 goto Error156
+t0 = QS_Sort_t167
+t0 = [t0 + 0]
+QS_Sort_t162 = t0
+t0 = QS_Sort_t169
+t1 = QS_Sort_t162
+t0 = t0 < t1
+QS_Sort_t163 = t0
+t0 = QS_Sort_t163
+if0 t0 goto Error156
+t0 = QS_Sort_t159
+t0 = [t0 + 0]
+QS_Sort_t156 = t0
+goto end156
+Error156:
+error("array index out of bounds")
+end156:
+t0 = QS_Sort_t156
+s5 = t0
+t0 = t2
+t0 = t0
+QS_Sort_t174 = t0
+t0 = s5
+t0 = t0
+QS_Sort_t176 = t0
+t0 = QS_Sort_t174
+t1 = QS_Sort_t176
+t0 = t0 < t1
+QS_Sort_t173 = t0
+t0 = QS_Sort_t173
+if0 t0 goto else172
+t0 = 0
+QS_Sort_t172 = t0
+goto end172
+else172:
+t0 = 1
+QS_Sort_t172 = t0
+end172:
+t0 = QS_Sort_t172
+if0 t0 goto else171
+t0 = 0
+QS_Sort_t178 = t0
+t0 = QS_Sort_t178
+s6 = t0
+goto end171
+else171:
+t0 = 1
+QS_Sort_t179 = t0
+t0 = QS_Sort_t179
+s6 = t0
+end171:
+goto loop149
+end149:
+t0 = t4
+t0 = [t0 + 4]
+QS_Sort_t191 = t0
+t0 = s11
+t0 = t0
+QS_Sort_t193 = t0
+t0 = 1
+QS_Sort_t189 = t0
+t0 = 4
+QS_Sort_t190 = t0
+t0 = QS_Sort_t193
+t1 = QS_Sort_t189
+t0 = t0 + t1
+QS_Sort_t181 = t0
+t0 = QS_Sort_t181
+t1 = QS_Sort_t190
+t0 = t0 * t1
+QS_Sort_t182 = t0
+t0 = QS_Sort_t191
+t1 = QS_Sort_t182
+t0 = t0 + t1
+QS_Sort_t183 = t0
+t0 = 1
+QS_Sort_t184 = t0
+t0 = 2
+QS_Sort_t188 = t0
+t0 = QS_Sort_t184
+t1 = QS_Sort_t188
+t0 = t0 - t1
+QS_Sort_t188 = t0
+t0 = QS_Sort_t188
+t1 = QS_Sort_t193
+t0 = t0 < t1
+QS_Sort_t185 = t0
+t0 = QS_Sort_t185
+if0 t0 goto Error180
+t0 = QS_Sort_t191
+t0 = [t0 + 0]
+QS_Sort_t186 = t0
+t0 = QS_Sort_t193
+t1 = QS_Sort_t186
+t0 = t0 < t1
+QS_Sort_t187 = t0
+t0 = QS_Sort_t187
+if0 t0 goto Error180
+t0 = QS_Sort_t183
+t0 = [t0 + 0]
+QS_Sort_t180 = t0
+goto end180
+Error180:
+error("array index out of bounds")
+end180:
+t0 = QS_Sort_t180
+s8 = t0
+t0 = t4
+t0 = [t0 + 4]
+QS_Sort_t205 = t0
+t0 = s11
+t0 = t0
+QS_Sort_t207 = t0
+t0 = t4
+t0 = [t0 + 4]
+QS_Sort_t220 = t0
+t0 = s10
+t0 = t0
+QS_Sort_t222 = t0
+t0 = 1
+QS_Sort_t218 = t0
+t0 = 4
+QS_Sort_t219 = t0
+t0 = QS_Sort_t222
+t1 = QS_Sort_t218
+t0 = t0 + t1
+QS_Sort_t210 = t0
+t0 = QS_Sort_t210
+t1 = QS_Sort_t219
+t0 = t0 * t1
+QS_Sort_t211 = t0
+t0 = QS_Sort_t220
+t1 = QS_Sort_t211
+t0 = t0 + t1
+QS_Sort_t212 = t0
+t0 = 1
+QS_Sort_t213 = t0
+t0 = 2
+QS_Sort_t217 = t0
+t0 = QS_Sort_t213
+t1 = QS_Sort_t217
+t0 = t0 - t1
+QS_Sort_t217 = t0
+t0 = QS_Sort_t217
+t1 = QS_Sort_t222
+t0 = t0 < t1
+QS_Sort_t214 = t0
+t0 = QS_Sort_t214
+if0 t0 goto Error209
+t0 = QS_Sort_t220
+t0 = [t0 + 0]
+QS_Sort_t215 = t0
+t0 = QS_Sort_t222
+t1 = QS_Sort_t215
+t0 = t0 < t1
+QS_Sort_t216 = t0
+t0 = QS_Sort_t216
+if0 t0 goto Error209
+t0 = QS_Sort_t212
+t0 = [t0 + 0]
+QS_Sort_t209 = t0
+goto end209
+Error209:
+error("array index out of bounds")
+end209:
+t0 = 1
+QS_Sort_t204 = t0
+t0 = QS_Sort_t207
+t1 = QS_Sort_t204
+t0 = t0 + t1
+QS_Sort_t196 = t0
+t0 = 4
+QS_Sort_t204 = t0
+t0 = QS_Sort_t196
+t1 = QS_Sort_t204
+t0 = t0 * t1
+QS_Sort_t197 = t0
+t0 = QS_Sort_t205
+t1 = QS_Sort_t197
+t0 = t0 + t1
+QS_Sort_t198 = t0
+t0 = QS_Sort_t205
+t0 = [t0 + 0]
+QS_Sort_t224 = t0
+t0 = 1
+QS_Sort_t199 = t0
+t0 = 2
+QS_Sort_t203 = t0
+t0 = QS_Sort_t199
+t1 = QS_Sort_t203
+t0 = t0 - t1
+QS_Sort_t203 = t0
+t0 = QS_Sort_t203
+t1 = QS_Sort_t209
+t0 = t0 < t1
+QS_Sort_t200 = t0
+t0 = QS_Sort_t200
+if0 t0 goto Error195
+t0 = QS_Sort_t205
+t0 = [t0 + 0]
+QS_Sort_t201 = t0
+t0 = QS_Sort_t207
+t1 = QS_Sort_t224
+t0 = t0 < t1
+QS_Sort_t202 = t0
+t0 = QS_Sort_t202
+if0 t0 goto Error195
+t0 = QS_Sort_t198
+t1 = QS_Sort_t209
+[t0 + 0] = t1
+goto end195
+Error195:
+error("array index out of bounds")
+end195:
+t0 = t4
+t0 = [t0 + 4]
+QS_Sort_t235 = t0
+t0 = s10
+t0 = t0
+QS_Sort_t237 = t0
+t0 = s8
+t0 = t0
+QS_Sort_t239 = t0
+t0 = 1
+QS_Sort_t234 = t0
+t0 = QS_Sort_t237
+t1 = QS_Sort_t234
+t0 = t0 + t1
+QS_Sort_t226 = t0
+t0 = 4
+QS_Sort_t234 = t0
+t0 = QS_Sort_t226
+t1 = QS_Sort_t234
+t0 = t0 * t1
+QS_Sort_t227 = t0
+t0 = QS_Sort_t235
+t1 = QS_Sort_t227
+t0 = t0 + t1
+QS_Sort_t228 = t0
+t0 = QS_Sort_t235
+t0 = [t0 + 0]
+QS_Sort_t241 = t0
+t0 = 1
+QS_Sort_t229 = t0
+t0 = 2
+QS_Sort_t233 = t0
+t0 = QS_Sort_t229
+t1 = QS_Sort_t233
+t0 = t0 - t1
+QS_Sort_t233 = t0
+t0 = QS_Sort_t233
+t1 = QS_Sort_t239
+t0 = t0 < t1
+QS_Sort_t230 = t0
+t0 = QS_Sort_t230
+if0 t0 goto Error225
+t0 = QS_Sort_t235
+t0 = [t0 + 0]
+QS_Sort_t231 = t0
+t0 = QS_Sort_t237
+t1 = QS_Sort_t241
+t0 = t0 < t1
+QS_Sort_t232 = t0
+t0 = QS_Sort_t232
+if0 t0 goto Error225
+t0 = QS_Sort_t228
+t1 = QS_Sort_t239
+[t0 + 0] = t1
+goto end225
+Error225:
+error("array index out of bounds")
+end225:
+t0 = s10
+t0 = t0
+QS_Sort_t244 = t0
+t0 = s11
+t0 = t0
+QS_Sort_t247 = t0
+t0 = 1
+QS_Sort_t249 = t0
+t0 = QS_Sort_t247
+t1 = QS_Sort_t249
+t0 = t0 + t1
+QS_Sort_t246 = t0
+t0 = QS_Sort_t244
+t1 = QS_Sort_t246
+t0 = t0 < t1
+QS_Sort_t243 = t0
+t0 = QS_Sort_t243
+if0 t0 goto else242
+t0 = 0
+QS_Sort_t250 = t0
+t0 = QS_Sort_t250
+s7 = t0
+goto end242
+else242:
+t0 = 1
+QS_Sort_t251 = t0
+t0 = QS_Sort_t251
+s7 = t0
+end242:
+goto loop113
+end113:
+t0 = t4
+s1 = [t0 + 4]
+t0 = s10
+s5 = t0
+t0 = t4
+s10 = [t0 + 4]
+t0 = s11
+s3 = t0
+s7 = 1
+s2 = 4
+t0 = s3
+t1 = s7
+s4 = t0 + t1
+t0 = s4
+t1 = s2
+s7 = t0 * t1
+t0 = s10
+t1 = s7
+s2 = t0 + t1
+s7 = 1
+s4 = 2
+t0 = s7
+t1 = s4
+s4 = t0 - t1
+t0 = s4
+t1 = s3
+s7 = t0 < t1
+t0 = s7
+if0 t0 goto Error266
+t0 = s10
+s7 = [t0 + 0]
+t0 = s3
+t1 = s7
+s10 = t0 < t1
+t0 = s10
+if0 t0 goto Error266
+t0 = s2
+s3 = [t0 + 0]
+goto end266
+Error266:
+error("array index out of bounds")
+end266:
+s2 = 1
+t0 = s5
+t1 = s2
+s10 = t0 + t1
+s2 = 4
+t0 = s10
+t1 = s2
+s7 = t0 * t1
+t0 = s1
+t1 = s7
+s10 = t0 + t1
+t0 = s1
+s7 = [t0 + 0]
+s2 = 1
+s4 = 2
+t0 = s2
+t1 = s4
+s4 = t0 - t1
+t0 = s4
+t1 = s3
+s2 = t0 < t1
+t0 = s2
+if0 t0 goto Error252
+t0 = s1
+s2 = [t0 + 0]
+t0 = s5
+t1 = s7
+s1 = t0 < t1
+t0 = s1
+if0 t0 goto Error252
+t0 = s10
+t1 = s3
+[t0 + 0] = t1
+goto end252
+Error252:
+error("array index out of bounds")
+end252:
+t0 = t4
+s3 = [t0 + 4]
+t0 = s11
+s5 = t0
+t0 = t4
+s10 = [t0 + 4]
+t0 = t3
+s1 = t0
+s7 = 1
+s2 = 4
+t0 = s1
+t1 = s7
+s4 = t0 + t1
+t0 = s4
+t1 = s2
+s7 = t0 * t1
+t0 = s10
+t1 = s7
+s2 = t0 + t1
+s7 = 1
+s4 = 2
+t0 = s7
+t1 = s4
+s4 = t0 - t1
+t0 = s4
+t1 = s1
+s7 = t0 < t1
+t0 = s7
+if0 t0 goto Error296
+t0 = s10
+s7 = [t0 + 0]
+t0 = s1
+t1 = s7
+s10 = t0 < t1
+t0 = s10
+if0 t0 goto Error296
+t0 = s2
+s1 = [t0 + 0]
+goto end296
+Error296:
+error("array index out of bounds")
+end296:
+s2 = 1
+t0 = s5
+t1 = s2
+s10 = t0 + t1
+s2 = 4
+t0 = s10
+t1 = s2
+s7 = t0 * t1
+t0 = s3
+t1 = s7
+s10 = t0 + t1
+t0 = s3
+s7 = [t0 + 0]
+s2 = 1
+s4 = 2
+t0 = s2
+t1 = s4
+s4 = t0 - t1
+t0 = s4
+t1 = s1
+s2 = t0 < t1
+t0 = s2
+if0 t0 goto Error282
+t0 = s3
+s2 = [t0 + 0]
+t0 = s5
+t1 = s7
+s2 = t0 < t1
+t0 = s2
+if0 t0 goto Error282
+t0 = s10
+t1 = s1
+[t0 + 0] = t1
+goto end282
+Error282:
+error("array index out of bounds")
+end282:
+t0 = t4
+s10 = [t0 + 4]
+t0 = t3
+s5 = t0
+t0 = s8
+s1 = t0
+s8 = 1
+t0 = s5
+t1 = s8
+s2 = t0 + t1
+s8 = 4
+t0 = s2
+t1 = s8
+s7 = t0 * t1
+t0 = s10
+t1 = s7
+s2 = t0 + t1
+t0 = s10
+s7 = [t0 + 0]
+s8 = 1
+s3 = 2
+t0 = s8
+t1 = s3
+s3 = t0 - t1
+t0 = s3
+t1 = s1
+s8 = t0 < t1
+t0 = s8
+if0 t0 goto Error312
+t0 = s10
+s8 = [t0 + 0]
+t0 = s5
+t1 = s7
+s10 = t0 < t1
+t0 = s10
+if0 t0 goto Error312
+t0 = s2
+t1 = s1
+[t0 + 0] = t1
+goto end312
+Error312:
+error("array index out of bounds")
+end312:
+t0 = t4
+s2 = t0
+t0 = s2
+if0 t0 goto null331
+t0 = s2
+s5 = [t0 + 0]
+t0 = s5
+s1 = [t0 + 4]
+goto null_end331
+null331:
+error("null pointer")
+null_end331:
+t0 = t5
+s5 = t0
+t0 = s11
+t5 = t0
+s10 = 1
+t0 = t5
+t1 = s10
+s7 = t0 - t1
+t0 = s1
+QS_Sort_this = t4
+QS_Sort_QS_right = t3
+QS_Sort_QS_nt = s9
+QS_Sort_t338 = s7
+QS_Sort_t336 = s5
+QS_Sort_t331 = s2
+QS_Sort_QS_i = s11
+QS_Sort_t335 = s1
+a2 = s2
+a3 = s5
+a4 = s7
+s10 = call t0()
+t4 = QS_Sort_this
+t3 = QS_Sort_QS_right
+s9 = QS_Sort_QS_nt
+s7 = QS_Sort_t338
+s5 = QS_Sort_t336
+s2 = QS_Sort_t331
+s11 = QS_Sort_QS_i
+s1 = QS_Sort_t335
+t0 = s10
+s9 = t0
+t0 = t4
+s10 = t0
+t0 = s10
+if0 t0 goto null344
+t0 = s10
+t4 = [t0 + 0]
+t0 = t4
+s1 = [t0 + 4]
+goto null_end344
+null344:
+error("null pointer")
+null_end344:
+t0 = s11
+t4 = t0
+s11 = 1
+t0 = t4
+t1 = s11
+s5 = t0 + t1
+t0 = t3
+s11 = t0
+t0 = s1
+QS_Sort_QS_nt = s9
+QS_Sort_t349 = s5
+QS_Sort_t353 = s11
+QS_Sort_t348 = s1
+QS_Sort_t344 = s10
+a2 = s10
+a3 = s5
+a4 = s11
+t3 = call t0()
+s9 = QS_Sort_QS_nt
+s5 = QS_Sort_t349
+s11 = QS_Sort_t353
+s1 = QS_Sort_t348
+s10 = QS_Sort_t344
+t0 = t3
+s9 = t0
+goto end85
+else85:
+t3 = 0
+t0 = t3
+s9 = t0
+end85:
+t3 = 0
+goto Sort_end
+Sort_end:
+t356 = t3
+return t356
+
+func QS_Print()
+t5 = a2
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t4 = t0
+loop360:
+t0 = t4
+t3 = t0
+t0 = t5
+t2 = [t0 + 8]
+t0 = t3
+t1 = t2
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto end360
+t0 = t5
+s10 = [t0 + 4]
+t0 = t4
+s9 = t0
+s8 = 1
+s7 = 4
+t0 = s9
+t1 = s8
+s6 = t0 + t1
+t0 = s6
+t1 = s7
+s5 = t0 * t1
+t0 = s10
+t1 = s5
+s4 = t0 + t1
+s3 = 1
+s2 = 2
+t0 = s3
+t1 = s2
+s2 = t0 - t1
+t0 = s2
+t1 = s9
+s1 = t0 < t1
+t0 = s1
+if0 t0 goto Error366
+t0 = s10
+t0 = [t0 + 0]
+QS_Print_t372 = t0
+t0 = s9
+t1 = QS_Print_t372
+t0 = t0 < t1
+QS_Print_t373 = t0
+t0 = QS_Print_t373
+if0 t0 goto Error366
+t0 = s4
+t0 = [t0 + 0]
+QS_Print_t366 = t0
+goto end366
+Error366:
+error("array index out of bounds")
+end366:
+t0 = QS_Print_t366
+print(t0)
+t0 = t4
+t0 = t0
+QS_Print_t382 = t0
+t0 = 1
+QS_Print_t384 = t0
+t0 = QS_Print_t382
+t1 = QS_Print_t384
+t0 = t0 + t1
+QS_Print_t381 = t0
+t0 = QS_Print_t381
+t4 = t0
+goto loop360
+end360:
+s10 = 0
+goto Print_end
+Print_end:
+t385 = s10
+return t385
+
+func QS_Init()
+t5 = a2
+t4 = a3
+t0 = t4
+t3 = t0
+t0 = t3
+t2 = t0
+t0 = t5
+t1 = t3
+[t0 + 8] = t1
+t0 = t4
+t3 = t0
+t4 = 1
+t2 = 4
+t0 = t3
+t1 = t4
+s11 = t0 + t1
+t0 = s11
+t1 = t2
+t4 = t0 * t1
+t0 = t4
+t2 = alloc(t0)
+s11 = 0
+t0 = t2
+t1 = t3
+[t0 + 0] = t1
+t0 = t2
+t3 = t0
+t0 = t5
+t1 = t2
+[t0 + 4] = t1
+t0 = t5
+t2 = [t0 + 4]
+t3 = 0
+s11 = 20
+t4 = 1
+t0 = t3
+t1 = t4
+s10 = t0 + t1
+t4 = 4
+t0 = s10
+t1 = t4
+s9 = t0 * t1
+t0 = t2
+t1 = s9
+s10 = t0 + t1
+t0 = t2
+s9 = [t0 + 0]
+t4 = 1
+s8 = 2
+t0 = t4
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s11
+t4 = t0 < t1
+t0 = t4
+if0 t0 goto Error395
+t0 = t2
+t4 = [t0 + 0]
+t0 = t3
+t1 = s9
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto Error395
+t0 = s10
+t1 = s11
+[t0 + 0] = t1
+goto end395
+Error395:
+error("array index out of bounds")
+end395:
+t0 = t5
+s9 = [t0 + 4]
+s11 = 1
+s10 = 7
+t2 = 1
+t0 = s11
+t1 = t2
+t3 = t0 + t1
+t2 = 4
+t0 = t3
+t1 = t2
+t4 = t0 * t1
+t0 = s9
+t1 = t4
+t2 = t0 + t1
+t0 = s9
+t4 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error410
+t0 = s9
+t3 = [t0 + 0]
+t0 = s11
+t1 = t4
+s9 = t0 < t1
+t0 = s9
+if0 t0 goto Error410
+t0 = t2
+t1 = s10
+[t0 + 0] = t1
+goto end410
+Error410:
+error("array index out of bounds")
+end410:
+t0 = t5
+s11 = [t0 + 4]
+t2 = 2
+s10 = 12
+s9 = 1
+t0 = t2
+t1 = s9
+t4 = t0 + t1
+s9 = 4
+t0 = t4
+t1 = s9
+t3 = t0 * t1
+t0 = s11
+t1 = t3
+s9 = t0 + t1
+t0 = s11
+t3 = [t0 + 0]
+t4 = 1
+s8 = 2
+t0 = t4
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t4 = t0 < t1
+t0 = t4
+if0 t0 goto Error425
+t0 = s11
+t4 = [t0 + 0]
+t0 = t2
+t1 = t3
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error425
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+goto end425
+Error425:
+error("array index out of bounds")
+end425:
+t0 = t5
+t2 = [t0 + 4]
+s9 = 3
+s10 = 18
+s11 = 1
+t0 = s9
+t1 = s11
+t3 = t0 + t1
+s11 = 4
+t0 = t3
+t1 = s11
+t4 = t0 * t1
+t0 = t2
+t1 = t4
+s11 = t0 + t1
+t0 = t2
+t4 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error440
+t0 = t2
+t3 = [t0 + 0]
+t0 = s9
+t1 = t4
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto Error440
+t0 = s11
+t1 = s10
+[t0 + 0] = t1
+goto end440
+Error440:
+error("array index out of bounds")
+end440:
+t0 = t5
+s9 = [t0 + 4]
+s11 = 4
+s10 = 2
+t2 = 1
+t0 = s11
+t1 = t2
+t4 = t0 + t1
+t2 = 4
+t0 = t4
+t1 = t2
+t3 = t0 * t1
+t0 = s9
+t1 = t3
+t2 = t0 + t1
+t0 = s9
+t3 = [t0 + 0]
+t4 = 1
+s8 = 2
+t0 = t4
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t4 = t0 < t1
+t0 = t4
+if0 t0 goto Error455
+t0 = s9
+t4 = [t0 + 0]
+t0 = s11
+t1 = t3
+s9 = t0 < t1
+t0 = s9
+if0 t0 goto Error455
+t0 = t2
+t1 = s10
+[t0 + 0] = t1
+goto end455
+Error455:
+error("array index out of bounds")
+end455:
+t0 = t5
+s11 = [t0 + 4]
+t2 = 5
+s10 = 11
+s9 = 1
+t0 = t2
+t1 = s9
+t3 = t0 + t1
+s9 = 4
+t0 = t3
+t1 = s9
+t4 = t0 * t1
+t0 = s11
+t1 = t4
+s9 = t0 + t1
+t0 = s11
+t4 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error470
+t0 = s11
+t3 = [t0 + 0]
+t0 = t2
+t1 = t4
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error470
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+goto end470
+Error470:
+error("array index out of bounds")
+end470:
+t0 = t5
+t2 = [t0 + 4]
+s9 = 6
+s10 = 6
+s11 = 1
+t0 = s9
+t1 = s11
+t4 = t0 + t1
+s11 = 4
+t0 = t4
+t1 = s11
+t3 = t0 * t1
+t0 = t2
+t1 = t3
+s11 = t0 + t1
+t0 = t2
+t3 = [t0 + 0]
+t4 = 1
+s8 = 2
+t0 = t4
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t4 = t0 < t1
+t0 = t4
+if0 t0 goto Error485
+t0 = t2
+t4 = [t0 + 0]
+t0 = s9
+t1 = t3
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto Error485
+t0 = s11
+t1 = s10
+[t0 + 0] = t1
+goto end485
+Error485:
+error("array index out of bounds")
+end485:
+t0 = t5
+s9 = [t0 + 4]
+s11 = 7
+s10 = 9
+t2 = 1
+t0 = s11
+t1 = t2
+t3 = t0 + t1
+t2 = 4
+t0 = t3
+t1 = t2
+t4 = t0 * t1
+t0 = s9
+t1 = t4
+t2 = t0 + t1
+t0 = s9
+t4 = [t0 + 0]
+t3 = 1
+s8 = 2
+t0 = t3
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t3 = t0 < t1
+t0 = t3
+if0 t0 goto Error500
+t0 = s9
+t3 = [t0 + 0]
+t0 = s11
+t1 = t4
+s9 = t0 < t1
+t0 = s9
+if0 t0 goto Error500
+t0 = t2
+t1 = s10
+[t0 + 0] = t1
+goto end500
+Error500:
+error("array index out of bounds")
+end500:
+t0 = t5
+s11 = [t0 + 4]
+t2 = 8
+s10 = 19
+s9 = 1
+t0 = t2
+t1 = s9
+t4 = t0 + t1
+s9 = 4
+t0 = t4
+t1 = s9
+t3 = t0 * t1
+t0 = s11
+t1 = t3
+s9 = t0 + t1
+t0 = s11
+t3 = [t0 + 0]
+t4 = 1
+s8 = 2
+t0 = t4
+t1 = s8
+s8 = t0 - t1
+t0 = s8
+t1 = s10
+t4 = t0 < t1
+t0 = t4
+if0 t0 goto Error515
+t0 = s11
+t4 = [t0 + 0]
+t0 = t2
+t1 = t3
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error515
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+goto end515
+Error515:
+error("array index out of bounds")
+end515:
+t0 = t5
+t2 = [t0 + 4]
+t5 = 9
+s9 = 5
+s10 = 1
+t0 = t5
+t1 = s10
+s11 = t0 + t1
+s10 = 4
+t0 = s11
+t1 = s10
+t3 = t0 * t1
+t0 = t2
+t1 = t3
+s10 = t0 + t1
+t0 = t2
+t3 = [t0 + 0]
+s11 = 1
+t4 = 2
+t0 = s11
+t1 = t4
+t4 = t0 - t1
+t0 = t4
+t1 = s9
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error530
+t0 = t2
+s11 = [t0 + 0]
+t0 = t5
+t1 = t3
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto Error530
+t0 = s10
+t1 = s9
+[t0 + 0] = t1
+goto end530
+Error530:
+error("array index out of bounds")
+end530:
+s10 = 0
+goto Init_end
+Init_end:
+t545 = s10
+return t545
+
+

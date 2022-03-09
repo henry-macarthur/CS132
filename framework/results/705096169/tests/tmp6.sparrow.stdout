@@ -1,0 +1,3817 @@
+func Main()
+t5 = 4
+t0 = t5
+t4 = alloc(t0)
+t5 = 4
+t0 = t5
+t3 = alloc(t0)
+t5 = @BT_Start
+t0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null8
+t0 = t4
+t3 = [t0 + 0]
+t0 = t3
+t5 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t0 = t5
+Main_t17 = t5
+Main_t8 = t4
+a2 = t4
+t3 = call t0()
+t5 = Main_t17
+t4 = Main_t8
+t0 = t3
+print(t0)
+t3 = 1
+goto main_end
+main_end:
+t18 = t3
+return t18
+
+func BT_Start()
+t5 = a2
+t5 = 0
+t0 = t5
+t4 = t0
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 28
+t0 = t2
+t3 = alloc(t0)
+t2 = 80
+t0 = t2
+s11 = alloc(t0)
+t2 = @Tree_Init
+s10 = @Tree_SetRight
+s9 = @Tree_SetLeft
+s8 = @Tree_GetRight
+s7 = @Tree_GetLeft
+s6 = @Tree_GetKey
+s5 = @Tree_SetKey
+s4 = @Tree_GetHas_Right
+s3 = @Tree_GetHas_Left
+s2 = @Tree_SetHas_Left
+s1 = @Tree_SetHas_Right
+t0 = @Tree_Compare
+BT_Start_t41 = t0
+t0 = @Tree_Insert
+BT_Start_t42 = t0
+t0 = @Tree_Delete
+BT_Start_t43 = t0
+t0 = @Tree_Remove
+BT_Start_t44 = t0
+t0 = @Tree_RemoveRight
+BT_Start_t45 = t0
+t0 = @Tree_RemoveLeft
+BT_Start_t46 = t0
+t0 = @Tree_Search
+BT_Start_t47 = t0
+t0 = @Tree_Print
+BT_Start_t48 = t0
+t0 = @Tree_RecPrint
+BT_Start_t49 = t0
+t0 = s11
+t1 = t2
+[t0 + 0] = t1
+t0 = s11
+t1 = s10
+[t0 + 4] = t1
+t0 = s11
+t1 = s9
+[t0 + 8] = t1
+t0 = s11
+t1 = s8
+[t0 + 12] = t1
+t0 = s11
+t1 = s7
+[t0 + 16] = t1
+t0 = s11
+t1 = s6
+[t0 + 20] = t1
+t0 = s11
+t1 = s5
+[t0 + 24] = t1
+t0 = s11
+t1 = s4
+[t0 + 28] = t1
+t0 = s11
+t1 = s3
+[t0 + 32] = t1
+t0 = s11
+t1 = s2
+[t0 + 36] = t1
+t0 = s11
+t1 = s1
+[t0 + 40] = t1
+t0 = s11
+t1 = BT_Start_t41
+[t0 + 44] = t1
+t0 = s11
+t1 = BT_Start_t42
+[t0 + 48] = t1
+t0 = s11
+t1 = BT_Start_t43
+[t0 + 52] = t1
+t0 = s11
+t1 = BT_Start_t44
+[t0 + 56] = t1
+t0 = s11
+t1 = BT_Start_t45
+[t0 + 60] = t1
+t0 = s11
+t1 = BT_Start_t46
+[t0 + 64] = t1
+t0 = s11
+t1 = BT_Start_t47
+[t0 + 68] = t1
+t0 = s11
+t1 = BT_Start_t48
+[t0 + 72] = t1
+t0 = s11
+t1 = BT_Start_t49
+[t0 + 76] = t1
+t0 = t3
+t1 = s11
+[t0 + 0] = t1
+t0 = t3
+t5 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null52
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 0]
+goto null_end52
+null52:
+error("null pointer")
+null_end52:
+s4 = 16
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t52 = t3
+BT_Start_t58 = s4
+BT_Start_t57 = s11
+a2 = t3
+a3 = s4
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t52
+s4 = BT_Start_t58
+s11 = BT_Start_t57
+t0 = s8
+t4 = t0
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null61
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 72]
+goto null_end61
+null61:
+error("null pointer")
+null_end61:
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t61 = s8
+BT_Start_t66 = s11
+a2 = s8
+s4 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t61
+s11 = BT_Start_t66
+t0 = s4
+t4 = t0
+s4 = 100000000
+t0 = s4
+print(t0)
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null70
+t0 = s4
+s11 = [t0 + 0]
+t0 = s11
+s8 = [t0 + 48]
+goto null_end70
+null70:
+error("null pointer")
+null_end70:
+s11 = 8
+t0 = s8
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t75 = s8
+BT_Start_t70 = s4
+BT_Start_t76 = s11
+a2 = s4
+a3 = s11
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t75
+s4 = BT_Start_t70
+s11 = BT_Start_t76
+t0 = t3
+t4 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null79
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 72]
+goto null_end79
+null79:
+error("null pointer")
+null_end79:
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t79 = t3
+BT_Start_t84 = s11
+a2 = t3
+s4 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t79
+s11 = BT_Start_t84
+t0 = s4
+t4 = t0
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null87
+t0 = s4
+s11 = [t0 + 0]
+t0 = s11
+t3 = [t0 + 48]
+goto null_end87
+null87:
+error("null pointer")
+null_end87:
+s11 = 24
+t0 = t3
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t92 = t3
+BT_Start_t87 = s4
+BT_Start_t93 = s11
+a2 = s4
+a3 = s11
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t92
+s4 = BT_Start_t87
+s11 = BT_Start_t93
+t0 = s8
+t4 = t0
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null96
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 48]
+goto null_end96
+null96:
+error("null pointer")
+null_end96:
+s4 = 4
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t96 = s8
+BT_Start_t102 = s4
+BT_Start_t101 = s11
+a2 = s8
+a3 = s4
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t96
+s4 = BT_Start_t102
+s11 = BT_Start_t101
+t0 = t3
+t4 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null105
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 48]
+goto null_end105
+null105:
+error("null pointer")
+null_end105:
+s4 = 12
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t105 = t3
+BT_Start_t111 = s4
+BT_Start_t110 = s11
+a2 = t3
+a3 = s4
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t105
+s4 = BT_Start_t111
+s11 = BT_Start_t110
+t0 = s8
+t4 = t0
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null114
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 48]
+goto null_end114
+null114:
+error("null pointer")
+null_end114:
+s4 = 20
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t114 = s8
+BT_Start_t120 = s4
+BT_Start_t119 = s11
+a2 = s8
+a3 = s4
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t114
+s4 = BT_Start_t120
+s11 = BT_Start_t119
+t0 = t3
+t4 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null123
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 48]
+goto null_end123
+null123:
+error("null pointer")
+null_end123:
+s4 = 28
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t123 = t3
+BT_Start_t129 = s4
+BT_Start_t128 = s11
+a2 = t3
+a3 = s4
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t123
+s4 = BT_Start_t129
+s11 = BT_Start_t128
+t0 = s8
+t4 = t0
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null132
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 48]
+goto null_end132
+null132:
+error("null pointer")
+null_end132:
+s4 = 14
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t132 = s8
+BT_Start_t138 = s4
+BT_Start_t137 = s11
+a2 = s8
+a3 = s4
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t132
+s4 = BT_Start_t138
+s11 = BT_Start_t137
+t0 = t3
+t4 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null141
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 72]
+goto null_end141
+null141:
+error("null pointer")
+null_end141:
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t141 = t3
+BT_Start_t146 = s11
+a2 = t3
+s4 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t141
+s11 = BT_Start_t146
+t0 = s4
+t4 = t0
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null149
+t0 = s4
+s11 = [t0 + 0]
+t0 = s11
+t3 = [t0 + 68]
+goto null_end149
+null149:
+error("null pointer")
+null_end149:
+s11 = 24
+t0 = t3
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t154 = t3
+BT_Start_t149 = s4
+BT_Start_t155 = s11
+a2 = s4
+a3 = s11
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t154
+s4 = BT_Start_t149
+s11 = BT_Start_t155
+t0 = s8
+print(t0)
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null158
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 68]
+goto null_end158
+null158:
+error("null pointer")
+null_end158:
+s4 = 12
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t158 = s8
+BT_Start_t164 = s4
+BT_Start_t163 = s11
+a2 = s8
+a3 = s4
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t158
+s4 = BT_Start_t164
+s11 = BT_Start_t163
+t0 = t3
+print(t0)
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null167
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 68]
+goto null_end167
+null167:
+error("null pointer")
+null_end167:
+s4 = 16
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t167 = t3
+BT_Start_t173 = s4
+BT_Start_t172 = s11
+a2 = t3
+a3 = s4
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t167
+s4 = BT_Start_t173
+s11 = BT_Start_t172
+t0 = s8
+print(t0)
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null176
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 68]
+goto null_end176
+null176:
+error("null pointer")
+null_end176:
+s4 = 50
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t176 = s8
+BT_Start_t182 = s4
+BT_Start_t181 = s11
+a2 = s8
+a3 = s4
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t176
+s4 = BT_Start_t182
+s11 = BT_Start_t181
+t0 = t3
+print(t0)
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null185
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 68]
+goto null_end185
+null185:
+error("null pointer")
+null_end185:
+s4 = 12
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t185 = t3
+BT_Start_t191 = s4
+BT_Start_t190 = s11
+a2 = t3
+a3 = s4
+s8 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t185
+s4 = BT_Start_t191
+s11 = BT_Start_t190
+t0 = s8
+print(t0)
+t0 = t5
+s8 = t0
+t0 = s8
+if0 t0 goto null194
+t0 = s8
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 52]
+goto null_end194
+null194:
+error("null pointer")
+null_end194:
+s4 = 12
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t194 = s8
+BT_Start_t200 = s4
+BT_Start_t199 = s11
+a2 = s8
+a3 = s4
+t3 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+s8 = BT_Start_t194
+s4 = BT_Start_t200
+s11 = BT_Start_t199
+t0 = t3
+t4 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null203
+t0 = t3
+s4 = [t0 + 0]
+t0 = s4
+s11 = [t0 + 72]
+goto null_end203
+null203:
+error("null pointer")
+null_end203:
+t0 = s11
+BT_Start_BT_root = t5
+BT_Start_BT_ntb = t4
+BT_Start_t203 = t3
+BT_Start_t208 = s11
+a2 = t3
+s4 = call t0()
+t5 = BT_Start_BT_root
+t4 = BT_Start_BT_ntb
+t3 = BT_Start_t203
+s11 = BT_Start_t208
+t0 = s4
+t4 = t0
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null211
+t0 = s4
+t5 = [t0 + 0]
+t0 = t5
+t4 = [t0 + 68]
+goto null_end211
+null211:
+error("null pointer")
+null_end211:
+t5 = 12
+t0 = t4
+BT_Start_t217 = t5
+BT_Start_t216 = t4
+BT_Start_t211 = s4
+a2 = s4
+a3 = t5
+s11 = call t0()
+t5 = BT_Start_t217
+t4 = BT_Start_t216
+s4 = BT_Start_t211
+t0 = s11
+print(t0)
+s4 = 0
+goto Start_end
+Start_end:
+t218 = s4
+return t218
+
+func Tree_Init()
+t5 = a2
+t4 = a3
+t0 = t4
+t3 = t0
+t0 = t3
+t4 = t0
+t0 = t5
+t1 = t3
+[t0 + 12] = t1
+t3 = 0
+t0 = t3
+t4 = t0
+t0 = t5
+t1 = t3
+[t0 + 16] = t1
+t3 = 0
+t0 = t3
+t4 = t0
+t0 = t5
+t1 = t3
+[t0 + 20] = t1
+t3 = 1
+goto Init_end
+Init_end:
+t235 = t3
+return t235
+
+func Tree_SetRight()
+t4 = a2
+t5 = a3
+t0 = t5
+t3 = t0
+t0 = t3
+t5 = t0
+t0 = t4
+t1 = t3
+[t0 + 8] = t1
+t3 = 1
+goto SetRight_end
+SetRight_end:
+t238 = t3
+return t238
+
+func Tree_SetLeft()
+t4 = a2
+t5 = a3
+t0 = t5
+t3 = t0
+t0 = t3
+t5 = t0
+t0 = t4
+t1 = t3
+[t0 + 4] = t1
+t3 = 1
+goto SetLeft_end
+SetLeft_end:
+t241 = t3
+return t241
+
+func Tree_GetRight()
+t5 = a2
+t0 = t5
+t4 = [t0 + 8]
+goto GetRight_end
+GetRight_end:
+t242 = t4
+return t242
+
+func Tree_GetLeft()
+t5 = a2
+t0 = t5
+t4 = [t0 + 4]
+goto GetLeft_end
+GetLeft_end:
+t244 = t4
+return t244
+
+func Tree_GetKey()
+t5 = a2
+t0 = t5
+t4 = [t0 + 12]
+goto GetKey_end
+GetKey_end:
+t246 = t4
+return t246
+
+func Tree_SetKey()
+t5 = a2
+t4 = a3
+t0 = t4
+t3 = t0
+t0 = t3
+t4 = t0
+t0 = t5
+t1 = t3
+[t0 + 12] = t1
+t3 = 1
+goto SetKey_end
+SetKey_end:
+t250 = t3
+return t250
+
+func Tree_GetHas_Right()
+t5 = a2
+t0 = t5
+t4 = [t0 + 20]
+goto GetHas_Right_end
+GetHas_Right_end:
+t251 = t4
+return t251
+
+func Tree_GetHas_Left()
+t5 = a2
+t0 = t5
+t4 = [t0 + 16]
+goto GetHas_Left_end
+GetHas_Left_end:
+t253 = t4
+return t253
+
+func Tree_SetHas_Left()
+t5 = a2
+t4 = a3
+t0 = t4
+t3 = t0
+t0 = t3
+t4 = t0
+t0 = t5
+t1 = t3
+[t0 + 16] = t1
+t3 = 1
+goto SetHas_Left_end
+SetHas_Left_end:
+t257 = t3
+return t257
+
+func Tree_SetHas_Right()
+t4 = a2
+t5 = a3
+t0 = t5
+t3 = t0
+t0 = t3
+t5 = t0
+t0 = t4
+t1 = t3
+[t0 + 20] = t1
+t3 = 1
+goto SetHas_Right_end
+SetHas_Right_end:
+t260 = t3
+return t260
+
+func Tree_Compare()
+t3 = a2
+t4 = a3
+t5 = a4
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+t3 = t0
+t0 = t5
+s11 = t0
+s10 = 1
+t0 = s11
+t1 = s10
+s9 = t0 + t1
+t0 = s9
+t2 = t0
+t0 = t4
+s9 = t0
+t0 = t5
+s10 = t0
+t0 = s9
+t1 = s10
+t5 = t0 < t1
+t0 = t5
+if0 t0 goto else270
+s10 = 0
+t0 = s10
+t3 = t0
+goto end270
+else270:
+t0 = t4
+s10 = t0
+t0 = t2
+t4 = t0
+t0 = s10
+t1 = t4
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto else278
+s10 = 0
+goto end278
+else278:
+s10 = 1
+end278:
+t0 = s10
+if0 t0 goto else277
+s10 = 0
+t0 = s10
+t3 = t0
+goto end277
+else277:
+s10 = 1
+t0 = s10
+t3 = t0
+end277:
+end270:
+t0 = t3
+s10 = t0
+goto Compare_end
+Compare_end:
+t286 = s10
+return t286
+
+func Tree_Insert()
+t5 = a2
+t4 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 0
+t0 = s9
+s8 = t0
+s8 = 28
+t0 = s8
+s7 = alloc(t0)
+s8 = 80
+t0 = s8
+s6 = alloc(t0)
+s8 = @Tree_Init
+s5 = @Tree_SetRight
+s4 = @Tree_SetLeft
+s3 = @Tree_GetRight
+s2 = @Tree_GetLeft
+s1 = @Tree_GetKey
+t0 = @Tree_SetKey
+Tree_Insert_t309 = t0
+t0 = @Tree_GetHas_Right
+Tree_Insert_t310 = t0
+t0 = @Tree_GetHas_Left
+Tree_Insert_t311 = t0
+t0 = @Tree_SetHas_Left
+Tree_Insert_t312 = t0
+t0 = @Tree_SetHas_Right
+Tree_Insert_t313 = t0
+t0 = @Tree_Compare
+Tree_Insert_t314 = t0
+t0 = @Tree_Insert
+Tree_Insert_t315 = t0
+t0 = @Tree_Delete
+Tree_Insert_t316 = t0
+t0 = @Tree_Remove
+Tree_Insert_t317 = t0
+t0 = @Tree_RemoveRight
+Tree_Insert_t318 = t0
+t0 = @Tree_RemoveLeft
+Tree_Insert_t319 = t0
+t0 = @Tree_Search
+Tree_Insert_t320 = t0
+t0 = @Tree_Print
+Tree_Insert_t321 = t0
+t0 = @Tree_RecPrint
+Tree_Insert_t322 = t0
+t0 = s6
+t1 = s8
+[t0 + 0] = t1
+t0 = s6
+t1 = s5
+[t0 + 4] = t1
+t0 = s6
+t1 = s4
+[t0 + 8] = t1
+t0 = s6
+t1 = s3
+[t0 + 12] = t1
+t0 = s6
+t1 = s2
+[t0 + 16] = t1
+t0 = s6
+t1 = s1
+[t0 + 20] = t1
+t0 = s6
+t1 = Tree_Insert_t309
+[t0 + 24] = t1
+t0 = s6
+t1 = Tree_Insert_t310
+[t0 + 28] = t1
+t0 = s6
+t1 = Tree_Insert_t311
+[t0 + 32] = t1
+t0 = s6
+t1 = Tree_Insert_t312
+[t0 + 36] = t1
+t0 = s6
+t1 = Tree_Insert_t313
+[t0 + 40] = t1
+t0 = s6
+t1 = Tree_Insert_t314
+[t0 + 44] = t1
+t0 = s6
+t1 = Tree_Insert_t315
+[t0 + 48] = t1
+t0 = s6
+t1 = Tree_Insert_t316
+[t0 + 52] = t1
+t0 = s6
+t1 = Tree_Insert_t317
+[t0 + 56] = t1
+t0 = s6
+t1 = Tree_Insert_t318
+[t0 + 60] = t1
+t0 = s6
+t1 = Tree_Insert_t319
+[t0 + 64] = t1
+t0 = s6
+t1 = Tree_Insert_t320
+[t0 + 68] = t1
+t0 = s6
+t1 = Tree_Insert_t321
+[t0 + 72] = t1
+t0 = s6
+t1 = Tree_Insert_t322
+[t0 + 76] = t1
+t0 = s7
+t1 = s6
+[t0 + 0] = t1
+t0 = s7
+t3 = t0
+t0 = t3
+s7 = t0
+t0 = s7
+if0 t0 goto null325
+t0 = s7
+s3 = [t0 + 0]
+t0 = s3
+s1 = [t0 + 0]
+goto null_end325
+null325:
+error("null pointer")
+null_end325:
+t0 = t4
+s3 = t0
+t0 = s1
+Tree_Insert_this = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t325 = s7
+Tree_Insert_t331 = s3
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t330 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = s7
+a3 = s3
+s5 = call t0()
+t5 = Tree_Insert_this
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s7 = Tree_Insert_t325
+s3 = Tree_Insert_t331
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t330
+s10 = Tree_Insert_Tree_key_aux
+t0 = s5
+t2 = t0
+t0 = t5
+s5 = t0
+t0 = s5
+s9 = t0
+s5 = 1
+t0 = s5
+s11 = t0
+loop335:
+t0 = s11
+s5 = t0
+t0 = s5
+if0 t0 goto end335
+t0 = s9
+t5 = t0
+t0 = t5
+if0 t0 goto null340
+t0 = t5
+s3 = [t0 + 0]
+t0 = s3
+s1 = [t0 + 20]
+goto null_end340
+null340:
+error("null pointer")
+null_end340:
+t0 = s1
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t336 = s5
+Tree_Insert_t344 = s3
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = t5
+s7 = call t0()
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s5 = Tree_Insert_t336
+s3 = Tree_Insert_t344
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = s7
+s10 = t0
+t0 = t4
+s6 = t0
+t0 = s10
+s2 = t0
+t0 = s6
+t1 = s2
+s4 = t0 < t1
+t0 = s4
+if0 t0 goto else346
+t0 = s9
+s8 = t0
+t0 = s8
+if0 t0 goto null355
+t0 = s8
+t0 = [t0 + 0]
+Tree_Insert_t359 = t0
+t0 = Tree_Insert_t359
+t0 = [t0 + 32]
+Tree_Insert_t360 = t0
+goto null_end355
+null355:
+error("null pointer")
+null_end355:
+t0 = Tree_Insert_t360
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = s8
+t0 = call t0()
+Tree_Insert_t353 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t353
+if0 t0 goto else352
+t0 = s9
+t0 = t0
+Tree_Insert_t363 = t0
+t0 = Tree_Insert_t363
+if0 t0 goto null363
+t0 = Tree_Insert_t363
+t0 = [t0 + 0]
+Tree_Insert_t367 = t0
+t0 = Tree_Insert_t367
+t0 = [t0 + 16]
+Tree_Insert_t368 = t0
+goto null_end363
+null363:
+error("null pointer")
+null_end363:
+t0 = Tree_Insert_t368
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t363
+t0 = call t0()
+Tree_Insert_t361 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t361
+s9 = t0
+goto end352
+else352:
+t0 = 0
+Tree_Insert_t369 = t0
+t0 = Tree_Insert_t369
+s11 = t0
+t0 = s9
+t0 = t0
+Tree_Insert_t372 = t0
+t0 = Tree_Insert_t372
+if0 t0 goto null372
+t0 = Tree_Insert_t372
+t0 = [t0 + 0]
+Tree_Insert_t376 = t0
+t0 = Tree_Insert_t376
+t0 = [t0 + 36]
+Tree_Insert_t377 = t0
+goto null_end372
+null372:
+error("null pointer")
+null_end372:
+t0 = 1
+Tree_Insert_t378 = t0
+t0 = Tree_Insert_t377
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t372
+a3 = Tree_Insert_t378
+t0 = call t0()
+Tree_Insert_t370 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t370
+t2 = t0
+t0 = s9
+t0 = t0
+Tree_Insert_t381 = t0
+t0 = Tree_Insert_t381
+if0 t0 goto null381
+t0 = Tree_Insert_t381
+t0 = [t0 + 0]
+Tree_Insert_t385 = t0
+t0 = Tree_Insert_t385
+t0 = [t0 + 8]
+Tree_Insert_t386 = t0
+goto null_end381
+null381:
+error("null pointer")
+null_end381:
+t0 = t3
+t0 = t0
+Tree_Insert_t387 = t0
+t0 = Tree_Insert_t386
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t381
+a3 = Tree_Insert_t387
+t0 = call t0()
+Tree_Insert_t379 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t379
+t2 = t0
+end352:
+goto end346
+else346:
+t0 = s9
+t0 = t0
+Tree_Insert_t392 = t0
+t0 = Tree_Insert_t392
+if0 t0 goto null392
+t0 = Tree_Insert_t392
+t0 = [t0 + 0]
+Tree_Insert_t396 = t0
+t0 = Tree_Insert_t396
+t0 = [t0 + 28]
+Tree_Insert_t397 = t0
+goto null_end392
+null392:
+error("null pointer")
+null_end392:
+t0 = Tree_Insert_t397
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t392
+t0 = call t0()
+Tree_Insert_t390 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t390
+if0 t0 goto else389
+t0 = s9
+t0 = t0
+Tree_Insert_t400 = t0
+t0 = Tree_Insert_t400
+if0 t0 goto null400
+t0 = Tree_Insert_t400
+t0 = [t0 + 0]
+Tree_Insert_t404 = t0
+t0 = Tree_Insert_t404
+t0 = [t0 + 12]
+Tree_Insert_t405 = t0
+goto null_end400
+null400:
+error("null pointer")
+null_end400:
+t0 = Tree_Insert_t405
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t400
+t0 = call t0()
+Tree_Insert_t398 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t398
+s9 = t0
+goto end389
+else389:
+t0 = 0
+Tree_Insert_t406 = t0
+t0 = Tree_Insert_t406
+s11 = t0
+t0 = s9
+t0 = t0
+Tree_Insert_t409 = t0
+t0 = Tree_Insert_t409
+if0 t0 goto null409
+t0 = Tree_Insert_t409
+t0 = [t0 + 0]
+Tree_Insert_t413 = t0
+t0 = Tree_Insert_t413
+t0 = [t0 + 40]
+Tree_Insert_t414 = t0
+goto null_end409
+null409:
+error("null pointer")
+null_end409:
+t0 = 1
+Tree_Insert_t415 = t0
+t0 = Tree_Insert_t414
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t409
+a3 = Tree_Insert_t415
+t0 = call t0()
+Tree_Insert_t407 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t407
+t2 = t0
+t0 = s9
+t0 = t0
+Tree_Insert_t418 = t0
+t0 = Tree_Insert_t418
+if0 t0 goto null418
+t0 = Tree_Insert_t418
+t0 = [t0 + 0]
+Tree_Insert_t422 = t0
+t0 = Tree_Insert_t422
+t0 = [t0 + 4]
+Tree_Insert_t423 = t0
+goto null_end418
+null418:
+error("null pointer")
+null_end418:
+t0 = t3
+t0 = t0
+Tree_Insert_t424 = t0
+t0 = Tree_Insert_t423
+Tree_Insert_t340 = t5
+Tree_Insert_Tree_v_key = t4
+Tree_Insert_Tree_new_node = t3
+Tree_Insert_Tree_ntb = t2
+Tree_Insert_Tree_current_node = s9
+Tree_Insert_t355 = s8
+Tree_Insert_t338 = s7
+Tree_Insert_t348 = s6
+Tree_Insert_t336 = s5
+Tree_Insert_t347 = s4
+Tree_Insert_t344 = s3
+Tree_Insert_t350 = s2
+Tree_Insert_Tree_cont = s11
+Tree_Insert_t345 = s1
+Tree_Insert_Tree_key_aux = s10
+a2 = Tree_Insert_t418
+a3 = Tree_Insert_t424
+t0 = call t0()
+Tree_Insert_t416 = t0
+t5 = Tree_Insert_t340
+t4 = Tree_Insert_Tree_v_key
+t3 = Tree_Insert_Tree_new_node
+t2 = Tree_Insert_Tree_ntb
+s9 = Tree_Insert_Tree_current_node
+s8 = Tree_Insert_t355
+s7 = Tree_Insert_t338
+s6 = Tree_Insert_t348
+s5 = Tree_Insert_t336
+s4 = Tree_Insert_t347
+s3 = Tree_Insert_t344
+s2 = Tree_Insert_t350
+s11 = Tree_Insert_Tree_cont
+s1 = Tree_Insert_t345
+s10 = Tree_Insert_Tree_key_aux
+t0 = Tree_Insert_t416
+t2 = t0
+end389:
+end346:
+goto loop335
+end335:
+s10 = 1
+goto Insert_end
+Insert_end:
+t426 = s10
+return t426
+
+func Tree_Delete()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 0
+t0 = s9
+s8 = t0
+s8 = 0
+t0 = s8
+s7 = t0
+s7 = 0
+t0 = s7
+s6 = t0
+t0 = t4
+s6 = t0
+t0 = s6
+t3 = t0
+t0 = t4
+s6 = t0
+t0 = s6
+t2 = t0
+s6 = 1
+t0 = s6
+s11 = t0
+s6 = 0
+t0 = s6
+s10 = t0
+s6 = 1
+t0 = s6
+s9 = t0
+loop446:
+t0 = s11
+s6 = t0
+t0 = s6
+if0 t0 goto end446
+t0 = t3
+s5 = t0
+t0 = s5
+if0 t0 goto null451
+t0 = s5
+s4 = [t0 + 0]
+t0 = s4
+s3 = [t0 + 20]
+goto null_end451
+null451:
+error("null pointer")
+null_end451:
+t0 = s3
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_Tree_cont = s11
+Tree_Delete_Tree_found = s10
+a2 = s5
+s2 = call t0()
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s11 = Tree_Delete_Tree_cont
+s10 = Tree_Delete_Tree_found
+t0 = s2
+s8 = t0
+t0 = t5
+s1 = t0
+t0 = s8
+t0 = t0
+Tree_Delete_t461 = t0
+t0 = s1
+t1 = Tree_Delete_t461
+t0 = t0 < t1
+Tree_Delete_t458 = t0
+t0 = Tree_Delete_t458
+if0 t0 goto else457
+t0 = t3
+t0 = t0
+Tree_Delete_t466 = t0
+t0 = Tree_Delete_t466
+if0 t0 goto null466
+t0 = Tree_Delete_t466
+t0 = [t0 + 0]
+Tree_Delete_t470 = t0
+t0 = Tree_Delete_t470
+t0 = [t0 + 32]
+Tree_Delete_t471 = t0
+goto null_end466
+null466:
+error("null pointer")
+null_end466:
+t0 = Tree_Delete_t471
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t466
+t0 = call t0()
+Tree_Delete_t464 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t464
+if0 t0 goto else463
+t0 = t3
+t0 = t0
+Tree_Delete_t472 = t0
+t0 = Tree_Delete_t472
+t2 = t0
+t0 = t3
+t0 = t0
+Tree_Delete_t476 = t0
+t0 = Tree_Delete_t476
+if0 t0 goto null476
+t0 = Tree_Delete_t476
+t0 = [t0 + 0]
+Tree_Delete_t480 = t0
+t0 = Tree_Delete_t480
+t0 = [t0 + 16]
+Tree_Delete_t481 = t0
+goto null_end476
+null476:
+error("null pointer")
+null_end476:
+t0 = Tree_Delete_t481
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t476
+t0 = call t0()
+Tree_Delete_t474 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t474
+t3 = t0
+goto end463
+else463:
+t0 = 0
+Tree_Delete_t482 = t0
+t0 = Tree_Delete_t482
+s11 = t0
+end463:
+goto end457
+else457:
+t0 = s8
+t0 = t0
+Tree_Delete_t485 = t0
+t0 = t5
+t0 = t0
+Tree_Delete_t487 = t0
+t0 = Tree_Delete_t485
+t1 = Tree_Delete_t487
+t0 = t0 < t1
+Tree_Delete_t484 = t0
+t0 = Tree_Delete_t484
+if0 t0 goto else483
+t0 = t3
+t0 = t0
+Tree_Delete_t492 = t0
+t0 = Tree_Delete_t492
+if0 t0 goto null492
+t0 = Tree_Delete_t492
+t0 = [t0 + 0]
+Tree_Delete_t496 = t0
+t0 = Tree_Delete_t496
+t0 = [t0 + 28]
+Tree_Delete_t497 = t0
+goto null_end492
+null492:
+error("null pointer")
+null_end492:
+t0 = Tree_Delete_t497
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t492
+t0 = call t0()
+Tree_Delete_t490 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t490
+if0 t0 goto else489
+t0 = t3
+t0 = t0
+Tree_Delete_t498 = t0
+t0 = Tree_Delete_t498
+t2 = t0
+t0 = t3
+t0 = t0
+Tree_Delete_t502 = t0
+t0 = Tree_Delete_t502
+if0 t0 goto null502
+t0 = Tree_Delete_t502
+t0 = [t0 + 0]
+Tree_Delete_t506 = t0
+t0 = Tree_Delete_t506
+t0 = [t0 + 12]
+Tree_Delete_t507 = t0
+goto null_end502
+null502:
+error("null pointer")
+null_end502:
+t0 = Tree_Delete_t507
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t502
+t0 = call t0()
+Tree_Delete_t500 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t500
+t3 = t0
+goto end489
+else489:
+t0 = 0
+Tree_Delete_t508 = t0
+t0 = Tree_Delete_t508
+s11 = t0
+end489:
+goto end483
+else483:
+t0 = s9
+t0 = t0
+Tree_Delete_t510 = t0
+t0 = Tree_Delete_t510
+if0 t0 goto else509
+t0 = t3
+t0 = t0
+Tree_Delete_t517 = t0
+t0 = Tree_Delete_t517
+if0 t0 goto null517
+t0 = Tree_Delete_t517
+t0 = [t0 + 0]
+Tree_Delete_t521 = t0
+t0 = Tree_Delete_t521
+t0 = [t0 + 28]
+Tree_Delete_t522 = t0
+goto null_end517
+null517:
+error("null pointer")
+null_end517:
+t0 = Tree_Delete_t522
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t517
+t0 = call t0()
+Tree_Delete_t515 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t515
+if0 t0 goto else514
+t0 = 0
+Tree_Delete_t514 = t0
+goto end514
+else514:
+t0 = 1
+Tree_Delete_t514 = t0
+end514:
+t0 = t3
+t0 = t0
+Tree_Delete_t526 = t0
+t0 = Tree_Delete_t526
+if0 t0 goto null526
+t0 = Tree_Delete_t526
+t0 = [t0 + 0]
+Tree_Delete_t530 = t0
+t0 = Tree_Delete_t530
+t0 = [t0 + 32]
+Tree_Delete_t531 = t0
+goto null_end526
+null526:
+error("null pointer")
+null_end526:
+t0 = Tree_Delete_t531
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t526
+t0 = call t0()
+Tree_Delete_t524 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t524
+if0 t0 goto else523
+t0 = 0
+Tree_Delete_t523 = t0
+goto end523
+else523:
+t0 = 1
+Tree_Delete_t523 = t0
+end523:
+t0 = Tree_Delete_t514
+if0 t0 goto else513
+t0 = Tree_Delete_t523
+if0 t0 goto else513
+t0 = 1
+Tree_Delete_t513 = t0
+goto if513_end
+else513:
+t0 = 0
+Tree_Delete_t513 = t0
+goto if513_end
+if513_end:
+t0 = Tree_Delete_t513
+if0 t0 goto else512
+t0 = 1
+Tree_Delete_t532 = t0
+t0 = Tree_Delete_t532
+s7 = t0
+goto end512
+else512:
+t0 = t4
+t0 = t0
+Tree_Delete_t535 = t0
+t0 = Tree_Delete_t535
+if0 t0 goto null535
+t0 = Tree_Delete_t535
+t0 = [t0 + 0]
+Tree_Delete_t538 = t0
+t0 = Tree_Delete_t538
+t0 = [t0 + 56]
+Tree_Delete_t539 = t0
+goto null_end535
+null535:
+error("null pointer")
+null_end535:
+t0 = t2
+t0 = t0
+Tree_Delete_t540 = t0
+t0 = t3
+t0 = t0
+Tree_Delete_t542 = t0
+t0 = Tree_Delete_t539
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t535
+a3 = Tree_Delete_t540
+a4 = Tree_Delete_t542
+t0 = call t0()
+Tree_Delete_t533 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t533
+s7 = t0
+end512:
+goto end509
+else509:
+t0 = t4
+t0 = t0
+Tree_Delete_t546 = t0
+t0 = Tree_Delete_t546
+if0 t0 goto null546
+t0 = Tree_Delete_t546
+t0 = [t0 + 0]
+Tree_Delete_t549 = t0
+t0 = Tree_Delete_t549
+t0 = [t0 + 56]
+Tree_Delete_t550 = t0
+goto null_end546
+null546:
+error("null pointer")
+null_end546:
+t0 = t2
+t0 = t0
+Tree_Delete_t551 = t0
+t0 = t3
+t0 = t0
+Tree_Delete_t553 = t0
+t0 = Tree_Delete_t550
+Tree_Delete_Tree_v_key = t5
+Tree_Delete_this = t4
+Tree_Delete_Tree_current_node = t3
+Tree_Delete_Tree_parent_node = t2
+Tree_Delete_Tree_is_root = s9
+Tree_Delete_Tree_key_aux = s8
+Tree_Delete_Tree_ntb = s7
+Tree_Delete_t447 = s6
+Tree_Delete_t451 = s5
+Tree_Delete_t455 = s4
+Tree_Delete_t456 = s3
+Tree_Delete_t449 = s2
+Tree_Delete_Tree_cont = s11
+Tree_Delete_t459 = s1
+Tree_Delete_Tree_found = s10
+a2 = Tree_Delete_t546
+a3 = Tree_Delete_t551
+a4 = Tree_Delete_t553
+t0 = call t0()
+Tree_Delete_t544 = t0
+t5 = Tree_Delete_Tree_v_key
+t4 = Tree_Delete_this
+t3 = Tree_Delete_Tree_current_node
+t2 = Tree_Delete_Tree_parent_node
+s9 = Tree_Delete_Tree_is_root
+s8 = Tree_Delete_Tree_key_aux
+s7 = Tree_Delete_Tree_ntb
+s6 = Tree_Delete_t447
+s5 = Tree_Delete_t451
+s4 = Tree_Delete_t455
+s3 = Tree_Delete_t456
+s2 = Tree_Delete_t449
+s11 = Tree_Delete_Tree_cont
+s1 = Tree_Delete_t459
+s10 = Tree_Delete_Tree_found
+t0 = Tree_Delete_t544
+s7 = t0
+end509:
+t0 = 1
+Tree_Delete_t555 = t0
+t0 = Tree_Delete_t555
+s10 = t0
+t0 = 0
+Tree_Delete_t556 = t0
+t0 = Tree_Delete_t556
+s11 = t0
+end483:
+end457:
+t0 = 0
+Tree_Delete_t557 = t0
+t0 = Tree_Delete_t557
+s9 = t0
+goto loop446
+end446:
+t0 = s10
+s1 = t0
+goto Delete_end
+Delete_end:
+t558 = s1
+return t558
+
+func Tree_Remove()
+t3 = a2
+t4 = a3
+t5 = a4
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+t0 = t5
+s9 = t0
+t0 = s9
+if0 t0 goto null569
+t0 = s9
+s8 = [t0 + 0]
+t0 = s8
+s7 = [t0 + 32]
+goto null_end569
+null569:
+error("null pointer")
+null_end569:
+t0 = s7
+Tree_Remove_Tree_c_node = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t569 = s9
+Tree_Remove_t574 = s7
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = s9
+s8 = call t0()
+t5 = Tree_Remove_Tree_c_node
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t569
+s7 = Tree_Remove_t574
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = s8
+if0 t0 goto else566
+t0 = t3
+s7 = t0
+t0 = s7
+if0 t0 goto null577
+t0 = s7
+s8 = [t0 + 0]
+t0 = s8
+s9 = [t0 + 64]
+goto null_end577
+null577:
+error("null pointer")
+null_end577:
+t0 = t4
+s8 = t0
+t0 = t5
+s6 = t0
+t0 = s9
+Tree_Remove_Tree_c_node = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t581 = s9
+Tree_Remove_t582 = s8
+Tree_Remove_t577 = s7
+Tree_Remove_t584 = s6
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = s7
+a3 = s8
+a4 = s6
+s5 = call t0()
+t5 = Tree_Remove_Tree_c_node
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t581
+s8 = Tree_Remove_t582
+s7 = Tree_Remove_t577
+s6 = Tree_Remove_t584
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = s5
+t2 = t0
+goto end566
+else566:
+t0 = t5
+s5 = t0
+t0 = s5
+if0 t0 goto null589
+t0 = s5
+s6 = [t0 + 0]
+t0 = s6
+s8 = [t0 + 28]
+goto null_end589
+null589:
+error("null pointer")
+null_end589:
+t0 = s8
+Tree_Remove_Tree_c_node = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t594 = s8
+Tree_Remove_t589 = s5
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = s5
+s6 = call t0()
+t5 = Tree_Remove_Tree_c_node
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s8 = Tree_Remove_t594
+s5 = Tree_Remove_t589
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = s6
+if0 t0 goto else586
+t0 = t3
+s5 = t0
+t0 = s5
+if0 t0 goto null597
+t0 = s5
+s6 = [t0 + 0]
+t0 = s6
+s8 = [t0 + 60]
+goto null_end597
+null597:
+error("null pointer")
+null_end597:
+t0 = t4
+s6 = t0
+t0 = t5
+s7 = t0
+t0 = s8
+Tree_Remove_Tree_c_node = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t601 = s8
+Tree_Remove_t604 = s7
+Tree_Remove_t602 = s6
+Tree_Remove_t597 = s5
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = s5
+a3 = s6
+a4 = s7
+s9 = call t0()
+t5 = Tree_Remove_Tree_c_node
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s8 = Tree_Remove_t601
+s7 = Tree_Remove_t604
+s6 = Tree_Remove_t602
+s5 = Tree_Remove_t597
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = s9
+t2 = t0
+goto end586
+else586:
+t0 = t5
+s9 = t0
+t0 = s9
+if0 t0 goto null608
+t0 = s9
+t5 = [t0 + 0]
+t0 = t5
+s5 = [t0 + 20]
+goto null_end608
+null608:
+error("null pointer")
+null_end608:
+t0 = s5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t608 = s9
+Tree_Remove_t613 = s5
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = s9
+t5 = call t0()
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t608
+s5 = Tree_Remove_t613
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = t5
+s11 = t0
+t0 = t4
+t5 = t0
+t0 = t5
+if0 t0 goto null618
+t0 = t5
+s5 = [t0 + 0]
+t0 = s5
+s9 = [t0 + 16]
+goto null_end618
+null618:
+error("null pointer")
+null_end618:
+t0 = s9
+Tree_Remove_t618 = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t623 = s9
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = t5
+s5 = call t0()
+t5 = Tree_Remove_t618
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t623
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = s5
+if0 t0 goto null616
+t0 = s5
+s9 = [t0 + 0]
+t0 = s9
+t5 = [t0 + 20]
+goto null_end616
+null616:
+error("null pointer")
+null_end616:
+t0 = t5
+Tree_Remove_t627 = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t616 = s5
+Tree_Remove_Tree_auxkey1 = s11
+Tree_Remove_Tree_auxkey2 = s10
+a2 = s5
+s9 = call t0()
+t5 = Tree_Remove_t627
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s5 = Tree_Remove_t616
+s11 = Tree_Remove_Tree_auxkey1
+s10 = Tree_Remove_Tree_auxkey2
+t0 = s9
+s10 = t0
+t0 = t3
+s9 = t0
+t0 = s9
+if0 t0 goto null631
+t0 = s9
+s5 = [t0 + 0]
+t0 = s5
+t5 = [t0 + 44]
+goto null_end631
+null631:
+error("null pointer")
+null_end631:
+t0 = s11
+s5 = t0
+t0 = s10
+s11 = t0
+t0 = t5
+Tree_Remove_t635 = t5
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t631 = s9
+Tree_Remove_t636 = s5
+Tree_Remove_t638 = s11
+a2 = s9
+a3 = s5
+a4 = s11
+s10 = call t0()
+t5 = Tree_Remove_t635
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t631
+s5 = Tree_Remove_t636
+s11 = Tree_Remove_t638
+t0 = s10
+if0 t0 goto else628
+t0 = t4
+s11 = t0
+t0 = s11
+if0 t0 goto null642
+t0 = s11
+s9 = [t0 + 0]
+t0 = s9
+s10 = [t0 + 8]
+goto null_end642
+null642:
+error("null pointer")
+null_end642:
+t0 = t3
+s9 = [t0 + 24]
+t0 = s10
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t648 = s9
+Tree_Remove_t642 = s11
+Tree_Remove_t647 = s10
+a2 = s11
+a3 = s9
+s5 = call t0()
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t648
+s11 = Tree_Remove_t642
+s10 = Tree_Remove_t647
+t0 = s5
+t2 = t0
+t0 = t4
+s5 = t0
+t0 = s5
+if0 t0 goto null652
+t0 = s5
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 36]
+goto null_end652
+null652:
+error("null pointer")
+null_end652:
+s11 = 0
+t0 = s10
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_this = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t652 = s5
+Tree_Remove_t658 = s11
+Tree_Remove_t657 = s10
+a2 = s5
+a3 = s11
+s9 = call t0()
+t4 = Tree_Remove_Tree_p_node
+t3 = Tree_Remove_this
+t2 = Tree_Remove_Tree_ntb
+s5 = Tree_Remove_t652
+s11 = Tree_Remove_t658
+s10 = Tree_Remove_t657
+t0 = s9
+t2 = t0
+goto end628
+else628:
+t0 = t4
+s9 = t0
+t0 = s9
+if0 t0 goto null661
+t0 = s9
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 4]
+goto null_end661
+null661:
+error("null pointer")
+null_end661:
+t0 = t3
+s11 = [t0 + 24]
+t0 = s10
+Tree_Remove_Tree_p_node = t4
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t661 = s9
+Tree_Remove_t667 = s11
+Tree_Remove_t666 = s10
+a2 = s9
+a3 = s11
+t3 = call t0()
+t4 = Tree_Remove_Tree_p_node
+t2 = Tree_Remove_Tree_ntb
+s9 = Tree_Remove_t661
+s11 = Tree_Remove_t667
+s10 = Tree_Remove_t666
+t0 = t3
+t2 = t0
+t0 = t4
+t3 = t0
+t0 = t3
+if0 t0 goto null671
+t0 = t3
+t4 = [t0 + 0]
+t0 = t4
+s11 = [t0 + 40]
+goto null_end671
+null671:
+error("null pointer")
+null_end671:
+t4 = 0
+t0 = s11
+Tree_Remove_t677 = t4
+Tree_Remove_t671 = t3
+Tree_Remove_Tree_ntb = t2
+Tree_Remove_t676 = s11
+a2 = t3
+a3 = t4
+s10 = call t0()
+t4 = Tree_Remove_t677
+t3 = Tree_Remove_t671
+t2 = Tree_Remove_Tree_ntb
+s11 = Tree_Remove_t676
+t0 = s10
+t2 = t0
+end628:
+end586:
+end566:
+t2 = 1
+goto Remove_end
+Remove_end:
+t678 = t2
+return t678
+
+func Tree_RemoveRight()
+t3 = a2
+t4 = a3
+t5 = a4
+t2 = 0
+t0 = t2
+s11 = t0
+loop681:
+t0 = t5
+s11 = t0
+t0 = s11
+if0 t0 goto null684
+t0 = s11
+s10 = [t0 + 0]
+t0 = s10
+s9 = [t0 + 28]
+goto null_end684
+null684:
+error("null pointer")
+null_end684:
+t0 = s9
+Tree_RemoveRight_Tree_c_node = t5
+Tree_RemoveRight_Tree_p_node = t4
+Tree_RemoveRight_this = t3
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t689 = s9
+Tree_RemoveRight_t684 = s11
+Tree_RemoveRight_t688 = s10
+a2 = s11
+s8 = call t0()
+t5 = Tree_RemoveRight_Tree_c_node
+t4 = Tree_RemoveRight_Tree_p_node
+t3 = Tree_RemoveRight_this
+t2 = Tree_RemoveRight_Tree_ntb
+s9 = Tree_RemoveRight_t689
+s11 = Tree_RemoveRight_t684
+s10 = Tree_RemoveRight_t688
+t0 = s8
+if0 t0 goto end681
+t0 = t5
+s7 = t0
+t0 = s7
+if0 t0 goto null692
+t0 = s7
+s6 = [t0 + 0]
+t0 = s6
+s5 = [t0 + 24]
+goto null_end692
+null692:
+error("null pointer")
+null_end692:
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null702
+t0 = s4
+s3 = [t0 + 0]
+t0 = s3
+s2 = [t0 + 12]
+goto null_end702
+null702:
+error("null pointer")
+null_end702:
+t0 = s2
+Tree_RemoveRight_Tree_c_node = t5
+Tree_RemoveRight_Tree_p_node = t4
+Tree_RemoveRight_this = t3
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t689 = s9
+Tree_RemoveRight_t682 = s8
+Tree_RemoveRight_t692 = s7
+Tree_RemoveRight_t696 = s6
+Tree_RemoveRight_t697 = s5
+Tree_RemoveRight_t702 = s4
+Tree_RemoveRight_t706 = s3
+Tree_RemoveRight_t707 = s2
+Tree_RemoveRight_t684 = s11
+Tree_RemoveRight_t688 = s10
+a2 = s4
+s1 = call t0()
+t5 = Tree_RemoveRight_Tree_c_node
+t4 = Tree_RemoveRight_Tree_p_node
+t3 = Tree_RemoveRight_this
+t2 = Tree_RemoveRight_Tree_ntb
+s9 = Tree_RemoveRight_t689
+s8 = Tree_RemoveRight_t682
+s7 = Tree_RemoveRight_t692
+s6 = Tree_RemoveRight_t696
+s5 = Tree_RemoveRight_t697
+s4 = Tree_RemoveRight_t702
+s3 = Tree_RemoveRight_t706
+s2 = Tree_RemoveRight_t707
+s11 = Tree_RemoveRight_t684
+s10 = Tree_RemoveRight_t688
+t0 = s1
+if0 t0 goto null700
+t0 = s1
+t0 = [t0 + 0]
+Tree_RemoveRight_t710 = t0
+t0 = Tree_RemoveRight_t710
+t0 = [t0 + 20]
+Tree_RemoveRight_t711 = t0
+goto null_end700
+null700:
+error("null pointer")
+null_end700:
+t0 = Tree_RemoveRight_t711
+Tree_RemoveRight_Tree_c_node = t5
+Tree_RemoveRight_Tree_p_node = t4
+Tree_RemoveRight_this = t3
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t689 = s9
+Tree_RemoveRight_t682 = s8
+Tree_RemoveRight_t692 = s7
+Tree_RemoveRight_t696 = s6
+Tree_RemoveRight_t697 = s5
+Tree_RemoveRight_t702 = s4
+Tree_RemoveRight_t706 = s3
+Tree_RemoveRight_t707 = s2
+Tree_RemoveRight_t684 = s11
+Tree_RemoveRight_t700 = s1
+Tree_RemoveRight_t688 = s10
+a2 = s1
+t0 = call t0()
+Tree_RemoveRight_t698 = t0
+t5 = Tree_RemoveRight_Tree_c_node
+t4 = Tree_RemoveRight_Tree_p_node
+t3 = Tree_RemoveRight_this
+t2 = Tree_RemoveRight_Tree_ntb
+s9 = Tree_RemoveRight_t689
+s8 = Tree_RemoveRight_t682
+s7 = Tree_RemoveRight_t692
+s6 = Tree_RemoveRight_t696
+s5 = Tree_RemoveRight_t697
+s4 = Tree_RemoveRight_t702
+s3 = Tree_RemoveRight_t706
+s2 = Tree_RemoveRight_t707
+s11 = Tree_RemoveRight_t684
+s1 = Tree_RemoveRight_t700
+s10 = Tree_RemoveRight_t688
+t0 = s5
+Tree_RemoveRight_Tree_c_node = t5
+Tree_RemoveRight_Tree_p_node = t4
+Tree_RemoveRight_this = t3
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t689 = s9
+Tree_RemoveRight_t682 = s8
+Tree_RemoveRight_t692 = s7
+Tree_RemoveRight_t696 = s6
+Tree_RemoveRight_t697 = s5
+Tree_RemoveRight_t702 = s4
+Tree_RemoveRight_t706 = s3
+Tree_RemoveRight_t707 = s2
+Tree_RemoveRight_t684 = s11
+Tree_RemoveRight_t700 = s1
+Tree_RemoveRight_t688 = s10
+a2 = s7
+a3 = Tree_RemoveRight_t698
+t0 = call t0()
+Tree_RemoveRight_t690 = t0
+t5 = Tree_RemoveRight_Tree_c_node
+t4 = Tree_RemoveRight_Tree_p_node
+t3 = Tree_RemoveRight_this
+t2 = Tree_RemoveRight_Tree_ntb
+s9 = Tree_RemoveRight_t689
+s8 = Tree_RemoveRight_t682
+s7 = Tree_RemoveRight_t692
+s6 = Tree_RemoveRight_t696
+s5 = Tree_RemoveRight_t697
+s4 = Tree_RemoveRight_t702
+s3 = Tree_RemoveRight_t706
+s2 = Tree_RemoveRight_t707
+s11 = Tree_RemoveRight_t684
+s1 = Tree_RemoveRight_t700
+s10 = Tree_RemoveRight_t688
+t0 = Tree_RemoveRight_t690
+t2 = t0
+t0 = t5
+t0 = t0
+Tree_RemoveRight_t712 = t0
+t0 = Tree_RemoveRight_t712
+t4 = t0
+t0 = t5
+t0 = t0
+Tree_RemoveRight_t716 = t0
+t0 = Tree_RemoveRight_t716
+if0 t0 goto null716
+t0 = Tree_RemoveRight_t716
+t0 = [t0 + 0]
+Tree_RemoveRight_t720 = t0
+t0 = Tree_RemoveRight_t720
+t0 = [t0 + 12]
+Tree_RemoveRight_t721 = t0
+goto null_end716
+null716:
+error("null pointer")
+null_end716:
+t0 = Tree_RemoveRight_t721
+Tree_RemoveRight_Tree_c_node = t5
+Tree_RemoveRight_Tree_p_node = t4
+Tree_RemoveRight_this = t3
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t689 = s9
+Tree_RemoveRight_t682 = s8
+Tree_RemoveRight_t692 = s7
+Tree_RemoveRight_t696 = s6
+Tree_RemoveRight_t697 = s5
+Tree_RemoveRight_t702 = s4
+Tree_RemoveRight_t706 = s3
+Tree_RemoveRight_t707 = s2
+Tree_RemoveRight_t684 = s11
+Tree_RemoveRight_t700 = s1
+Tree_RemoveRight_t688 = s10
+a2 = Tree_RemoveRight_t716
+t0 = call t0()
+Tree_RemoveRight_t714 = t0
+t5 = Tree_RemoveRight_Tree_c_node
+t4 = Tree_RemoveRight_Tree_p_node
+t3 = Tree_RemoveRight_this
+t2 = Tree_RemoveRight_Tree_ntb
+s9 = Tree_RemoveRight_t689
+s8 = Tree_RemoveRight_t682
+s7 = Tree_RemoveRight_t692
+s6 = Tree_RemoveRight_t696
+s5 = Tree_RemoveRight_t697
+s4 = Tree_RemoveRight_t702
+s3 = Tree_RemoveRight_t706
+s2 = Tree_RemoveRight_t707
+s11 = Tree_RemoveRight_t684
+s1 = Tree_RemoveRight_t700
+s10 = Tree_RemoveRight_t688
+t0 = Tree_RemoveRight_t714
+t5 = t0
+goto loop681
+end681:
+t0 = t4
+s3 = t0
+t0 = s3
+if0 t0 goto null724
+t0 = s3
+s10 = [t0 + 0]
+t0 = s10
+s7 = [t0 + 4]
+goto null_end724
+null724:
+error("null pointer")
+null_end724:
+t0 = t3
+s10 = [t0 + 24]
+t0 = s7
+Tree_RemoveRight_Tree_p_node = t4
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t729 = s7
+Tree_RemoveRight_t724 = s3
+Tree_RemoveRight_t730 = s10
+a2 = s3
+a3 = s10
+t3 = call t0()
+t4 = Tree_RemoveRight_Tree_p_node
+t2 = Tree_RemoveRight_Tree_ntb
+s7 = Tree_RemoveRight_t729
+s3 = Tree_RemoveRight_t724
+s10 = Tree_RemoveRight_t730
+t0 = t3
+t2 = t0
+t0 = t4
+t3 = t0
+t0 = t3
+if0 t0 goto null734
+t0 = t3
+t4 = [t0 + 0]
+t0 = t4
+s3 = [t0 + 40]
+goto null_end734
+null734:
+error("null pointer")
+null_end734:
+t4 = 0
+t0 = s3
+Tree_RemoveRight_t740 = t4
+Tree_RemoveRight_t734 = t3
+Tree_RemoveRight_Tree_ntb = t2
+Tree_RemoveRight_t739 = s3
+a2 = t3
+a3 = t4
+s10 = call t0()
+t4 = Tree_RemoveRight_t740
+t3 = Tree_RemoveRight_t734
+t2 = Tree_RemoveRight_Tree_ntb
+s3 = Tree_RemoveRight_t739
+t0 = s10
+t2 = t0
+t2 = 1
+goto RemoveRight_end
+RemoveRight_end:
+t741 = t2
+return t741
+
+func Tree_RemoveLeft()
+t5 = a2
+t3 = a3
+t4 = a4
+t2 = 0
+t0 = t2
+s11 = t0
+loop744:
+t0 = t4
+s11 = t0
+t0 = s11
+if0 t0 goto null747
+t0 = s11
+s10 = [t0 + 0]
+t0 = s10
+s9 = [t0 + 32]
+goto null_end747
+null747:
+error("null pointer")
+null_end747:
+t0 = s9
+Tree_RemoveLeft_this = t5
+Tree_RemoveLeft_Tree_c_node = t4
+Tree_RemoveLeft_Tree_p_node = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t752 = s9
+Tree_RemoveLeft_t747 = s11
+Tree_RemoveLeft_t751 = s10
+a2 = s11
+s8 = call t0()
+t5 = Tree_RemoveLeft_this
+t4 = Tree_RemoveLeft_Tree_c_node
+t3 = Tree_RemoveLeft_Tree_p_node
+t2 = Tree_RemoveLeft_Tree_ntb
+s9 = Tree_RemoveLeft_t752
+s11 = Tree_RemoveLeft_t747
+s10 = Tree_RemoveLeft_t751
+t0 = s8
+if0 t0 goto end744
+t0 = t4
+s7 = t0
+t0 = s7
+if0 t0 goto null755
+t0 = s7
+s6 = [t0 + 0]
+t0 = s6
+s5 = [t0 + 24]
+goto null_end755
+null755:
+error("null pointer")
+null_end755:
+t0 = t4
+s4 = t0
+t0 = s4
+if0 t0 goto null765
+t0 = s4
+s3 = [t0 + 0]
+t0 = s3
+s2 = [t0 + 16]
+goto null_end765
+null765:
+error("null pointer")
+null_end765:
+t0 = s2
+Tree_RemoveLeft_this = t5
+Tree_RemoveLeft_Tree_c_node = t4
+Tree_RemoveLeft_Tree_p_node = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t752 = s9
+Tree_RemoveLeft_t745 = s8
+Tree_RemoveLeft_t755 = s7
+Tree_RemoveLeft_t759 = s6
+Tree_RemoveLeft_t760 = s5
+Tree_RemoveLeft_t765 = s4
+Tree_RemoveLeft_t769 = s3
+Tree_RemoveLeft_t770 = s2
+Tree_RemoveLeft_t747 = s11
+Tree_RemoveLeft_t751 = s10
+a2 = s4
+s1 = call t0()
+t5 = Tree_RemoveLeft_this
+t4 = Tree_RemoveLeft_Tree_c_node
+t3 = Tree_RemoveLeft_Tree_p_node
+t2 = Tree_RemoveLeft_Tree_ntb
+s9 = Tree_RemoveLeft_t752
+s8 = Tree_RemoveLeft_t745
+s7 = Tree_RemoveLeft_t755
+s6 = Tree_RemoveLeft_t759
+s5 = Tree_RemoveLeft_t760
+s4 = Tree_RemoveLeft_t765
+s3 = Tree_RemoveLeft_t769
+s2 = Tree_RemoveLeft_t770
+s11 = Tree_RemoveLeft_t747
+s10 = Tree_RemoveLeft_t751
+t0 = s1
+if0 t0 goto null763
+t0 = s1
+t0 = [t0 + 0]
+Tree_RemoveLeft_t773 = t0
+t0 = Tree_RemoveLeft_t773
+t0 = [t0 + 20]
+Tree_RemoveLeft_t774 = t0
+goto null_end763
+null763:
+error("null pointer")
+null_end763:
+t0 = Tree_RemoveLeft_t774
+Tree_RemoveLeft_this = t5
+Tree_RemoveLeft_Tree_c_node = t4
+Tree_RemoveLeft_Tree_p_node = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t752 = s9
+Tree_RemoveLeft_t745 = s8
+Tree_RemoveLeft_t755 = s7
+Tree_RemoveLeft_t759 = s6
+Tree_RemoveLeft_t760 = s5
+Tree_RemoveLeft_t765 = s4
+Tree_RemoveLeft_t769 = s3
+Tree_RemoveLeft_t770 = s2
+Tree_RemoveLeft_t747 = s11
+Tree_RemoveLeft_t763 = s1
+Tree_RemoveLeft_t751 = s10
+a2 = s1
+t0 = call t0()
+Tree_RemoveLeft_t761 = t0
+t5 = Tree_RemoveLeft_this
+t4 = Tree_RemoveLeft_Tree_c_node
+t3 = Tree_RemoveLeft_Tree_p_node
+t2 = Tree_RemoveLeft_Tree_ntb
+s9 = Tree_RemoveLeft_t752
+s8 = Tree_RemoveLeft_t745
+s7 = Tree_RemoveLeft_t755
+s6 = Tree_RemoveLeft_t759
+s5 = Tree_RemoveLeft_t760
+s4 = Tree_RemoveLeft_t765
+s3 = Tree_RemoveLeft_t769
+s2 = Tree_RemoveLeft_t770
+s11 = Tree_RemoveLeft_t747
+s1 = Tree_RemoveLeft_t763
+s10 = Tree_RemoveLeft_t751
+t0 = s5
+Tree_RemoveLeft_this = t5
+Tree_RemoveLeft_Tree_c_node = t4
+Tree_RemoveLeft_Tree_p_node = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t752 = s9
+Tree_RemoveLeft_t745 = s8
+Tree_RemoveLeft_t755 = s7
+Tree_RemoveLeft_t759 = s6
+Tree_RemoveLeft_t760 = s5
+Tree_RemoveLeft_t765 = s4
+Tree_RemoveLeft_t769 = s3
+Tree_RemoveLeft_t770 = s2
+Tree_RemoveLeft_t747 = s11
+Tree_RemoveLeft_t763 = s1
+Tree_RemoveLeft_t751 = s10
+a2 = s7
+a3 = Tree_RemoveLeft_t761
+t0 = call t0()
+Tree_RemoveLeft_t753 = t0
+t5 = Tree_RemoveLeft_this
+t4 = Tree_RemoveLeft_Tree_c_node
+t3 = Tree_RemoveLeft_Tree_p_node
+t2 = Tree_RemoveLeft_Tree_ntb
+s9 = Tree_RemoveLeft_t752
+s8 = Tree_RemoveLeft_t745
+s7 = Tree_RemoveLeft_t755
+s6 = Tree_RemoveLeft_t759
+s5 = Tree_RemoveLeft_t760
+s4 = Tree_RemoveLeft_t765
+s3 = Tree_RemoveLeft_t769
+s2 = Tree_RemoveLeft_t770
+s11 = Tree_RemoveLeft_t747
+s1 = Tree_RemoveLeft_t763
+s10 = Tree_RemoveLeft_t751
+t0 = Tree_RemoveLeft_t753
+t2 = t0
+t0 = t4
+t0 = t0
+Tree_RemoveLeft_t775 = t0
+t0 = Tree_RemoveLeft_t775
+t3 = t0
+t0 = t4
+t0 = t0
+Tree_RemoveLeft_t779 = t0
+t0 = Tree_RemoveLeft_t779
+if0 t0 goto null779
+t0 = Tree_RemoveLeft_t779
+t0 = [t0 + 0]
+Tree_RemoveLeft_t783 = t0
+t0 = Tree_RemoveLeft_t783
+t0 = [t0 + 16]
+Tree_RemoveLeft_t784 = t0
+goto null_end779
+null779:
+error("null pointer")
+null_end779:
+t0 = Tree_RemoveLeft_t784
+Tree_RemoveLeft_this = t5
+Tree_RemoveLeft_Tree_c_node = t4
+Tree_RemoveLeft_Tree_p_node = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t752 = s9
+Tree_RemoveLeft_t745 = s8
+Tree_RemoveLeft_t755 = s7
+Tree_RemoveLeft_t759 = s6
+Tree_RemoveLeft_t760 = s5
+Tree_RemoveLeft_t765 = s4
+Tree_RemoveLeft_t769 = s3
+Tree_RemoveLeft_t770 = s2
+Tree_RemoveLeft_t747 = s11
+Tree_RemoveLeft_t763 = s1
+Tree_RemoveLeft_t751 = s10
+a2 = Tree_RemoveLeft_t779
+t0 = call t0()
+Tree_RemoveLeft_t777 = t0
+t5 = Tree_RemoveLeft_this
+t4 = Tree_RemoveLeft_Tree_c_node
+t3 = Tree_RemoveLeft_Tree_p_node
+t2 = Tree_RemoveLeft_Tree_ntb
+s9 = Tree_RemoveLeft_t752
+s8 = Tree_RemoveLeft_t745
+s7 = Tree_RemoveLeft_t755
+s6 = Tree_RemoveLeft_t759
+s5 = Tree_RemoveLeft_t760
+s4 = Tree_RemoveLeft_t765
+s3 = Tree_RemoveLeft_t769
+s2 = Tree_RemoveLeft_t770
+s11 = Tree_RemoveLeft_t747
+s1 = Tree_RemoveLeft_t763
+s10 = Tree_RemoveLeft_t751
+t0 = Tree_RemoveLeft_t777
+t4 = t0
+goto loop744
+end744:
+t0 = t3
+s3 = t0
+t0 = s3
+if0 t0 goto null787
+t0 = s3
+s10 = [t0 + 0]
+t0 = s10
+s7 = [t0 + 8]
+goto null_end787
+null787:
+error("null pointer")
+null_end787:
+t0 = t5
+s10 = [t0 + 24]
+t0 = s7
+Tree_RemoveLeft_Tree_p_node = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t792 = s7
+Tree_RemoveLeft_t787 = s3
+Tree_RemoveLeft_t793 = s10
+a2 = s3
+a3 = s10
+t5 = call t0()
+t3 = Tree_RemoveLeft_Tree_p_node
+t2 = Tree_RemoveLeft_Tree_ntb
+s7 = Tree_RemoveLeft_t792
+s3 = Tree_RemoveLeft_t787
+s10 = Tree_RemoveLeft_t793
+t0 = t5
+t2 = t0
+t0 = t3
+t5 = t0
+t0 = t5
+if0 t0 goto null797
+t0 = t5
+t3 = [t0 + 0]
+t0 = t3
+s3 = [t0 + 36]
+goto null_end797
+null797:
+error("null pointer")
+null_end797:
+t3 = 0
+t0 = s3
+Tree_RemoveLeft_t797 = t5
+Tree_RemoveLeft_t803 = t3
+Tree_RemoveLeft_Tree_ntb = t2
+Tree_RemoveLeft_t802 = s3
+a2 = t5
+a3 = t3
+s10 = call t0()
+t5 = Tree_RemoveLeft_t797
+t3 = Tree_RemoveLeft_t803
+t2 = Tree_RemoveLeft_Tree_ntb
+s3 = Tree_RemoveLeft_t802
+t0 = s10
+t2 = t0
+t2 = 1
+goto RemoveLeft_end
+RemoveLeft_end:
+t804 = t2
+return t804
+
+func Tree_Search()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+t0 = t4
+s9 = t0
+t0 = s9
+s11 = t0
+s9 = 1
+t0 = s9
+t3 = t0
+s9 = 0
+t0 = s9
+t2 = t0
+loop816:
+t0 = t3
+s9 = t0
+t0 = s9
+if0 t0 goto end816
+t0 = s11
+t4 = t0
+t0 = t4
+if0 t0 goto null821
+t0 = t4
+s8 = [t0 + 0]
+t0 = s8
+s7 = [t0 + 20]
+goto null_end821
+null821:
+error("null pointer")
+null_end821:
+t0 = s7
+Tree_Search_Tree_v_key = t5
+Tree_Search_t821 = t4
+Tree_Search_Tree_cont = t3
+Tree_Search_Tree_ifound = t2
+Tree_Search_t817 = s9
+Tree_Search_t825 = s8
+Tree_Search_t826 = s7
+Tree_Search_Tree_current_node = s11
+Tree_Search_Tree_key_aux = s10
+a2 = t4
+s6 = call t0()
+t5 = Tree_Search_Tree_v_key
+t4 = Tree_Search_t821
+t3 = Tree_Search_Tree_cont
+t2 = Tree_Search_Tree_ifound
+s9 = Tree_Search_t817
+s8 = Tree_Search_t825
+s7 = Tree_Search_t826
+s11 = Tree_Search_Tree_current_node
+s10 = Tree_Search_Tree_key_aux
+t0 = s6
+s10 = t0
+t0 = t5
+s5 = t0
+t0 = s10
+s4 = t0
+t0 = s5
+t1 = s4
+s3 = t0 < t1
+t0 = s3
+if0 t0 goto else827
+t0 = s11
+s2 = t0
+t0 = s2
+if0 t0 goto null836
+t0 = s2
+s1 = [t0 + 0]
+t0 = s1
+t0 = [t0 + 32]
+Tree_Search_t841 = t0
+goto null_end836
+null836:
+error("null pointer")
+null_end836:
+t0 = Tree_Search_t841
+Tree_Search_Tree_v_key = t5
+Tree_Search_t821 = t4
+Tree_Search_Tree_cont = t3
+Tree_Search_Tree_ifound = t2
+Tree_Search_t817 = s9
+Tree_Search_t825 = s8
+Tree_Search_t826 = s7
+Tree_Search_t819 = s6
+Tree_Search_t829 = s5
+Tree_Search_t831 = s4
+Tree_Search_t828 = s3
+Tree_Search_t836 = s2
+Tree_Search_Tree_current_node = s11
+Tree_Search_t840 = s1
+Tree_Search_Tree_key_aux = s10
+a2 = s2
+t0 = call t0()
+Tree_Search_t834 = t0
+t5 = Tree_Search_Tree_v_key
+t4 = Tree_Search_t821
+t3 = Tree_Search_Tree_cont
+t2 = Tree_Search_Tree_ifound
+s9 = Tree_Search_t817
+s8 = Tree_Search_t825
+s7 = Tree_Search_t826
+s6 = Tree_Search_t819
+s5 = Tree_Search_t829
+s4 = Tree_Search_t831
+s3 = Tree_Search_t828
+s2 = Tree_Search_t836
+s11 = Tree_Search_Tree_current_node
+s1 = Tree_Search_t840
+s10 = Tree_Search_Tree_key_aux
+t0 = Tree_Search_t834
+if0 t0 goto else833
+t0 = s11
+t0 = t0
+Tree_Search_t844 = t0
+t0 = Tree_Search_t844
+if0 t0 goto null844
+t0 = Tree_Search_t844
+t0 = [t0 + 0]
+Tree_Search_t848 = t0
+t0 = Tree_Search_t848
+t0 = [t0 + 16]
+Tree_Search_t849 = t0
+goto null_end844
+null844:
+error("null pointer")
+null_end844:
+t0 = Tree_Search_t849
+Tree_Search_Tree_v_key = t5
+Tree_Search_t821 = t4
+Tree_Search_Tree_cont = t3
+Tree_Search_Tree_ifound = t2
+Tree_Search_t817 = s9
+Tree_Search_t825 = s8
+Tree_Search_t826 = s7
+Tree_Search_t819 = s6
+Tree_Search_t829 = s5
+Tree_Search_t831 = s4
+Tree_Search_t828 = s3
+Tree_Search_t836 = s2
+Tree_Search_Tree_current_node = s11
+Tree_Search_t840 = s1
+Tree_Search_Tree_key_aux = s10
+a2 = Tree_Search_t844
+t0 = call t0()
+Tree_Search_t842 = t0
+t5 = Tree_Search_Tree_v_key
+t4 = Tree_Search_t821
+t3 = Tree_Search_Tree_cont
+t2 = Tree_Search_Tree_ifound
+s9 = Tree_Search_t817
+s8 = Tree_Search_t825
+s7 = Tree_Search_t826
+s6 = Tree_Search_t819
+s5 = Tree_Search_t829
+s4 = Tree_Search_t831
+s3 = Tree_Search_t828
+s2 = Tree_Search_t836
+s11 = Tree_Search_Tree_current_node
+s1 = Tree_Search_t840
+s10 = Tree_Search_Tree_key_aux
+t0 = Tree_Search_t842
+s11 = t0
+goto end833
+else833:
+t0 = 0
+Tree_Search_t850 = t0
+t0 = Tree_Search_t850
+t3 = t0
+end833:
+goto end827
+else827:
+t0 = s10
+t0 = t0
+Tree_Search_t853 = t0
+t0 = t5
+t0 = t0
+Tree_Search_t855 = t0
+t0 = Tree_Search_t853
+t1 = Tree_Search_t855
+t0 = t0 < t1
+Tree_Search_t852 = t0
+t0 = Tree_Search_t852
+if0 t0 goto else851
+t0 = s11
+t0 = t0
+Tree_Search_t860 = t0
+t0 = Tree_Search_t860
+if0 t0 goto null860
+t0 = Tree_Search_t860
+t0 = [t0 + 0]
+Tree_Search_t864 = t0
+t0 = Tree_Search_t864
+t0 = [t0 + 28]
+Tree_Search_t865 = t0
+goto null_end860
+null860:
+error("null pointer")
+null_end860:
+t0 = Tree_Search_t865
+Tree_Search_Tree_v_key = t5
+Tree_Search_t821 = t4
+Tree_Search_Tree_cont = t3
+Tree_Search_Tree_ifound = t2
+Tree_Search_t817 = s9
+Tree_Search_t825 = s8
+Tree_Search_t826 = s7
+Tree_Search_t819 = s6
+Tree_Search_t829 = s5
+Tree_Search_t831 = s4
+Tree_Search_t828 = s3
+Tree_Search_t836 = s2
+Tree_Search_Tree_current_node = s11
+Tree_Search_t840 = s1
+Tree_Search_Tree_key_aux = s10
+a2 = Tree_Search_t860
+t0 = call t0()
+Tree_Search_t858 = t0
+t5 = Tree_Search_Tree_v_key
+t4 = Tree_Search_t821
+t3 = Tree_Search_Tree_cont
+t2 = Tree_Search_Tree_ifound
+s9 = Tree_Search_t817
+s8 = Tree_Search_t825
+s7 = Tree_Search_t826
+s6 = Tree_Search_t819
+s5 = Tree_Search_t829
+s4 = Tree_Search_t831
+s3 = Tree_Search_t828
+s2 = Tree_Search_t836
+s11 = Tree_Search_Tree_current_node
+s1 = Tree_Search_t840
+s10 = Tree_Search_Tree_key_aux
+t0 = Tree_Search_t858
+if0 t0 goto else857
+t0 = s11
+t0 = t0
+Tree_Search_t868 = t0
+t0 = Tree_Search_t868
+if0 t0 goto null868
+t0 = Tree_Search_t868
+t0 = [t0 + 0]
+Tree_Search_t872 = t0
+t0 = Tree_Search_t872
+t0 = [t0 + 12]
+Tree_Search_t873 = t0
+goto null_end868
+null868:
+error("null pointer")
+null_end868:
+t0 = Tree_Search_t873
+Tree_Search_Tree_v_key = t5
+Tree_Search_t821 = t4
+Tree_Search_Tree_cont = t3
+Tree_Search_Tree_ifound = t2
+Tree_Search_t817 = s9
+Tree_Search_t825 = s8
+Tree_Search_t826 = s7
+Tree_Search_t819 = s6
+Tree_Search_t829 = s5
+Tree_Search_t831 = s4
+Tree_Search_t828 = s3
+Tree_Search_t836 = s2
+Tree_Search_Tree_current_node = s11
+Tree_Search_t840 = s1
+Tree_Search_Tree_key_aux = s10
+a2 = Tree_Search_t868
+t0 = call t0()
+Tree_Search_t866 = t0
+t5 = Tree_Search_Tree_v_key
+t4 = Tree_Search_t821
+t3 = Tree_Search_Tree_cont
+t2 = Tree_Search_Tree_ifound
+s9 = Tree_Search_t817
+s8 = Tree_Search_t825
+s7 = Tree_Search_t826
+s6 = Tree_Search_t819
+s5 = Tree_Search_t829
+s4 = Tree_Search_t831
+s3 = Tree_Search_t828
+s2 = Tree_Search_t836
+s11 = Tree_Search_Tree_current_node
+s1 = Tree_Search_t840
+s10 = Tree_Search_Tree_key_aux
+t0 = Tree_Search_t866
+s11 = t0
+goto end857
+else857:
+t0 = 0
+Tree_Search_t874 = t0
+t0 = Tree_Search_t874
+t3 = t0
+end857:
+goto end851
+else851:
+t0 = 1
+Tree_Search_t875 = t0
+t0 = Tree_Search_t875
+t2 = t0
+t0 = 0
+Tree_Search_t876 = t0
+t0 = Tree_Search_t876
+t3 = t0
+end851:
+end827:
+goto loop816
+end816:
+t0 = t2
+s10 = t0
+goto Search_end
+Search_end:
+t877 = s10
+return t877
+
+func Tree_Print()
+t5 = a2
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t2 = t0
+t0 = t5
+t2 = t0
+t0 = t2
+t4 = t0
+t0 = t5
+t2 = t0
+t0 = t2
+if0 t0 goto null886
+t0 = t2
+t5 = [t0 + 0]
+t0 = t5
+s11 = [t0 + 76]
+goto null_end886
+null886:
+error("null pointer")
+null_end886:
+t0 = t4
+t5 = t0
+t0 = s11
+Tree_Print_t891 = t5
+Tree_Print_Tree_ntb = t3
+Tree_Print_t886 = t2
+Tree_Print_t890 = s11
+a2 = t2
+a3 = t5
+t4 = call t0()
+t5 = Tree_Print_t891
+t3 = Tree_Print_Tree_ntb
+t2 = Tree_Print_t886
+s11 = Tree_Print_t890
+t0 = t4
+t3 = t0
+t4 = 1
+goto Print_end
+Print_end:
+t893 = t4
+return t893
+
+func Tree_RecPrint()
+t5 = a2
+t4 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t0 = t4
+t2 = t0
+t0 = t2
+if0 t0 goto null899
+t0 = t2
+s11 = [t0 + 0]
+t0 = s11
+s10 = [t0 + 32]
+goto null_end899
+null899:
+error("null pointer")
+null_end899:
+t0 = s10
+Tree_RecPrint_this = t5
+Tree_RecPrint_Tree_node = t4
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t899 = t2
+Tree_RecPrint_t904 = s10
+a2 = t2
+s11 = call t0()
+t5 = Tree_RecPrint_this
+t4 = Tree_RecPrint_Tree_node
+t3 = Tree_RecPrint_Tree_ntb
+t2 = Tree_RecPrint_t899
+s10 = Tree_RecPrint_t904
+t0 = s11
+if0 t0 goto else896
+t0 = t5
+s10 = t0
+t0 = s10
+if0 t0 goto null907
+t0 = s10
+s11 = [t0 + 0]
+t0 = s11
+t2 = [t0 + 76]
+goto null_end907
+null907:
+error("null pointer")
+null_end907:
+t0 = t4
+s11 = t0
+t0 = s11
+if0 t0 goto null914
+t0 = s11
+s9 = [t0 + 0]
+t0 = s9
+s8 = [t0 + 16]
+goto null_end914
+null914:
+error("null pointer")
+null_end914:
+t0 = s8
+Tree_RecPrint_this = t5
+Tree_RecPrint_Tree_node = t4
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t911 = t2
+Tree_RecPrint_t919 = s8
+Tree_RecPrint_t914 = s11
+Tree_RecPrint_t907 = s10
+a2 = s11
+s9 = call t0()
+t5 = Tree_RecPrint_this
+t4 = Tree_RecPrint_Tree_node
+t3 = Tree_RecPrint_Tree_ntb
+t2 = Tree_RecPrint_t911
+s8 = Tree_RecPrint_t919
+s11 = Tree_RecPrint_t914
+s10 = Tree_RecPrint_t907
+t0 = t2
+Tree_RecPrint_this = t5
+Tree_RecPrint_Tree_node = t4
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t911 = t2
+Tree_RecPrint_t912 = s9
+Tree_RecPrint_t907 = s10
+a2 = s10
+a3 = s9
+s11 = call t0()
+t5 = Tree_RecPrint_this
+t4 = Tree_RecPrint_Tree_node
+t3 = Tree_RecPrint_Tree_ntb
+t2 = Tree_RecPrint_t911
+s9 = Tree_RecPrint_t912
+s10 = Tree_RecPrint_t907
+t0 = s11
+t3 = t0
+goto end896
+else896:
+s11 = 1
+t0 = s11
+t3 = t0
+end896:
+t0 = t4
+s11 = t0
+t0 = s11
+if0 t0 goto null923
+t0 = s11
+s9 = [t0 + 0]
+t0 = s9
+s10 = [t0 + 20]
+goto null_end923
+null923:
+error("null pointer")
+null_end923:
+t0 = s10
+Tree_RecPrint_this = t5
+Tree_RecPrint_Tree_node = t4
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t923 = s11
+Tree_RecPrint_t928 = s10
+a2 = s11
+s9 = call t0()
+t5 = Tree_RecPrint_this
+t4 = Tree_RecPrint_Tree_node
+t3 = Tree_RecPrint_Tree_ntb
+s11 = Tree_RecPrint_t923
+s10 = Tree_RecPrint_t928
+t0 = s9
+print(t0)
+t0 = t4
+s10 = t0
+t0 = s10
+if0 t0 goto null932
+t0 = s10
+s9 = [t0 + 0]
+t0 = s9
+s11 = [t0 + 28]
+goto null_end932
+null932:
+error("null pointer")
+null_end932:
+t0 = s11
+Tree_RecPrint_this = t5
+Tree_RecPrint_Tree_node = t4
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t937 = s11
+Tree_RecPrint_t932 = s10
+a2 = s10
+s9 = call t0()
+t5 = Tree_RecPrint_this
+t4 = Tree_RecPrint_Tree_node
+t3 = Tree_RecPrint_Tree_ntb
+s11 = Tree_RecPrint_t937
+s10 = Tree_RecPrint_t932
+t0 = s9
+if0 t0 goto else929
+t0 = t5
+s10 = t0
+t0 = s10
+if0 t0 goto null940
+t0 = s10
+t5 = [t0 + 0]
+t0 = t5
+s9 = [t0 + 76]
+goto null_end940
+null940:
+error("null pointer")
+null_end940:
+t0 = t4
+t5 = t0
+t0 = t5
+if0 t0 goto null947
+t0 = t5
+t4 = [t0 + 0]
+t0 = t4
+s11 = [t0 + 12]
+goto null_end947
+null947:
+error("null pointer")
+null_end947:
+t0 = s11
+Tree_RecPrint_t947 = t5
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t944 = s9
+Tree_RecPrint_t952 = s11
+Tree_RecPrint_t940 = s10
+a2 = t5
+t4 = call t0()
+t5 = Tree_RecPrint_t947
+t3 = Tree_RecPrint_Tree_ntb
+s9 = Tree_RecPrint_t944
+s11 = Tree_RecPrint_t952
+s10 = Tree_RecPrint_t940
+t0 = s9
+Tree_RecPrint_t945 = t4
+Tree_RecPrint_Tree_ntb = t3
+Tree_RecPrint_t944 = s9
+Tree_RecPrint_t940 = s10
+a2 = s10
+a3 = t4
+s11 = call t0()
+t4 = Tree_RecPrint_t945
+t3 = Tree_RecPrint_Tree_ntb
+s9 = Tree_RecPrint_t944
+s10 = Tree_RecPrint_t940
+t0 = s11
+t3 = t0
+goto end929
+else929:
+s11 = 1
+t0 = s11
+t3 = t0
+end929:
+t3 = 1
+goto RecPrint_end
+RecPrint_end:
+t954 = t3
+return t954
+
+

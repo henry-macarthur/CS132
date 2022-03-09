@@ -1,0 +1,67 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :run
+func Main() 
+Main_i = 0
+t6 = Main_i
+Main_MAX = 0
+t8 = Main_MAX
+Main_j = 0
+t10 = Main_j
+t12 = 0
+Main_i = t12
+t13 = 10
+Main_MAX = t13
+loop14:
+t16 = Main_i
+t18 = Main_MAX
+t15 = t16 < t18
+if0 t15 goto end14
+t20 = 0
+Main_j = t20
+t23 = Main_i
+t25 = 5
+t22 = t23 < t25
+if0 t22 goto else21
+loop26:
+t28 = Main_j
+t30 = 3
+t27 = t28 < t30
+if0 t27 goto end26
+t31 = Main_i
+print(t31)
+t34 = Main_j
+t36 = 1
+t33 = t34 + t36
+Main_j = t33
+goto loop26
+end26:
+goto end21
+else21:
+t38 = Main_i
+t40 = Main_i
+t37 = t38 * t40
+print(t37)
+end21:
+t43 = Main_i
+t45 = 1
+t42 = t43 + t45
+Main_i = t42
+goto loop14
+end14:
+t46 = 1
+goto main_end
+main_end:
+return t46
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 687ms
+2 actionable tasks: 1 executed, 1 up-to-date

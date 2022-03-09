@@ -1,0 +1,201 @@
+func Main()
+t5 = 4
+t0 = t5
+t4 = alloc(t0)
+t5 = 8
+t0 = t5
+t3 = alloc(t0)
+t5 = @MT4_Start
+t2 = @MT4_Change
+t0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t3
+t1 = t2
+[t0 + 4] = t1
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null8
+t0 = t4
+t2 = [t0 + 0]
+t0 = t2
+t3 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t2 = 1
+t5 = 2
+s11 = 3
+s10 = 4
+s9 = 5
+s8 = 6
+t0 = t3
+Main_t20 = t5
+Main_t8 = t4
+Main_t18 = t3
+Main_t19 = t2
+Main_t23 = s9
+Main_t24 = s8
+Main_t21 = s11
+Main_t22 = s10
+a2 = t4
+a3 = t2
+a4 = t5
+a5 = s11
+a6 = s10
+a7 = s9
+Main_t24 = s8
+s7 = call t0(Main_t24)
+t5 = Main_t20
+t4 = Main_t8
+t3 = Main_t18
+t2 = Main_t19
+s9 = Main_t23
+s8 = Main_t24
+s11 = Main_t21
+s10 = Main_t22
+t0 = s7
+print(t0)
+s7 = 1
+goto main_end
+main_end:
+t25 = s7
+return t25
+
+func MT4_Start(MT4_Start_MT4_p6)
+t5 = a2
+s9 = a3
+s10 = a4
+s11 = a5
+t2 = a6
+t3 = a7
+t4 = MT4_Start_MT4_p6
+s8 = 0
+t0 = s8
+s7 = t0
+t0 = s9
+s7 = t0
+t0 = s7
+print(t0)
+t0 = s10
+s7 = t0
+t0 = s7
+print(t0)
+t0 = s11
+s7 = t0
+t0 = s7
+print(t0)
+t0 = t2
+s7 = t0
+t0 = s7
+print(t0)
+t0 = t3
+s7 = t0
+t0 = s7
+print(t0)
+t0 = t4
+s7 = t0
+t0 = s7
+print(t0)
+t0 = t5
+s7 = t0
+t0 = s7
+if0 t0 goto null42
+t0 = s7
+t5 = [t0 + 0]
+t0 = t5
+s6 = [t0 + 4]
+goto null_end42
+null42:
+error("null pointer")
+null_end42:
+t0 = t4
+t5 = t0
+t0 = t3
+t4 = t0
+t0 = t2
+t3 = t0
+t0 = s11
+t2 = t0
+t0 = s10
+s11 = t0
+t0 = s9
+s10 = t0
+t0 = s6
+MT4_Start_t47 = t5
+MT4_Start_t49 = t4
+MT4_Start_t51 = t3
+MT4_Start_t53 = t2
+MT4_Start_MT4_aux = s8
+MT4_Start_t42 = s7
+MT4_Start_t46 = s6
+MT4_Start_t55 = s11
+MT4_Start_t57 = s10
+a2 = s7
+a3 = t5
+a4 = t4
+a5 = t3
+a6 = t2
+a7 = s11
+MT4_Start_t57 = s10
+s9 = call t0(MT4_Start_t57)
+t5 = MT4_Start_t47
+t4 = MT4_Start_t49
+t3 = MT4_Start_t51
+t2 = MT4_Start_t53
+s8 = MT4_Start_MT4_aux
+s7 = MT4_Start_t42
+s6 = MT4_Start_t46
+s11 = MT4_Start_t55
+s10 = MT4_Start_t57
+t0 = s9
+s8 = t0
+t0 = s8
+s10 = t0
+goto Start_end
+Start_end:
+t59 = s10
+return t59
+
+func MT4_Change(MT4_Change_MT4_p6)
+t5 = a2
+s9 = a3
+s10 = a4
+s11 = a5
+t2 = a6
+t3 = a7
+t4 = MT4_Change_MT4_p6
+t0 = s9
+t5 = t0
+t0 = t5
+print(t0)
+t0 = s10
+t5 = t0
+t0 = t5
+print(t0)
+t0 = s11
+t5 = t0
+t0 = t5
+print(t0)
+t0 = t2
+t5 = t0
+t0 = t5
+print(t0)
+t0 = t3
+t5 = t0
+t0 = t5
+print(t0)
+t0 = t4
+t5 = t0
+t0 = t5
+print(t0)
+t4 = 0
+goto Change_end
+Change_end:
+t73 = t4
+return t73
+
+

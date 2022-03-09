@@ -1,0 +1,318 @@
+func Main()
+t5 = @f
+t0 = t5
+Main_v0 = t5
+t4 = call t0()
+t5 = Main_v0
+t0 = t4
+print(t0)
+v1 = t4
+return v1
+
+func f()
+t5 = 10
+t4 = 20
+t0 = t5
+t1 = t4
+t3 = t0 + t1
+t2 = 30
+t0 = t5
+t1 = t2
+s11 = t0 < t1
+t0 = s11
+if0 t0 goto L8
+t0 = t5
+t1 = t3
+s11 = t0 + t1
+t0 = t5
+t1 = t4
+s10 = t0 + t1
+goto L10
+L8:
+t0 = t4
+t1 = t3
+s9 = t0 + t1
+goto L14
+L10:
+s8 = 50
+t0 = s11
+t1 = s8
+t4 = t0 + t1
+t0 = t3
+t1 = s11
+s7 = t0 + t1
+t0 = s7
+t1 = s10
+s6 = t0 + t1
+t0 = s6
+print(t0)
+t0 = t3
+t1 = s10
+s9 = t0 + t1
+s5 = 40
+t0 = t4
+t1 = s5
+t4 = t0 + t1
+goto L8
+L14:
+s6 = 10
+t0 = t5
+t1 = s6
+s10 = t0 + t1
+L22:
+t4 = 55
+s5 = 20
+t0 = t5
+t1 = s5
+t3 = t0 - t1
+t0 = t4
+t1 = t3
+s8 = t0 < t1
+t0 = s8
+if0 t0 goto L20
+t0 = t3
+t1 = t4
+s11 = t0 + t1
+t0 = s11
+t1 = s6
+s9 = t0 - t1
+t0 = s11
+t1 = s9
+s4 = t0 + t1
+t0 = s4
+print(t0)
+t0 = t3
+t1 = s9
+t4 = t0 + t1
+s3 = 2
+t0 = s3
+t1 = t4
+s10 = t0 - t1
+goto L22
+L20:
+s8 = 7
+t0 = s10
+t1 = s8
+t4 = t0 + t1
+t0 = t3
+t1 = t4
+t3 = t0 + t1
+s3 = 2
+t0 = s3
+t1 = t3
+s9 = t0 * t1
+t0 = s10
+t1 = s6
+s8 = t0 + t1
+s6 = 55
+t0 = s6
+s4 = t0
+s6 = @func_g
+t0 = s8
+t1 = s4
+t2 = t0 < t1
+t0 = t2
+if0 t0 goto L27
+t0 = s8
+t1 = s5
+t2 = t0 - t1
+t0 = s6
+f_b = t4
+f_c = t3
+f_i = t2
+f_e = s9
+f_g = s8
+f_s = s7
+f_v2 = s6
+f_twenty = s5
+f_two = s3
+f_d = s11
+f_f = s10
+a2 = t4
+a3 = t3
+a4 = s11
+a5 = s9
+a6 = s10
+a7 = s8
+f_h = s4
+f_i = t2
+s4 = call t0(f_h f_i)
+t4 = f_b
+t3 = f_c
+t2 = f_i
+s9 = f_e
+s8 = f_g
+s7 = f_s
+s6 = f_v2
+s5 = f_twenty
+s3 = f_two
+s11 = f_d
+s10 = f_f
+t0 = t2
+t1 = s4
+s10 = t0 + t1
+goto L29
+L27:
+s4 = 1
+t0 = s8
+t1 = s4
+s9 = t0 + t1
+t0 = s3
+t1 = s9
+s10 = t0 * t1
+L29:
+s3 = 5
+t0 = s10
+t1 = s3
+s4 = t0 - t1
+t0 = s8
+t1 = s4
+s9 = t0 + t1
+t0 = s10
+t1 = s9
+s3 = t0 - t1
+t0 = s3
+t1 = s4
+s6 = t0 + t1
+t0 = s6
+print(t0)
+t0 = s10
+t1 = s9
+t2 = t0 + t1
+t0 = t3
+t1 = s11
+t3 = t0 + t1
+t0 = s11
+t1 = s5
+s10 = t0 + t1
+t0 = t2
+t1 = s10
+s5 = t0 + t1
+t0 = s11
+t1 = s5
+s7 = t0 < t1
+L3:
+t0 = s7
+if0 t0 goto L12
+t0 = s11
+t1 = s10
+s3 = t0 + t1
+s6 = 30
+t0 = s3
+t1 = s6
+s4 = t0 + t1
+t0 = t2
+t1 = s4
+s4 = t0 - t1
+t0 = s3
+t1 = s4
+s5 = t0 - t1
+t4 = 0
+t0 = s5
+t1 = t4
+s7 = t0 * t1
+t0 = t3
+t1 = s8
+s10 = t0 + t1
+t0 = s3
+t1 = s5
+s5 = t0 + t1
+t0 = s10
+t1 = s5
+t5 = t0 - t1
+t0 = t5
+print(t0)
+goto L3
+L12:
+t0 = s9
+t1 = s5
+s8 = t0 - t1
+t0 = s3
+t1 = s8
+s8 = t0 + t1
+g = s8
+return g
+
+func func_g(func_g_x7 func_g_x8)
+s8 = a2
+s9 = a3
+s10 = a4
+s11 = a5
+t2 = a6
+t3 = a7
+t4 = func_g_x7
+t5 = func_g_x8
+t0 = s8
+t1 = s9
+s7 = t0 + t1
+t0 = s10
+t1 = s11
+s6 = t0 + t1
+t0 = t2
+t1 = t3
+s10 = t0 + t1
+t0 = t4
+t1 = t5
+t3 = t0 + t1
+s11 = 10
+t0 = s11
+s5 = t0
+t0 = t5
+t1 = s8
+s4 = t0 < t1
+t0 = s4
+if0 t0 goto L42
+s8 = @func_g
+t0 = s8
+func_g_x7 = t4
+func_g_d = t3
+func_g_x5 = t2
+func_g_x2 = s9
+func_g_v4 = s8
+func_g_b = s6
+func_g_e = s5
+func_g_v3 = s4
+func_g_ten = s11
+func_g_c = s10
+a2 = s4
+a3 = t4
+a4 = s4
+a5 = t2
+a6 = s11
+a7 = s4
+func_g_x2 = s9
+func_g_ten = s11
+s7 = call t0(func_g_x2 func_g_ten)
+t4 = func_g_x7
+t3 = func_g_d
+t2 = func_g_x5
+s9 = func_g_x2
+s8 = func_g_v4
+s6 = func_g_b
+s5 = func_g_e
+s4 = func_g_v3
+s11 = func_g_ten
+s10 = func_g_c
+L42:
+t0 = t3
+t1 = s7
+s5 = t0 - t1
+t0 = s6
+t1 = s5
+s7 = t0 * t1
+t0 = s10
+t1 = s7
+s6 = t0 - t1
+t0 = t3
+t1 = s5
+s10 = t0 + t1
+t0 = s5
+t1 = s7
+t3 = t0 + t1
+t0 = s6
+t1 = s10
+s7 = t0 + t1
+j = s7
+return j
+
+

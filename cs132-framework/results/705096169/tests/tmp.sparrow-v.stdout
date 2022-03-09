@@ -1,0 +1,4041 @@
+.equiv @sbrk, 9
+.equiv @print_string, 4
+.equiv @print_char, 11
+.equiv @print_int, 1
+.equiv @exit, 10
+.equiv @exit2, 17
+
+.text
+jal Main
+li a0, @exit
+ecall
+
+.globl Main
+Main:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+li t5, 4
+mv t0, t5
+mv a0, t0
+jal alloc
+mv t5, a0
+li t4, 4
+mv t0, t4
+mv a0, t0
+jal alloc
+mv t4, a0
+la t3, BT_Start
+mv t0, t4
+mv t1, t3
+sw t1, 0(t0)
+mv t0, t5
+mv t1, t4
+sw t1, 0(t0)
+mv t0, t5
+beqz t0, Main_null8_1_0
+jal Main_null8_2_0
+Main_null8_1_0:
+jal Main_null8
+Main_null8_2_0:
+mv t0, t5
+lw t4, 0(t0)
+mv t0, t4
+lw t4, 0(t0)
+jal Main_null_end8
+Main_null8:
+la a0, msg_1
+j error
+Main_null_end8:
+mv t0, t4
+mv a2, t5
+jalr t0
+mv t4, a0
+mv t0, t4
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+li t4, 1
+jal Main_main_end
+Main_main_end:
+sw t4, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl BT_Start
+BT_Start:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 188
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+li t4, 0
+mv t0, t4
+mv t5, t0
+li t3, 0
+mv t0, t3
+mv t5, t0
+li t2, 0
+mv t0, t2
+mv t2, t0
+li t5, 28
+mv t0, t5
+mv a0, t0
+jal alloc
+mv t2, a0
+li t5, 80
+mv t0, t5
+mv a0, t0
+jal alloc
+mv t5, a0
+la s11, Tree_Init
+la s10, Tree_SetRight
+la s9, Tree_SetLeft
+la s8, Tree_GetRight
+la s7, Tree_GetLeft
+la s6, Tree_GetKey
+la s5, Tree_SetKey
+la s4, Tree_GetHas_Right
+la s3, Tree_GetHas_Left
+la s2, Tree_SetHas_Left
+la s1, Tree_SetHas_Right
+sw t4, -180(fp)
+la t4, Tree_Compare
+sw t3, -184(fp)
+la t3, Tree_Insert
+sw t2, -20(fp)
+la t2, Tree_Delete
+sw t5, -24(fp)
+la t5, Tree_Remove
+la t0, Tree_RemoveRight
+sw t0, -28(fp)
+la t0, Tree_RemoveLeft
+sw t0, -32(fp)
+la t0, Tree_Search
+sw t0, -36(fp)
+la t0, Tree_Print
+sw t0, -40(fp)
+la t0, Tree_RecPrint
+sw t0, -44(fp)
+lw t0, -24(fp)
+mv t1, s11
+sw t1, 0(t0)
+lw t0, -24(fp)
+mv t1, s10
+sw t1, -4(t0)
+lw t0, -24(fp)
+mv t1, s9
+sw t1, -8(t0)
+lw t0, -24(fp)
+mv t1, s8
+sw t1, -12(t0)
+lw t0, -24(fp)
+mv t1, s7
+sw t1, -16(t0)
+lw t0, -24(fp)
+mv t1, s6
+sw t1, -20(t0)
+lw t0, -24(fp)
+mv t1, s5
+sw t1, -24(t0)
+lw t0, -24(fp)
+mv t1, s4
+sw t1, -28(t0)
+lw t0, -24(fp)
+mv t1, s3
+sw t1, -32(t0)
+lw t0, -24(fp)
+mv t1, s2
+sw t1, -36(t0)
+lw t0, -24(fp)
+mv t1, s1
+sw t1, -40(t0)
+lw t0, -24(fp)
+mv t1, t4
+sw t1, -44(t0)
+lw t0, -24(fp)
+mv t1, t3
+sw t1, -48(t0)
+lw t0, -24(fp)
+mv t1, t2
+sw t1, -52(t0)
+lw t0, -24(fp)
+mv t1, t5
+sw t1, -56(t0)
+lw t0, -24(fp)
+lw t1, -28(fp)
+sw t1, -60(t0)
+lw t0, -24(fp)
+lw t1, -32(fp)
+sw t1, -64(t0)
+lw t0, -24(fp)
+lw t1, -36(fp)
+sw t1, -68(t0)
+lw t0, -24(fp)
+lw t1, -40(fp)
+sw t1, -72(t0)
+lw t0, -24(fp)
+lw t1, -44(fp)
+sw t1, -76(t0)
+lw t0, -20(fp)
+lw t1, -24(fp)
+sw t1, 0(t0)
+lw t0, -20(fp)
+mv t5, t0
+mv t0, t5
+mv t2, t0
+mv t0, t2
+beqz t0, BT_Start_null52_1_1
+jal BT_Start_null52_2_1
+BT_Start_null52_1_1:
+jal BT_Start_null52
+BT_Start_null52_2_1:
+mv t0, t2
+lw t3, 0(t0)
+mv t0, t3
+lw t3, 0(t0)
+jal BT_Start_null_end52
+BT_Start_null52:
+la a0, msg_1
+j error
+BT_Start_null_end52:
+li t4, 16
+mv t0, t3
+sw t5, -180(fp)
+mv a2, t2
+mv a3, t4
+jalr t0
+mv t2, a0
+lw t5, -180(fp)
+mv t0, t2
+mv t2, t0
+mv t0, t5
+mv t3, t0
+mv t0, t3
+beqz t0, BT_Start_null61_1_2
+jal BT_Start_null61_2_2
+BT_Start_null61_1_2:
+jal BT_Start_null61
+BT_Start_null61_2_2:
+mv t0, t3
+lw t4, 0(t0)
+mv t0, t4
+lw t4, -72(t0)
+jal BT_Start_null_end61
+BT_Start_null61:
+la a0, msg_1
+j error
+BT_Start_null_end61:
+mv t0, t4
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, t3
+jalr t0
+mv t3, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, t3
+mv t2, t0
+li t3, 100000000
+mv t0, t3
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t5
+mv t3, t0
+mv t0, t3
+beqz t0, BT_Start_null70_1_3
+jal BT_Start_null70_2_3
+BT_Start_null70_1_3:
+jal BT_Start_null70
+BT_Start_null70_2_3:
+mv t0, t3
+lw t4, 0(t0)
+mv t0, t4
+lw t4, -48(t0)
+jal BT_Start_null_end70
+BT_Start_null70:
+la a0, msg_1
+j error
+BT_Start_null_end70:
+li s1, 8
+mv t0, t4
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, t3
+mv a3, s1
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null79_1_4
+jal BT_Start_null79_2_4
+BT_Start_null79_1_4:
+jal BT_Start_null79
+BT_Start_null79_2_4:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -72(t0)
+jal BT_Start_null_end79
+BT_Start_null79:
+la a0, msg_1
+j error
+BT_Start_null_end79:
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null87_1_5
+jal BT_Start_null87_2_5
+BT_Start_null87_1_5:
+jal BT_Start_null87
+BT_Start_null87_2_5:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -48(t0)
+jal BT_Start_null_end87
+BT_Start_null87:
+la a0, msg_1
+j error
+BT_Start_null_end87:
+li t4, 24
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null96_1_6
+jal BT_Start_null96_2_6
+BT_Start_null96_1_6:
+jal BT_Start_null96
+BT_Start_null96_2_6:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -48(t0)
+jal BT_Start_null_end96
+BT_Start_null96:
+la a0, msg_1
+j error
+BT_Start_null_end96:
+li t4, 4
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null105_1_7
+jal BT_Start_null105_2_7
+BT_Start_null105_1_7:
+jal BT_Start_null105
+BT_Start_null105_2_7:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -48(t0)
+jal BT_Start_null_end105
+BT_Start_null105:
+la a0, msg_1
+j error
+BT_Start_null_end105:
+li t4, 12
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null114_1_8
+jal BT_Start_null114_2_8
+BT_Start_null114_1_8:
+jal BT_Start_null114
+BT_Start_null114_2_8:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -48(t0)
+jal BT_Start_null_end114
+BT_Start_null114:
+la a0, msg_1
+j error
+BT_Start_null_end114:
+li t4, 20
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null123_1_9
+jal BT_Start_null123_2_9
+BT_Start_null123_1_9:
+jal BT_Start_null123
+BT_Start_null123_2_9:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -48(t0)
+jal BT_Start_null_end123
+BT_Start_null123:
+la a0, msg_1
+j error
+BT_Start_null_end123:
+li t4, 28
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null132_1_10
+jal BT_Start_null132_2_10
+BT_Start_null132_1_10:
+jal BT_Start_null132
+BT_Start_null132_2_10:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -48(t0)
+jal BT_Start_null_end132
+BT_Start_null132:
+la a0, msg_1
+j error
+BT_Start_null_end132:
+li t4, 14
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null141_1_11
+jal BT_Start_null141_2_11
+BT_Start_null141_1_11:
+jal BT_Start_null141
+BT_Start_null141_2_11:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -72(t0)
+jal BT_Start_null_end141
+BT_Start_null141:
+la a0, msg_1
+j error
+BT_Start_null_end141:
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null149_1_12
+jal BT_Start_null149_2_12
+BT_Start_null149_1_12:
+jal BT_Start_null149
+BT_Start_null149_2_12:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -68(t0)
+jal BT_Start_null_end149
+BT_Start_null149:
+la a0, msg_1
+j error
+BT_Start_null_end149:
+li t4, 24
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null158_1_13
+jal BT_Start_null158_2_13
+BT_Start_null158_1_13:
+jal BT_Start_null158
+BT_Start_null158_2_13:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -68(t0)
+jal BT_Start_null_end158
+BT_Start_null158:
+la a0, msg_1
+j error
+BT_Start_null_end158:
+li t4, 12
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null167_1_14
+jal BT_Start_null167_2_14
+BT_Start_null167_1_14:
+jal BT_Start_null167
+BT_Start_null167_2_14:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -68(t0)
+jal BT_Start_null_end167
+BT_Start_null167:
+la a0, msg_1
+j error
+BT_Start_null_end167:
+li t4, 16
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null176_1_15
+jal BT_Start_null176_2_15
+BT_Start_null176_1_15:
+jal BT_Start_null176
+BT_Start_null176_2_15:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -68(t0)
+jal BT_Start_null_end176
+BT_Start_null176:
+la a0, msg_1
+j error
+BT_Start_null_end176:
+li t4, 50
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null185_1_16
+jal BT_Start_null185_2_16
+BT_Start_null185_1_16:
+jal BT_Start_null185
+BT_Start_null185_2_16:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -68(t0)
+jal BT_Start_null_end185
+BT_Start_null185:
+la a0, msg_1
+j error
+BT_Start_null_end185:
+li t4, 12
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null194_1_17
+jal BT_Start_null194_2_17
+BT_Start_null194_1_17:
+jal BT_Start_null194
+BT_Start_null194_2_17:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -52(t0)
+jal BT_Start_null_end194
+BT_Start_null194:
+la a0, msg_1
+j error
+BT_Start_null_end194:
+li t4, 12
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv t2, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null203_1_18
+jal BT_Start_null203_2_18
+BT_Start_null203_1_18:
+jal BT_Start_null203
+BT_Start_null203_2_18:
+mv t0, s1
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -72(t0)
+jal BT_Start_null_end203
+BT_Start_null203:
+la a0, msg_1
+j error
+BT_Start_null_end203:
+mv t0, t3
+sw t5, -180(fp)
+sw t2, -184(fp)
+mv a2, s1
+jalr t0
+mv s1, a0
+lw t5, -180(fp)
+lw t2, -184(fp)
+mv t0, s1
+mv s1, t0
+mv t0, t5
+mv s1, t0
+mv t0, s1
+beqz t0, BT_Start_null211_1_19
+jal BT_Start_null211_2_19
+BT_Start_null211_1_19:
+jal BT_Start_null211
+BT_Start_null211_2_19:
+mv t0, s1
+lw t5, 0(t0)
+mv t0, t5
+lw t5, -68(t0)
+jal BT_Start_null_end211
+BT_Start_null211:
+la a0, msg_1
+j error
+BT_Start_null_end211:
+li t2, 12
+mv t0, t5
+mv a2, s1
+mv a3, t2
+jalr t0
+mv s1, a0
+mv t0, s1
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+li s1, 0
+jal BT_Start_Start_end
+BT_Start_Start_end:
+sw s1, -188(fp)
+lw a0, -188(fp)
+addi sp, sp, 188
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Init
+Tree_Init:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t0, t4
+mv t4, t0
+mv t0, t4
+mv t3, t0
+mv t0, t5
+mv t1, t4
+sw t1, -12(t0)
+li t3, 0
+mv t0, t3
+mv t4, t0
+mv t0, t5
+mv t1, t3
+sw t1, -16(t0)
+li t3, 0
+mv t0, t3
+mv t4, t0
+mv t0, t5
+mv t1, t3
+sw t1, -20(t0)
+li t3, 1
+jal Tree_Init_Init_end
+Tree_Init_Init_end:
+sw t3, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_SetRight
+Tree_SetRight:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t0, t4
+mv t4, t0
+mv t0, t4
+mv t3, t0
+mv t0, t5
+mv t1, t4
+sw t1, -8(t0)
+li t3, 1
+jal Tree_SetRight_SetRight_end
+Tree_SetRight_SetRight_end:
+sw t3, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_SetLeft
+Tree_SetLeft:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t0, t4
+mv t4, t0
+mv t0, t4
+mv t3, t0
+mv t0, t5
+mv t1, t4
+sw t1, -4(t0)
+li t3, 1
+jal Tree_SetLeft_SetLeft_end
+Tree_SetLeft_SetLeft_end:
+sw t3, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_GetRight
+Tree_GetRight:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t0, t5
+lw t5, -8(t0)
+jal Tree_GetRight_GetRight_end
+Tree_GetRight_GetRight_end:
+sw t5, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_GetLeft
+Tree_GetLeft:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t0, t5
+lw t5, -4(t0)
+jal Tree_GetLeft_GetLeft_end
+Tree_GetLeft_GetLeft_end:
+sw t5, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_GetKey
+Tree_GetKey:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t0, t5
+lw t5, -12(t0)
+jal Tree_GetKey_GetKey_end
+Tree_GetKey_GetKey_end:
+sw t5, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_SetKey
+Tree_SetKey:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t0, t4
+mv t4, t0
+mv t0, t4
+mv t3, t0
+mv t0, t5
+mv t1, t4
+sw t1, -12(t0)
+li t3, 1
+jal Tree_SetKey_SetKey_end
+Tree_SetKey_SetKey_end:
+sw t3, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_GetHas_Right
+Tree_GetHas_Right:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t0, t5
+lw t5, -20(t0)
+jal Tree_GetHas_Right_GetHas_Right_end
+Tree_GetHas_Right_GetHas_Right_end:
+sw t5, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_GetHas_Left
+Tree_GetHas_Left:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t0, t5
+lw t5, -16(t0)
+jal Tree_GetHas_Left_GetHas_Left_end
+Tree_GetHas_Left_GetHas_Left_end:
+sw t5, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_SetHas_Left
+Tree_SetHas_Left:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t0, t4
+mv t4, t0
+mv t0, t4
+mv t3, t0
+mv t0, t5
+mv t1, t4
+sw t1, -16(t0)
+li t3, 1
+jal Tree_SetHas_Left_SetHas_Left_end
+Tree_SetHas_Left_SetHas_Left_end:
+sw t3, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_SetHas_Right
+Tree_SetHas_Right:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t0, t4
+mv t4, t0
+mv t0, t4
+mv t3, t0
+mv t0, t5
+mv t1, t4
+sw t1, -20(t0)
+li t3, 1
+jal Tree_SetHas_Right_SetHas_Right_end
+Tree_SetHas_Right_SetHas_Right_end:
+sw t3, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Compare
+Tree_Compare:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 12
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t3, a4
+li t2, 0
+mv t0, t2
+mv t5, t0
+li s11, 0
+mv t0, s11
+mv t5, t0
+li s10, 0
+mv t0, s10
+mv t2, t0
+mv t0, t3
+mv s10, t0
+li t5, 1
+mv t0, s10
+mv t1, t5
+add s10, t0, t1
+mv t0, s10
+mv s11, t0
+mv t0, t4
+mv s10, t0
+mv t0, t3
+mv t3, t0
+mv t0, s10
+mv t1, t3
+slt s10, t0, t1
+mv t0, s10
+beqz t0, Tree_Compare_else270_1_20
+jal Tree_Compare_else270_2_20
+Tree_Compare_else270_1_20:
+jal Tree_Compare_else270
+Tree_Compare_else270_2_20:
+li s10, 0
+mv t0, s10
+mv t2, t0
+jal Tree_Compare_end270
+Tree_Compare_else270:
+mv t0, t4
+mv t4, t0
+mv t0, s11
+mv s11, t0
+mv t0, t4
+mv t1, s11
+slt s11, t0, t1
+mv t0, s11
+beqz t0, Tree_Compare_else278_1_21
+jal Tree_Compare_else278_2_21
+Tree_Compare_else278_1_21:
+jal Tree_Compare_else278
+Tree_Compare_else278_2_21:
+li s11, 0
+jal Tree_Compare_end278
+Tree_Compare_else278:
+li s11, 1
+Tree_Compare_end278:
+mv t0, s11
+beqz t0, Tree_Compare_else277_1_22
+jal Tree_Compare_else277_2_22
+Tree_Compare_else277_1_22:
+jal Tree_Compare_else277
+Tree_Compare_else277_2_22:
+li s11, 0
+mv t0, s11
+mv t2, t0
+jal Tree_Compare_end277
+Tree_Compare_else277:
+li s11, 1
+mv t0, s11
+mv t2, t0
+Tree_Compare_end277:
+Tree_Compare_end270:
+mv t0, t2
+mv t2, t0
+jal Tree_Compare_Compare_end
+Tree_Compare_Compare_end:
+sw t2, -12(fp)
+lw a0, -12(fp)
+addi sp, sp, 12
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Insert
+Tree_Insert:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 376
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+li t3, 0
+mv t0, t3
+mv t2, t0
+li s11, 0
+mv t0, s11
+mv t2, t0
+li s10, 0
+mv t0, s10
+mv t2, t0
+li s9, 0
+mv t0, s9
+mv t2, t0
+li s8, 0
+mv t0, s8
+mv t2, t0
+li s7, 28
+mv t0, s7
+mv a0, t0
+jal alloc
+mv s7, a0
+li t2, 80
+mv t0, t2
+mv a0, t0
+jal alloc
+mv t2, a0
+la s6, Tree_Init
+la s5, Tree_SetRight
+la s4, Tree_SetLeft
+la s3, Tree_GetRight
+la s2, Tree_GetLeft
+la s1, Tree_GetKey
+sw t4, -12(fp)
+la t4, Tree_SetKey
+sw t3, -76(fp)
+la t3, Tree_GetHas_Right
+sw s9, -368(fp)
+la s9, Tree_GetHas_Left
+sw s8, -268(fp)
+la s8, Tree_SetHas_Left
+sw s11, -372(fp)
+la s11, Tree_SetHas_Right
+sw s10, -272(fp)
+la s10, Tree_Compare
+sw t5, -36(fp)
+la t5, Tree_Insert
+sw s7, -40(fp)
+la s7, Tree_Delete
+sw t2, -44(fp)
+la t2, Tree_Remove
+la t0, Tree_RemoveRight
+sw t0, -48(fp)
+la t0, Tree_RemoveLeft
+sw t0, -52(fp)
+la t0, Tree_Search
+sw t0, -56(fp)
+la t0, Tree_Print
+sw t0, -60(fp)
+la t0, Tree_RecPrint
+sw t0, -64(fp)
+lw t0, -44(fp)
+mv t1, s6
+sw t1, 0(t0)
+lw t0, -44(fp)
+mv t1, s5
+sw t1, -4(t0)
+lw t0, -44(fp)
+mv t1, s4
+sw t1, -8(t0)
+lw t0, -44(fp)
+mv t1, s3
+sw t1, -12(t0)
+lw t0, -44(fp)
+mv t1, s2
+sw t1, -16(t0)
+lw t0, -44(fp)
+mv t1, s1
+sw t1, -20(t0)
+lw t0, -44(fp)
+mv t1, t4
+sw t1, -24(t0)
+lw t0, -44(fp)
+mv t1, t3
+sw t1, -28(t0)
+lw t0, -44(fp)
+mv t1, s9
+sw t1, -32(t0)
+lw t0, -44(fp)
+mv t1, s8
+sw t1, -36(t0)
+lw t0, -44(fp)
+mv t1, s11
+sw t1, -40(t0)
+lw t0, -44(fp)
+mv t1, s10
+sw t1, -44(t0)
+lw t0, -44(fp)
+mv t1, t5
+sw t1, -48(t0)
+lw t0, -44(fp)
+mv t1, s7
+sw t1, -52(t0)
+lw t0, -44(fp)
+mv t1, t2
+sw t1, -56(t0)
+lw t0, -44(fp)
+lw t1, -48(fp)
+sw t1, -60(t0)
+lw t0, -44(fp)
+lw t1, -52(fp)
+sw t1, -64(t0)
+lw t0, -44(fp)
+lw t1, -56(fp)
+sw t1, -68(t0)
+lw t0, -44(fp)
+lw t1, -60(fp)
+sw t1, -72(t0)
+lw t0, -44(fp)
+lw t1, -64(fp)
+sw t1, -76(t0)
+lw t0, -40(fp)
+lw t1, -44(fp)
+sw t1, 0(t0)
+lw t0, -40(fp)
+mv t2, t0
+mv t0, t2
+mv s7, t0
+mv t0, s7
+beqz t0, Tree_Insert_null325_1_23
+jal Tree_Insert_null325_2_23
+Tree_Insert_null325_1_23:
+jal Tree_Insert_null325
+Tree_Insert_null325_2_23:
+mv t0, s7
+lw t5, 0(t0)
+mv t0, t5
+lw t5, 0(t0)
+jal Tree_Insert_null_end325
+Tree_Insert_null325:
+la a0, msg_1
+j error
+Tree_Insert_null_end325:
+lw t0, -12(fp)
+mv s10, t0
+mv t0, t5
+sw t2, -76(fp)
+mv a2, s7
+mv a3, s10
+jalr t0
+mv s10, a0
+lw t2, -76(fp)
+mv t0, s10
+mv s10, t0
+lw t0, -36(fp)
+mv s7, t0
+mv t0, s7
+mv s7, t0
+li t5, 1
+mv t0, t5
+mv t5, t0
+sw t5, -272(fp)
+sw t2, -76(fp)
+sw s7, -268(fp)
+sw s10, -372(fp)
+Tree_Insert_loop335:
+lw t0, -272(fp)
+mv t0, t0
+sw t0, -88(fp)
+lw t0, -88(fp)
+beqz t0, Tree_Insert_end335_1_24
+jal Tree_Insert_end335_2_24
+Tree_Insert_end335_1_24:
+jal Tree_Insert_end335
+Tree_Insert_end335_2_24:
+lw t0, -268(fp)
+mv t0, t0
+sw t0, -92(fp)
+lw t0, -92(fp)
+beqz t0, Tree_Insert_null340_1_25
+jal Tree_Insert_null340_2_25
+Tree_Insert_null340_1_25:
+jal Tree_Insert_null340
+Tree_Insert_null340_2_25:
+lw t0, -92(fp)
+lw t0, 0(t0)
+sw t0, -96(fp)
+lw t0, -96(fp)
+lw t0, -20(t0)
+sw t0, -100(fp)
+jal Tree_Insert_null_end340
+Tree_Insert_null340:
+la a0, msg_1
+j error
+Tree_Insert_null_end340:
+lw t0, -100(fp)
+lw a2, -92(fp)
+jalr t0
+mv t0, a0
+sw t0, -104(fp)
+lw t0, -104(fp)
+mv s10, t0
+lw t0, -12(fp)
+mv t0, t0
+sw t0, -108(fp)
+mv t0, s10
+mv t0, t0
+sw t0, -112(fp)
+lw t0, -108(fp)
+lw t1, -112(fp)
+slt t0, t0, t1
+sw t0, -116(fp)
+lw t0, -116(fp)
+beqz t0, Tree_Insert_else346_1_26
+jal Tree_Insert_else346_2_26
+Tree_Insert_else346_1_26:
+jal Tree_Insert_else346
+Tree_Insert_else346_2_26:
+lw t0, -268(fp)
+mv t0, t0
+sw t0, -120(fp)
+lw t0, -120(fp)
+beqz t0, Tree_Insert_null355_1_27
+jal Tree_Insert_null355_2_27
+Tree_Insert_null355_1_27:
+jal Tree_Insert_null355
+Tree_Insert_null355_2_27:
+lw t0, -120(fp)
+lw t0, 0(t0)
+sw t0, -124(fp)
+lw t0, -124(fp)
+lw t0, -32(t0)
+sw t0, -128(fp)
+jal Tree_Insert_null_end355
+Tree_Insert_null355:
+la a0, msg_1
+j error
+Tree_Insert_null_end355:
+lw t0, -128(fp)
+sw s10, -368(fp)
+lw a2, -120(fp)
+jalr t0
+mv t0, a0
+sw t0, -136(fp)
+lw s10, -368(fp)
+lw t0, -136(fp)
+beqz t0, Tree_Insert_else352_1_28
+jal Tree_Insert_else352_2_28
+Tree_Insert_else352_1_28:
+jal Tree_Insert_else352
+Tree_Insert_else352_2_28:
+lw t0, -268(fp)
+mv t0, t0
+sw t0, -140(fp)
+lw t0, -140(fp)
+beqz t0, Tree_Insert_null363_1_29
+jal Tree_Insert_null363_2_29
+Tree_Insert_null363_1_29:
+jal Tree_Insert_null363
+Tree_Insert_null363_2_29:
+lw t0, -140(fp)
+lw t0, 0(t0)
+sw t0, -144(fp)
+lw t0, -144(fp)
+lw t0, -16(t0)
+sw t0, -148(fp)
+jal Tree_Insert_null_end363
+Tree_Insert_null363:
+la a0, msg_1
+j error
+Tree_Insert_null_end363:
+lw t0, -148(fp)
+sw s10, -368(fp)
+lw a2, -140(fp)
+jalr t0
+mv t0, a0
+sw t0, -156(fp)
+lw s10, -368(fp)
+lw t0, -156(fp)
+mv t0, t0
+sw t0, -268(fp)
+jal Tree_Insert_end352
+Tree_Insert_else352:
+li t0, 0
+sw t0, -164(fp)
+lw t0, -164(fp)
+mv t0, t0
+sw t0, -272(fp)
+lw t0, -268(fp)
+mv t0, t0
+sw t0, -172(fp)
+lw t0, -172(fp)
+beqz t0, Tree_Insert_null372_1_30
+jal Tree_Insert_null372_2_30
+Tree_Insert_null372_1_30:
+jal Tree_Insert_null372
+Tree_Insert_null372_2_30:
+lw t0, -172(fp)
+lw t0, 0(t0)
+sw t0, -176(fp)
+lw t0, -176(fp)
+lw t0, -36(t0)
+sw t0, -180(fp)
+jal Tree_Insert_null_end372
+Tree_Insert_null372:
+la a0, msg_1
+j error
+Tree_Insert_null_end372:
+li t0, 1
+sw t0, -184(fp)
+lw t0, -180(fp)
+sw s10, -368(fp)
+lw a2, -172(fp)
+lw a3, -184(fp)
+jalr t0
+mv t0, a0
+sw t0, -192(fp)
+lw s10, -368(fp)
+lw t0, -192(fp)
+mv t0, t0
+sw t0, -372(fp)
+lw t0, -268(fp)
+mv t0, t0
+sw t0, -200(fp)
+lw t0, -200(fp)
+beqz t0, Tree_Insert_null381_1_31
+jal Tree_Insert_null381_2_31
+Tree_Insert_null381_1_31:
+jal Tree_Insert_null381
+Tree_Insert_null381_2_31:
+lw t0, -200(fp)
+lw t0, 0(t0)
+sw t0, -204(fp)
+lw t0, -204(fp)
+lw t0, -8(t0)
+sw t0, -208(fp)
+jal Tree_Insert_null_end381
+Tree_Insert_null381:
+la a0, msg_1
+j error
+Tree_Insert_null_end381:
+lw t0, -76(fp)
+mv t0, t0
+sw t0, -212(fp)
+lw t0, -208(fp)
+sw s10, -368(fp)
+lw a2, -200(fp)
+lw a3, -212(fp)
+jalr t0
+mv t0, a0
+sw t0, -220(fp)
+lw s10, -368(fp)
+lw t0, -220(fp)
+mv t0, t0
+sw t0, -372(fp)
+Tree_Insert_end352:
+jal Tree_Insert_end346
+Tree_Insert_else346:
+lw t0, -268(fp)
+mv t0, t0
+sw t0, -228(fp)
+lw t0, -228(fp)
+beqz t0, Tree_Insert_null392_1_32
+jal Tree_Insert_null392_2_32
+Tree_Insert_null392_1_32:
+jal Tree_Insert_null392
+Tree_Insert_null392_2_32:
+lw t0, -228(fp)
+lw t0, 0(t0)
+sw t0, -232(fp)
+lw t0, -232(fp)
+lw t0, -28(t0)
+sw t0, -236(fp)
+jal Tree_Insert_null_end392
+Tree_Insert_null392:
+la a0, msg_1
+j error
+Tree_Insert_null_end392:
+lw t0, -236(fp)
+sw s10, -368(fp)
+lw a2, -228(fp)
+jalr t0
+mv t0, a0
+sw t0, -244(fp)
+lw s10, -368(fp)
+lw t0, -244(fp)
+beqz t0, Tree_Insert_else389_1_33
+jal Tree_Insert_else389_2_33
+Tree_Insert_else389_1_33:
+jal Tree_Insert_else389
+Tree_Insert_else389_2_33:
+lw t0, -268(fp)
+mv s7, t0
+mv t0, s7
+beqz t0, Tree_Insert_null400_1_34
+jal Tree_Insert_null400_2_34
+Tree_Insert_null400_1_34:
+jal Tree_Insert_null400
+Tree_Insert_null400_2_34:
+mv t0, s7
+lw t2, 0(t0)
+mv t0, t2
+lw t5, -12(t0)
+jal Tree_Insert_null_end400
+Tree_Insert_null400:
+la a0, msg_1
+j error
+Tree_Insert_null_end400:
+mv t0, t5
+sw t5, -316(fp)
+sw t2, -328(fp)
+sw s7, -340(fp)
+sw s10, -368(fp)
+mv a2, s7
+jalr t0
+mv t0, a0
+sw t0, -264(fp)
+lw t5, -316(fp)
+lw t2, -328(fp)
+lw s7, -340(fp)
+lw s10, -368(fp)
+lw t0, -264(fp)
+mv t0, t0
+sw t0, -268(fp)
+jal Tree_Insert_end389
+Tree_Insert_else389:
+li s11, 0
+mv t0, s11
+mv t0, t0
+sw t0, -272(fp)
+lw t0, -268(fp)
+mv s8, t0
+mv t0, s8
+beqz t0, Tree_Insert_null409_1_35
+jal Tree_Insert_null409_2_35
+Tree_Insert_null409_1_35:
+jal Tree_Insert_null409
+Tree_Insert_null409_2_35:
+mv t0, s8
+lw s9, 0(t0)
+mv t0, s9
+lw t3, -40(t0)
+jal Tree_Insert_null_end409
+Tree_Insert_null409:
+la a0, msg_1
+j error
+Tree_Insert_null_end409:
+li t4, 1
+mv t0, t3
+sw t5, -316(fp)
+sw t4, -320(fp)
+sw t3, -324(fp)
+sw t2, -328(fp)
+sw s9, -332(fp)
+sw s8, -336(fp)
+sw s7, -340(fp)
+sw s11, -360(fp)
+sw s10, -368(fp)
+mv a2, s8
+mv a3, t4
+jalr t0
+mv s1, a0
+lw t5, -316(fp)
+lw t4, -320(fp)
+lw t3, -324(fp)
+lw t2, -328(fp)
+lw s9, -332(fp)
+lw s8, -336(fp)
+lw s7, -340(fp)
+lw s11, -360(fp)
+lw s10, -368(fp)
+mv t0, s1
+mv t0, t0
+sw t0, -372(fp)
+lw t0, -268(fp)
+mv s2, t0
+mv t0, s2
+beqz t0, Tree_Insert_null418_1_36
+jal Tree_Insert_null418_2_36
+Tree_Insert_null418_1_36:
+jal Tree_Insert_null418
+Tree_Insert_null418_2_36:
+mv t0, s2
+lw s3, 0(t0)
+mv t0, s3
+lw s4, -4(t0)
+jal Tree_Insert_null_end418
+Tree_Insert_null418:
+la a0, msg_1
+j error
+Tree_Insert_null_end418:
+lw t0, -76(fp)
+mv s5, t0
+mv t0, s4
+sw t5, -316(fp)
+sw t4, -320(fp)
+sw t3, -324(fp)
+sw t2, -328(fp)
+sw s9, -332(fp)
+sw s8, -336(fp)
+sw s7, -340(fp)
+sw s5, -344(fp)
+sw s4, -348(fp)
+sw s3, -352(fp)
+sw s2, -356(fp)
+sw s11, -360(fp)
+sw s1, -364(fp)
+sw s10, -368(fp)
+mv a2, s2
+mv a3, s5
+jalr t0
+mv s6, a0
+lw t5, -316(fp)
+lw t4, -320(fp)
+lw t3, -324(fp)
+lw t2, -328(fp)
+lw s9, -332(fp)
+lw s8, -336(fp)
+lw s7, -340(fp)
+lw s5, -344(fp)
+lw s4, -348(fp)
+lw s3, -352(fp)
+lw s2, -356(fp)
+lw s11, -360(fp)
+lw s1, -364(fp)
+lw s10, -368(fp)
+mv t0, s6
+mv t0, t0
+sw t0, -372(fp)
+Tree_Insert_end389:
+Tree_Insert_end346:
+jal Tree_Insert_loop335
+Tree_Insert_end335:
+li t0, 1
+sw t0, -376(fp)
+jal Tree_Insert_Insert_end
+Tree_Insert_Insert_end:
+lw a0, -376(fp)
+addi sp, sp, 376
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Delete
+Tree_Delete:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 680
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+li t3, 0
+mv t0, t3
+mv t2, t0
+li s11, 0
+mv t0, s11
+mv t2, t0
+li s10, 0
+mv t0, s10
+mv t2, t0
+li s9, 0
+mv t0, s9
+mv t2, t0
+li s8, 0
+mv t0, s8
+mv t2, t0
+li s7, 0
+mv t0, s7
+mv t2, t0
+li s6, 0
+mv t0, s6
+mv t2, t0
+mv t0, t5
+mv t2, t0
+mv t0, t2
+mv t3, t0
+mv t0, t5
+mv t2, t0
+mv t0, t2
+mv s11, t0
+li t2, 1
+mv t0, t2
+mv s10, t0
+li t2, 0
+mv t0, t2
+mv s9, t0
+li t2, 1
+mv t0, t2
+mv s8, t0
+sw s10, -672(fp)
+sw s6, -656(fp)
+sw t5, -20(fp)
+sw s9, -664(fp)
+Tree_Delete_loop446:
+lw t0, -672(fp)
+mv t0, t0
+sw t0, -28(fp)
+lw t0, -28(fp)
+beqz t0, Tree_Delete_end446_1_37
+jal Tree_Delete_end446_2_37
+Tree_Delete_end446_1_37:
+jal Tree_Delete_end446
+Tree_Delete_end446_2_37:
+mv t0, t3
+mv t0, t0
+sw t0, -32(fp)
+lw t0, -32(fp)
+beqz t0, Tree_Delete_null451_1_38
+jal Tree_Delete_null451_2_38
+Tree_Delete_null451_1_38:
+jal Tree_Delete_null451
+Tree_Delete_null451_2_38:
+lw t0, -32(fp)
+lw t0, 0(t0)
+sw t0, -36(fp)
+lw t0, -36(fp)
+lw t0, -20(t0)
+sw t0, -40(fp)
+jal Tree_Delete_null_end451
+Tree_Delete_null451:
+la a0, msg_1
+j error
+Tree_Delete_null_end451:
+lw t0, -40(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s11, -640(fp)
+lw a2, -32(fp)
+jalr t0
+mv t0, a0
+sw t0, -64(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s11, -640(fp)
+lw t0, -64(fp)
+mv s7, t0
+mv t0, t4
+mv t0, t0
+sw t0, -68(fp)
+mv t0, s7
+mv t0, t0
+sw t0, -72(fp)
+lw t0, -68(fp)
+lw t1, -72(fp)
+slt t0, t0, t1
+sw t0, -76(fp)
+lw t0, -76(fp)
+beqz t0, Tree_Delete_else457_1_39
+jal Tree_Delete_else457_2_39
+Tree_Delete_else457_1_39:
+jal Tree_Delete_else457
+Tree_Delete_else457_2_39:
+mv t0, t3
+mv t0, t0
+sw t0, -80(fp)
+lw t0, -80(fp)
+beqz t0, Tree_Delete_null466_1_40
+jal Tree_Delete_null466_2_40
+Tree_Delete_null466_1_40:
+jal Tree_Delete_null466
+Tree_Delete_null466_2_40:
+lw t0, -80(fp)
+lw t0, 0(t0)
+sw t0, -84(fp)
+lw t0, -84(fp)
+lw t0, -32(t0)
+sw t0, -88(fp)
+jal Tree_Delete_null_end466
+Tree_Delete_null466:
+la a0, msg_1
+j error
+Tree_Delete_null_end466:
+lw t0, -88(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s11, -640(fp)
+lw a2, -80(fp)
+jalr t0
+mv t0, a0
+sw t0, -112(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s11, -640(fp)
+lw t0, -112(fp)
+beqz t0, Tree_Delete_else463_1_41
+jal Tree_Delete_else463_2_41
+Tree_Delete_else463_1_41:
+jal Tree_Delete_else463
+Tree_Delete_else463_2_41:
+mv t0, t3
+mv t0, t0
+sw t0, -116(fp)
+lw t0, -116(fp)
+mv s11, t0
+mv t0, t3
+mv t0, t0
+sw t0, -120(fp)
+lw t0, -120(fp)
+beqz t0, Tree_Delete_null476_1_42
+jal Tree_Delete_null476_2_42
+Tree_Delete_null476_1_42:
+jal Tree_Delete_null476
+Tree_Delete_null476_2_42:
+lw t0, -120(fp)
+lw t0, 0(t0)
+sw t0, -124(fp)
+lw t0, -124(fp)
+lw s9, -16(t0)
+jal Tree_Delete_null_end476
+Tree_Delete_null476:
+la a0, msg_1
+j error
+Tree_Delete_null_end476:
+mv t0, s9
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s11, -640(fp)
+lw a2, -120(fp)
+jalr t0
+mv t0, a0
+sw t0, -152(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s11, -640(fp)
+lw t0, -152(fp)
+mv t3, t0
+jal Tree_Delete_end463
+Tree_Delete_else463:
+li t5, 0
+mv t0, t5
+mv t0, t0
+sw t0, -672(fp)
+Tree_Delete_end463:
+jal Tree_Delete_end457
+Tree_Delete_else457:
+mv t0, s7
+mv s6, t0
+mv t0, t4
+mv s10, t0
+mv t0, s6
+mv t1, s10
+slt t2, t0, t1
+mv t0, t2
+beqz t0, Tree_Delete_else483_1_43
+jal Tree_Delete_else483_2_43
+Tree_Delete_else483_1_43:
+jal Tree_Delete_else483
+Tree_Delete_else483_2_43:
+mv t0, t3
+mv s5, t0
+mv t0, s5
+beqz t0, Tree_Delete_null492_1_44
+jal Tree_Delete_null492_2_44
+Tree_Delete_null492_1_44:
+jal Tree_Delete_null492
+Tree_Delete_null492_2_44:
+mv t0, s5
+lw s4, 0(t0)
+mv t0, s4
+lw s3, -28(t0)
+jal Tree_Delete_null_end492
+Tree_Delete_null492:
+la a0, msg_1
+j error
+Tree_Delete_null_end492:
+mv t0, s3
+sw t5, -592(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw t2, -604(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s6, -620(fp)
+sw s5, -624(fp)
+sw s4, -628(fp)
+sw s3, -632(fp)
+sw s11, -640(fp)
+sw s10, -648(fp)
+mv a2, s5
+jalr t0
+mv s2, a0
+lw t5, -592(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw t2, -604(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s6, -620(fp)
+lw s5, -624(fp)
+lw s4, -628(fp)
+lw s3, -632(fp)
+lw s11, -640(fp)
+lw s10, -648(fp)
+mv t0, s2
+beqz t0, Tree_Delete_else489_1_45
+jal Tree_Delete_else489_2_45
+Tree_Delete_else489_1_45:
+jal Tree_Delete_else489
+Tree_Delete_else489_2_45:
+mv t0, t3
+mv s1, t0
+mv t0, s1
+mv s11, t0
+mv t0, t3
+mv t0, t0
+sw t0, -212(fp)
+lw t0, -212(fp)
+beqz t0, Tree_Delete_null502_1_46
+jal Tree_Delete_null502_2_46
+Tree_Delete_null502_1_46:
+jal Tree_Delete_null502
+Tree_Delete_null502_2_46:
+lw t0, -212(fp)
+lw t0, 0(t0)
+sw t0, -216(fp)
+lw t0, -216(fp)
+lw t0, -12(t0)
+sw t0, -220(fp)
+jal Tree_Delete_null_end502
+Tree_Delete_null502:
+la a0, msg_1
+j error
+Tree_Delete_null_end502:
+lw t0, -220(fp)
+sw t5, -592(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw t2, -604(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s6, -620(fp)
+sw s5, -624(fp)
+sw s4, -628(fp)
+sw s3, -632(fp)
+sw s2, -636(fp)
+sw s11, -640(fp)
+sw s1, -644(fp)
+sw s10, -648(fp)
+lw a2, -212(fp)
+jalr t0
+mv t0, a0
+sw t0, -284(fp)
+lw t5, -592(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw t2, -604(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s6, -620(fp)
+lw s5, -624(fp)
+lw s4, -628(fp)
+lw s3, -632(fp)
+lw s2, -636(fp)
+lw s11, -640(fp)
+lw s1, -644(fp)
+lw s10, -648(fp)
+lw t0, -284(fp)
+mv t3, t0
+jal Tree_Delete_end489
+Tree_Delete_else489:
+li t0, 0
+sw t0, -288(fp)
+lw t0, -288(fp)
+mv t0, t0
+sw t0, -672(fp)
+Tree_Delete_end489:
+jal Tree_Delete_end483
+Tree_Delete_else483:
+mv t0, s8
+mv t0, t0
+sw t0, -296(fp)
+lw t0, -296(fp)
+beqz t0, Tree_Delete_else509_1_47
+jal Tree_Delete_else509_2_47
+Tree_Delete_else509_1_47:
+jal Tree_Delete_else509
+Tree_Delete_else509_2_47:
+mv t0, t3
+mv t0, t0
+sw t0, -300(fp)
+lw t0, -300(fp)
+beqz t0, Tree_Delete_null517_1_48
+jal Tree_Delete_null517_2_48
+Tree_Delete_null517_1_48:
+jal Tree_Delete_null517
+Tree_Delete_null517_2_48:
+lw t0, -300(fp)
+lw t0, 0(t0)
+sw t0, -304(fp)
+lw t0, -304(fp)
+lw t0, -28(t0)
+sw t0, -308(fp)
+jal Tree_Delete_null_end517
+Tree_Delete_null517:
+la a0, msg_1
+j error
+Tree_Delete_null_end517:
+lw t0, -308(fp)
+sw t5, -592(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw t2, -604(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s6, -620(fp)
+sw s5, -624(fp)
+sw s4, -628(fp)
+sw s3, -632(fp)
+sw s2, -636(fp)
+sw s11, -640(fp)
+sw s1, -644(fp)
+sw s10, -648(fp)
+lw a2, -300(fp)
+jalr t0
+mv t0, a0
+sw t0, -372(fp)
+lw t5, -592(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw t2, -604(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s6, -620(fp)
+lw s5, -624(fp)
+lw s4, -628(fp)
+lw s3, -632(fp)
+lw s2, -636(fp)
+lw s11, -640(fp)
+lw s1, -644(fp)
+lw s10, -648(fp)
+lw t0, -372(fp)
+beqz t0, Tree_Delete_else514_1_49
+jal Tree_Delete_else514_2_49
+Tree_Delete_else514_1_49:
+jal Tree_Delete_else514
+Tree_Delete_else514_2_49:
+li t0, 0
+sw t0, -380(fp)
+jal Tree_Delete_end514
+Tree_Delete_else514:
+li t0, 1
+sw t0, -380(fp)
+Tree_Delete_end514:
+mv t0, t3
+mv t0, t0
+sw t0, -384(fp)
+lw t0, -384(fp)
+beqz t0, Tree_Delete_null526_1_50
+jal Tree_Delete_null526_2_50
+Tree_Delete_null526_1_50:
+jal Tree_Delete_null526
+Tree_Delete_null526_2_50:
+lw t0, -384(fp)
+lw t0, 0(t0)
+sw t0, -388(fp)
+lw t0, -388(fp)
+lw t0, -32(t0)
+sw t0, -392(fp)
+jal Tree_Delete_null_end526
+Tree_Delete_null526:
+la a0, msg_1
+j error
+Tree_Delete_null_end526:
+lw t0, -392(fp)
+sw t5, -592(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw t2, -604(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s6, -620(fp)
+sw s5, -624(fp)
+sw s4, -628(fp)
+sw s3, -632(fp)
+sw s2, -636(fp)
+sw s11, -640(fp)
+sw s1, -644(fp)
+sw s10, -648(fp)
+lw a2, -384(fp)
+jalr t0
+mv t0, a0
+sw t0, -456(fp)
+lw t5, -592(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw t2, -604(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s6, -620(fp)
+lw s5, -624(fp)
+lw s4, -628(fp)
+lw s3, -632(fp)
+lw s2, -636(fp)
+lw s11, -640(fp)
+lw s1, -644(fp)
+lw s10, -648(fp)
+lw t0, -456(fp)
+beqz t0, Tree_Delete_else523_1_51
+jal Tree_Delete_else523_2_51
+Tree_Delete_else523_1_51:
+jal Tree_Delete_else523
+Tree_Delete_else523_2_51:
+li t0, 0
+sw t0, -464(fp)
+jal Tree_Delete_end523
+Tree_Delete_else523:
+li t0, 1
+sw t0, -464(fp)
+Tree_Delete_end523:
+lw t0, -380(fp)
+beqz t0, Tree_Delete_else513_1_52
+jal Tree_Delete_else513_2_52
+Tree_Delete_else513_1_52:
+jal Tree_Delete_else513
+Tree_Delete_else513_2_52:
+lw t0, -464(fp)
+beqz t0, Tree_Delete_else513_1_53
+jal Tree_Delete_else513_2_53
+Tree_Delete_else513_1_53:
+jal Tree_Delete_else513
+Tree_Delete_else513_2_53:
+li t0, 1
+sw t0, -472(fp)
+jal Tree_Delete_if513_end
+Tree_Delete_else513:
+li t0, 0
+sw t0, -472(fp)
+jal Tree_Delete_if513_end
+Tree_Delete_if513_end:
+lw t0, -472(fp)
+beqz t0, Tree_Delete_else512_1_54
+jal Tree_Delete_else512_2_54
+Tree_Delete_else512_1_54:
+jal Tree_Delete_else512
+Tree_Delete_else512_2_54:
+li t0, 1
+sw t0, -476(fp)
+lw t0, -476(fp)
+mv t0, t0
+sw t0, -656(fp)
+jal Tree_Delete_end512
+Tree_Delete_else512:
+lw t0, -20(fp)
+mv t0, t0
+sw t0, -484(fp)
+lw t0, -484(fp)
+beqz t0, Tree_Delete_null535_1_55
+jal Tree_Delete_null535_2_55
+Tree_Delete_null535_1_55:
+jal Tree_Delete_null535
+Tree_Delete_null535_2_55:
+lw t0, -484(fp)
+lw t0, 0(t0)
+sw t0, -488(fp)
+lw t0, -488(fp)
+lw t0, -56(t0)
+sw t0, -492(fp)
+jal Tree_Delete_null_end535
+Tree_Delete_null535:
+la a0, msg_1
+j error
+Tree_Delete_null_end535:
+mv t0, s11
+mv t0, t0
+sw t0, -496(fp)
+mv t0, t3
+mv t0, t0
+sw t0, -500(fp)
+lw t0, -492(fp)
+sw t5, -592(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw t2, -604(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s6, -620(fp)
+sw s5, -624(fp)
+sw s4, -628(fp)
+sw s3, -632(fp)
+sw s2, -636(fp)
+sw s11, -640(fp)
+sw s1, -644(fp)
+sw s10, -648(fp)
+lw a2, -484(fp)
+lw a3, -496(fp)
+lw a4, -500(fp)
+jalr t0
+mv t0, a0
+sw t0, -564(fp)
+lw t5, -592(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw t2, -604(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s6, -620(fp)
+lw s5, -624(fp)
+lw s4, -628(fp)
+lw s3, -632(fp)
+lw s2, -636(fp)
+lw s11, -640(fp)
+lw s1, -644(fp)
+lw s10, -648(fp)
+lw t0, -564(fp)
+mv t0, t0
+sw t0, -656(fp)
+Tree_Delete_end512:
+jal Tree_Delete_end509
+Tree_Delete_else509:
+lw t0, -20(fp)
+mv t0, t0
+sw t0, -572(fp)
+lw t0, -572(fp)
+beqz t0, Tree_Delete_null546_1_56
+jal Tree_Delete_null546_2_56
+Tree_Delete_null546_1_56:
+jal Tree_Delete_null546
+Tree_Delete_null546_2_56:
+lw t0, -572(fp)
+lw t0, 0(t0)
+sw t0, -576(fp)
+lw t0, -576(fp)
+lw t0, -56(t0)
+sw t0, -580(fp)
+jal Tree_Delete_null_end546
+Tree_Delete_null546:
+la a0, msg_1
+j error
+Tree_Delete_null_end546:
+mv t0, s11
+mv t0, t0
+sw t0, -584(fp)
+mv t0, t3
+mv t0, t0
+sw t0, -588(fp)
+lw t0, -580(fp)
+sw t5, -592(fp)
+sw t4, -596(fp)
+sw t3, -600(fp)
+sw t2, -604(fp)
+sw s9, -608(fp)
+sw s8, -612(fp)
+sw s7, -616(fp)
+sw s6, -620(fp)
+sw s5, -624(fp)
+sw s4, -628(fp)
+sw s3, -632(fp)
+sw s2, -636(fp)
+sw s11, -640(fp)
+sw s1, -644(fp)
+sw s10, -648(fp)
+lw a2, -572(fp)
+lw a3, -584(fp)
+lw a4, -588(fp)
+jalr t0
+mv t0, a0
+sw t0, -652(fp)
+lw t5, -592(fp)
+lw t4, -596(fp)
+lw t3, -600(fp)
+lw t2, -604(fp)
+lw s9, -608(fp)
+lw s8, -612(fp)
+lw s7, -616(fp)
+lw s6, -620(fp)
+lw s5, -624(fp)
+lw s4, -628(fp)
+lw s3, -632(fp)
+lw s2, -636(fp)
+lw s11, -640(fp)
+lw s1, -644(fp)
+lw s10, -648(fp)
+lw t0, -652(fp)
+mv t0, t0
+sw t0, -656(fp)
+Tree_Delete_end509:
+li t0, 1
+sw t0, -660(fp)
+lw t0, -660(fp)
+mv t0, t0
+sw t0, -664(fp)
+li t0, 0
+sw t0, -668(fp)
+lw t0, -668(fp)
+mv t0, t0
+sw t0, -672(fp)
+Tree_Delete_end483:
+Tree_Delete_end457:
+li t0, 0
+sw t0, -676(fp)
+lw t0, -676(fp)
+mv s8, t0
+jal Tree_Delete_loop446
+Tree_Delete_end446:
+lw t0, -664(fp)
+mv s10, t0
+jal Tree_Delete_Delete_end
+Tree_Delete_Delete_end:
+sw s10, -680(fp)
+lw a0, -680(fp)
+addi sp, sp, 680
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Remove
+Tree_Remove:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 216
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t3, a4
+li t2, 0
+mv t0, t2
+mv s11, t0
+li s10, 0
+mv t0, s10
+mv s11, t0
+li s9, 0
+mv t0, s9
+mv s11, t0
+mv t0, t3
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Remove_null569_1_57
+jal Tree_Remove_null569_2_57
+Tree_Remove_null569_1_57:
+jal Tree_Remove_null569
+Tree_Remove_null569_2_57:
+mv t0, s11
+lw s8, 0(t0)
+mv t0, s8
+lw s8, -32(t0)
+jal Tree_Remove_null_end569
+Tree_Remove_null569:
+la a0, msg_1
+j error
+Tree_Remove_null_end569:
+mv t0, s8
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t3, -92(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, s11
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t3, -92(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+beqz t0, Tree_Remove_else566_1_58
+jal Tree_Remove_else566_2_58
+Tree_Remove_else566_1_58:
+jal Tree_Remove_else566
+Tree_Remove_else566_2_58:
+mv t0, t5
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Remove_null577_1_59
+jal Tree_Remove_null577_2_59
+Tree_Remove_null577_1_59:
+jal Tree_Remove_null577
+Tree_Remove_null577_2_59:
+mv t0, s11
+lw s8, 0(t0)
+mv t0, s8
+lw s8, -64(t0)
+jal Tree_Remove_null_end577
+Tree_Remove_null577:
+la a0, msg_1
+j error
+Tree_Remove_null_end577:
+mv t0, t4
+mv s7, t0
+mv t0, t3
+mv s6, t0
+mv t0, s8
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t3, -92(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, s11
+mv a3, s7
+mv a4, s6
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t3, -92(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+mv t2, t0
+jal Tree_Remove_end566
+Tree_Remove_else566:
+mv t0, t3
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Remove_null589_1_60
+jal Tree_Remove_null589_2_60
+Tree_Remove_null589_1_60:
+jal Tree_Remove_null589
+Tree_Remove_null589_2_60:
+mv t0, s11
+lw s6, 0(t0)
+mv t0, s6
+lw s6, -28(t0)
+jal Tree_Remove_null_end589
+Tree_Remove_null589:
+la a0, msg_1
+j error
+Tree_Remove_null_end589:
+mv t0, s6
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t3, -92(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, s11
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t3, -92(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+beqz t0, Tree_Remove_else586_1_61
+jal Tree_Remove_else586_2_61
+Tree_Remove_else586_1_61:
+jal Tree_Remove_else586
+Tree_Remove_else586_2_61:
+mv t0, t5
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Remove_null597_1_62
+jal Tree_Remove_null597_2_62
+Tree_Remove_null597_1_62:
+jal Tree_Remove_null597
+Tree_Remove_null597_2_62:
+mv t0, s11
+lw s6, 0(t0)
+mv t0, s6
+lw s6, -60(t0)
+jal Tree_Remove_null_end597
+Tree_Remove_null597:
+la a0, msg_1
+j error
+Tree_Remove_null_end597:
+mv t0, t4
+mv s7, t0
+mv t0, t3
+mv s8, t0
+mv t0, s6
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t3, -92(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, s11
+mv a3, s7
+mv a4, s8
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t3, -92(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+mv t2, t0
+jal Tree_Remove_end586
+Tree_Remove_else586:
+mv t0, t3
+mv t3, t0
+mv t0, t3
+beqz t0, Tree_Remove_null608_1_63
+jal Tree_Remove_null608_2_63
+Tree_Remove_null608_1_63:
+jal Tree_Remove_null608
+Tree_Remove_null608_2_63:
+mv t0, t3
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -20(t0)
+jal Tree_Remove_null_end608
+Tree_Remove_null608:
+la a0, msg_1
+j error
+Tree_Remove_null_end608:
+mv t0, s11
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, t3
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+mv s10, t0
+mv t0, t4
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Remove_null618_1_64
+jal Tree_Remove_null618_2_64
+Tree_Remove_null618_1_64:
+jal Tree_Remove_null618
+Tree_Remove_null618_2_64:
+mv t0, s11
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -16(t0)
+jal Tree_Remove_null_end618
+Tree_Remove_null618:
+la a0, msg_1
+j error
+Tree_Remove_null_end618:
+mv t0, t3
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, s11
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+beqz t0, Tree_Remove_null616_1_65
+jal Tree_Remove_null616_2_65
+Tree_Remove_null616_1_65:
+jal Tree_Remove_null616
+Tree_Remove_null616_2_65:
+mv t0, s11
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -20(t0)
+jal Tree_Remove_null_end616
+Tree_Remove_null616:
+la a0, msg_1
+j error
+Tree_Remove_null_end616:
+mv t0, t3
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t2, -212(fp)
+sw s9, -160(fp)
+sw s10, -164(fp)
+mv a2, s11
+jalr t0
+mv s11, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t2, -212(fp)
+lw s9, -160(fp)
+lw s10, -164(fp)
+mv t0, s11
+mv s9, t0
+mv t0, t5
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Remove_null631_1_66
+jal Tree_Remove_null631_2_66
+Tree_Remove_null631_1_66:
+jal Tree_Remove_null631
+Tree_Remove_null631_2_66:
+mv t0, s11
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -44(t0)
+jal Tree_Remove_null_end631
+Tree_Remove_null631:
+la a0, msg_1
+j error
+Tree_Remove_null_end631:
+mv t0, s10
+mv s10, t0
+mv t0, s9
+mv s9, t0
+mv t0, t3
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t2, -212(fp)
+mv a2, s11
+mv a3, s10
+mv a4, s9
+jalr t0
+mv s10, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t2, -212(fp)
+mv t0, s10
+beqz t0, Tree_Remove_else628_1_67
+jal Tree_Remove_else628_2_67
+Tree_Remove_else628_1_67:
+jal Tree_Remove_else628
+Tree_Remove_else628_2_67:
+mv t0, t4
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_Remove_null642_1_68
+jal Tree_Remove_null642_2_68
+Tree_Remove_null642_1_68:
+jal Tree_Remove_null642
+Tree_Remove_null642_2_68:
+mv t0, s10
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -8(t0)
+jal Tree_Remove_null_end642
+Tree_Remove_null642:
+la a0, msg_1
+j error
+Tree_Remove_null_end642:
+mv t0, t5
+lw s9, -24(t0)
+mv t0, s11
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t2, -212(fp)
+mv a2, s10
+mv a3, s9
+jalr t0
+mv s10, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t2, -212(fp)
+mv t0, s10
+mv t2, t0
+mv t0, t4
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_Remove_null652_1_69
+jal Tree_Remove_null652_2_69
+Tree_Remove_null652_1_69:
+jal Tree_Remove_null652
+Tree_Remove_null652_2_69:
+mv t0, s10
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -36(t0)
+jal Tree_Remove_null_end652
+Tree_Remove_null652:
+la a0, msg_1
+j error
+Tree_Remove_null_end652:
+li s9, 0
+mv t0, s11
+sw t5, -192(fp)
+sw t4, -204(fp)
+sw t2, -212(fp)
+mv a2, s10
+mv a3, s9
+jalr t0
+mv s10, a0
+lw t5, -192(fp)
+lw t4, -204(fp)
+lw t2, -212(fp)
+mv t0, s10
+mv t2, t0
+jal Tree_Remove_end628
+Tree_Remove_else628:
+mv t0, t4
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_Remove_null661_1_70
+jal Tree_Remove_null661_2_70
+Tree_Remove_null661_1_70:
+jal Tree_Remove_null661
+Tree_Remove_null661_2_70:
+mv t0, s10
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -4(t0)
+jal Tree_Remove_null_end661
+Tree_Remove_null661:
+la a0, msg_1
+j error
+Tree_Remove_null_end661:
+mv t0, t5
+lw t5, -24(t0)
+mv t0, s11
+sw t4, -204(fp)
+sw t2, -212(fp)
+mv a2, s10
+mv a3, t5
+jalr t0
+mv s10, a0
+lw t4, -204(fp)
+lw t2, -212(fp)
+mv t0, s10
+mv t2, t0
+mv t0, t4
+mv t4, t0
+mv t0, t4
+beqz t0, Tree_Remove_null671_1_71
+jal Tree_Remove_null671_2_71
+Tree_Remove_null671_1_71:
+jal Tree_Remove_null671
+Tree_Remove_null671_2_71:
+mv t0, t4
+lw s10, 0(t0)
+mv t0, s10
+lw s10, -40(t0)
+jal Tree_Remove_null_end671
+Tree_Remove_null671:
+la a0, msg_1
+j error
+Tree_Remove_null_end671:
+li s11, 0
+mv t0, s10
+sw t2, -212(fp)
+mv a2, t4
+mv a3, s11
+jalr t0
+mv s10, a0
+lw t2, -212(fp)
+mv t0, s10
+mv s10, t0
+Tree_Remove_end628:
+Tree_Remove_end586:
+Tree_Remove_end566:
+li t2, 1
+jal Tree_Remove_Remove_end
+Tree_Remove_Remove_end:
+sw t2, -216(fp)
+lw a0, -216(fp)
+addi sp, sp, 216
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_RemoveRight
+Tree_RemoveRight:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 220
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t3, a4
+li t2, 0
+mv t0, t2
+mv s11, t0
+sw t5, -12(fp)
+sw t4, -156(fp)
+sw t2, -216(fp)
+Tree_RemoveRight_loop681:
+mv t0, t3
+mv t0, t0
+sw t0, -24(fp)
+lw t0, -24(fp)
+beqz t0, Tree_RemoveRight_null684_1_72
+jal Tree_RemoveRight_null684_2_72
+Tree_RemoveRight_null684_1_72:
+jal Tree_RemoveRight_null684
+Tree_RemoveRight_null684_2_72:
+lw t0, -24(fp)
+lw t0, 0(t0)
+sw t0, -28(fp)
+lw t0, -28(fp)
+lw t0, -28(t0)
+sw t0, -32(fp)
+jal Tree_RemoveRight_null_end684
+Tree_RemoveRight_null684:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end684:
+lw t0, -32(fp)
+sw t3, -168(fp)
+lw a2, -24(fp)
+jalr t0
+mv t0, a0
+sw t0, -40(fp)
+lw t3, -168(fp)
+lw t0, -40(fp)
+beqz t0, Tree_RemoveRight_end681_1_73
+jal Tree_RemoveRight_end681_2_73
+Tree_RemoveRight_end681_1_73:
+jal Tree_RemoveRight_end681
+Tree_RemoveRight_end681_2_73:
+mv t0, t3
+mv t0, t0
+sw t0, -44(fp)
+lw t0, -44(fp)
+beqz t0, Tree_RemoveRight_null692_1_74
+jal Tree_RemoveRight_null692_2_74
+Tree_RemoveRight_null692_1_74:
+jal Tree_RemoveRight_null692
+Tree_RemoveRight_null692_2_74:
+lw t0, -44(fp)
+lw s11, 0(t0)
+mv t0, s11
+lw t2, -24(t0)
+jal Tree_RemoveRight_null_end692
+Tree_RemoveRight_null692:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end692:
+mv t0, t3
+mv t4, t0
+mv t0, t4
+beqz t0, Tree_RemoveRight_null702_1_75
+jal Tree_RemoveRight_null702_2_75
+Tree_RemoveRight_null702_1_75:
+jal Tree_RemoveRight_null702
+Tree_RemoveRight_null702_2_75:
+mv t0, t4
+lw t5, 0(t0)
+mv t0, t5
+lw s10, -12(t0)
+jal Tree_RemoveRight_null_end702
+Tree_RemoveRight_null702:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end702:
+mv t0, s10
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, t4
+jalr t0
+mv s9, a0
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, s9
+beqz t0, Tree_RemoveRight_null700_1_76
+jal Tree_RemoveRight_null700_2_76
+Tree_RemoveRight_null700_1_76:
+jal Tree_RemoveRight_null700
+Tree_RemoveRight_null700_2_76:
+mv t0, s9
+lw s8, 0(t0)
+mv t0, s8
+lw s7, -20(t0)
+jal Tree_RemoveRight_null_end700
+Tree_RemoveRight_null700:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end700:
+mv t0, s7
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s9, -176(fp)
+sw s8, -180(fp)
+sw s7, -184(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, s9
+jalr t0
+mv s6, a0
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s9, -176(fp)
+lw s8, -180(fp)
+lw s7, -184(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, t2
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s9, -176(fp)
+sw s8, -180(fp)
+sw s7, -184(fp)
+sw s6, -188(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+lw a2, -44(fp)
+mv a3, s6
+jalr t0
+mv t0, a0
+sw t0, -148(fp)
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s9, -176(fp)
+lw s8, -180(fp)
+lw s7, -184(fp)
+lw s6, -188(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+lw t0, -148(fp)
+mv t0, t0
+sw t0, -216(fp)
+mv t0, t3
+mv s5, t0
+mv t0, s5
+mv t0, t0
+sw t0, -156(fp)
+mv t0, t3
+mv s4, t0
+mv t0, s4
+beqz t0, Tree_RemoveRight_null716_1_77
+jal Tree_RemoveRight_null716_2_77
+Tree_RemoveRight_null716_1_77:
+jal Tree_RemoveRight_null716
+Tree_RemoveRight_null716_2_77:
+mv t0, s4
+lw s3, 0(t0)
+mv t0, s3
+lw s2, -12(t0)
+jal Tree_RemoveRight_null_end716
+Tree_RemoveRight_null716:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end716:
+mv t0, s2
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s9, -176(fp)
+sw s8, -180(fp)
+sw s7, -184(fp)
+sw s6, -188(fp)
+sw s5, -192(fp)
+sw s4, -196(fp)
+sw s3, -200(fp)
+sw s2, -204(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, s4
+jalr t0
+mv s1, a0
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s9, -176(fp)
+lw s8, -180(fp)
+lw s7, -184(fp)
+lw s6, -188(fp)
+lw s5, -192(fp)
+lw s4, -196(fp)
+lw s3, -200(fp)
+lw s2, -204(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, s1
+mv t3, t0
+jal Tree_RemoveRight_loop681
+Tree_RemoveRight_end681:
+lw t0, -156(fp)
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_RemoveRight_null724_1_78
+jal Tree_RemoveRight_null724_2_78
+Tree_RemoveRight_null724_1_78:
+jal Tree_RemoveRight_null724
+Tree_RemoveRight_null724_2_78:
+mv t0, s10
+lw s1, 0(t0)
+mv t0, s1
+lw s1, -4(t0)
+jal Tree_RemoveRight_null_end724
+Tree_RemoveRight_null724:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end724:
+lw t0, -12(fp)
+lw s11, -24(t0)
+mv t0, s1
+mv a2, s10
+mv a3, s11
+jalr t0
+mv s10, a0
+mv t0, s10
+mv s10, t0
+lw t0, -156(fp)
+mv s1, t0
+mv t0, s1
+beqz t0, Tree_RemoveRight_null734_1_79
+jal Tree_RemoveRight_null734_2_79
+Tree_RemoveRight_null734_1_79:
+jal Tree_RemoveRight_null734
+Tree_RemoveRight_null734_2_79:
+mv t0, s1
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -40(t0)
+jal Tree_RemoveRight_null_end734
+Tree_RemoveRight_null734:
+la a0, msg_1
+j error
+Tree_RemoveRight_null_end734:
+li s2, 0
+mv t0, s11
+sw s10, -216(fp)
+mv a2, s1
+mv a3, s2
+jalr t0
+mv s1, a0
+lw s10, -216(fp)
+mv t0, s1
+mv s10, t0
+li s1, 1
+jal Tree_RemoveRight_RemoveRight_end
+Tree_RemoveRight_RemoveRight_end:
+sw s1, -220(fp)
+lw a0, -220(fp)
+addi sp, sp, 220
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_RemoveLeft
+Tree_RemoveLeft:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 220
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+mv t3, a4
+li t2, 0
+mv t0, t2
+mv s11, t0
+sw t5, -12(fp)
+sw t4, -156(fp)
+sw t2, -216(fp)
+Tree_RemoveLeft_loop744:
+mv t0, t3
+mv t0, t0
+sw t0, -24(fp)
+lw t0, -24(fp)
+beqz t0, Tree_RemoveLeft_null747_1_80
+jal Tree_RemoveLeft_null747_2_80
+Tree_RemoveLeft_null747_1_80:
+jal Tree_RemoveLeft_null747
+Tree_RemoveLeft_null747_2_80:
+lw t0, -24(fp)
+lw t0, 0(t0)
+sw t0, -28(fp)
+lw t0, -28(fp)
+lw t0, -32(t0)
+sw t0, -32(fp)
+jal Tree_RemoveLeft_null_end747
+Tree_RemoveLeft_null747:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end747:
+lw t0, -32(fp)
+sw t3, -168(fp)
+lw a2, -24(fp)
+jalr t0
+mv t0, a0
+sw t0, -40(fp)
+lw t3, -168(fp)
+lw t0, -40(fp)
+beqz t0, Tree_RemoveLeft_end744_1_81
+jal Tree_RemoveLeft_end744_2_81
+Tree_RemoveLeft_end744_1_81:
+jal Tree_RemoveLeft_end744
+Tree_RemoveLeft_end744_2_81:
+mv t0, t3
+mv t0, t0
+sw t0, -44(fp)
+lw t0, -44(fp)
+beqz t0, Tree_RemoveLeft_null755_1_82
+jal Tree_RemoveLeft_null755_2_82
+Tree_RemoveLeft_null755_1_82:
+jal Tree_RemoveLeft_null755
+Tree_RemoveLeft_null755_2_82:
+lw t0, -44(fp)
+lw s11, 0(t0)
+mv t0, s11
+lw t2, -24(t0)
+jal Tree_RemoveLeft_null_end755
+Tree_RemoveLeft_null755:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end755:
+mv t0, t3
+mv t4, t0
+mv t0, t4
+beqz t0, Tree_RemoveLeft_null765_1_83
+jal Tree_RemoveLeft_null765_2_83
+Tree_RemoveLeft_null765_1_83:
+jal Tree_RemoveLeft_null765
+Tree_RemoveLeft_null765_2_83:
+mv t0, t4
+lw t5, 0(t0)
+mv t0, t5
+lw s10, -16(t0)
+jal Tree_RemoveLeft_null_end765
+Tree_RemoveLeft_null765:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end765:
+mv t0, s10
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, t4
+jalr t0
+mv s9, a0
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, s9
+beqz t0, Tree_RemoveLeft_null763_1_84
+jal Tree_RemoveLeft_null763_2_84
+Tree_RemoveLeft_null763_1_84:
+jal Tree_RemoveLeft_null763
+Tree_RemoveLeft_null763_2_84:
+mv t0, s9
+lw s8, 0(t0)
+mv t0, s8
+lw s7, -20(t0)
+jal Tree_RemoveLeft_null_end763
+Tree_RemoveLeft_null763:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end763:
+mv t0, s7
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s9, -176(fp)
+sw s8, -180(fp)
+sw s7, -184(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, s9
+jalr t0
+mv s6, a0
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s9, -176(fp)
+lw s8, -180(fp)
+lw s7, -184(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, t2
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s9, -176(fp)
+sw s8, -180(fp)
+sw s7, -184(fp)
+sw s6, -188(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+lw a2, -44(fp)
+mv a3, s6
+jalr t0
+mv t0, a0
+sw t0, -148(fp)
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s9, -176(fp)
+lw s8, -180(fp)
+lw s7, -184(fp)
+lw s6, -188(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+lw t0, -148(fp)
+mv t0, t0
+sw t0, -216(fp)
+mv t0, t3
+mv s5, t0
+mv t0, s5
+mv t0, t0
+sw t0, -156(fp)
+mv t0, t3
+mv s4, t0
+mv t0, s4
+beqz t0, Tree_RemoveLeft_null779_1_85
+jal Tree_RemoveLeft_null779_2_85
+Tree_RemoveLeft_null779_1_85:
+jal Tree_RemoveLeft_null779
+Tree_RemoveLeft_null779_2_85:
+mv t0, s4
+lw s3, 0(t0)
+mv t0, s3
+lw s2, -16(t0)
+jal Tree_RemoveLeft_null_end779
+Tree_RemoveLeft_null779:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end779:
+mv t0, s2
+sw t5, -160(fp)
+sw t4, -164(fp)
+sw t3, -168(fp)
+sw t2, -172(fp)
+sw s9, -176(fp)
+sw s8, -180(fp)
+sw s7, -184(fp)
+sw s6, -188(fp)
+sw s5, -192(fp)
+sw s4, -196(fp)
+sw s3, -200(fp)
+sw s2, -204(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, s4
+jalr t0
+mv s1, a0
+lw t5, -160(fp)
+lw t4, -164(fp)
+lw t3, -168(fp)
+lw t2, -172(fp)
+lw s9, -176(fp)
+lw s8, -180(fp)
+lw s7, -184(fp)
+lw s6, -188(fp)
+lw s5, -192(fp)
+lw s4, -196(fp)
+lw s3, -200(fp)
+lw s2, -204(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, s1
+mv t3, t0
+jal Tree_RemoveLeft_loop744
+Tree_RemoveLeft_end744:
+lw t0, -156(fp)
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_RemoveLeft_null787_1_86
+jal Tree_RemoveLeft_null787_2_86
+Tree_RemoveLeft_null787_1_86:
+jal Tree_RemoveLeft_null787
+Tree_RemoveLeft_null787_2_86:
+mv t0, s10
+lw s1, 0(t0)
+mv t0, s1
+lw s1, -8(t0)
+jal Tree_RemoveLeft_null_end787
+Tree_RemoveLeft_null787:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end787:
+lw t0, -12(fp)
+lw s11, -24(t0)
+mv t0, s1
+mv a2, s10
+mv a3, s11
+jalr t0
+mv s10, a0
+mv t0, s10
+mv s10, t0
+lw t0, -156(fp)
+mv s1, t0
+mv t0, s1
+beqz t0, Tree_RemoveLeft_null797_1_87
+jal Tree_RemoveLeft_null797_2_87
+Tree_RemoveLeft_null797_1_87:
+jal Tree_RemoveLeft_null797
+Tree_RemoveLeft_null797_2_87:
+mv t0, s1
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -36(t0)
+jal Tree_RemoveLeft_null_end797
+Tree_RemoveLeft_null797:
+la a0, msg_1
+j error
+Tree_RemoveLeft_null_end797:
+li s2, 0
+mv t0, s11
+sw s10, -216(fp)
+mv a2, s1
+mv a3, s2
+jalr t0
+mv s1, a0
+lw s10, -216(fp)
+mv t0, s1
+mv s10, t0
+li s1, 1
+jal Tree_RemoveLeft_RemoveLeft_end
+Tree_RemoveLeft_RemoveLeft_end:
+sw s1, -220(fp)
+lw a0, -220(fp)
+addi sp, sp, 220
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Search
+Tree_Search:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 220
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+li t3, 0
+mv t0, t3
+mv t2, t0
+li s11, 0
+mv t0, s11
+mv t2, t0
+li s10, 0
+mv t0, s10
+mv t2, t0
+li s9, 0
+mv t0, s9
+mv t2, t0
+mv t0, t5
+mv t2, t0
+mv t0, t2
+mv s10, t0
+li t2, 1
+mv t0, t2
+mv t3, t0
+li t2, 0
+mv t0, t2
+mv s11, t0
+sw s11, -216(fp)
+Tree_Search_loop816:
+mv t0, t3
+mv t0, t0
+sw t0, -16(fp)
+lw t0, -16(fp)
+beqz t0, Tree_Search_end816_1_88
+jal Tree_Search_end816_2_88
+Tree_Search_end816_1_88:
+jal Tree_Search_end816
+Tree_Search_end816_2_88:
+mv t0, s10
+mv t0, t0
+sw t0, -20(fp)
+lw t0, -20(fp)
+beqz t0, Tree_Search_null821_1_89
+jal Tree_Search_null821_2_89
+Tree_Search_null821_1_89:
+jal Tree_Search_null821
+Tree_Search_null821_2_89:
+lw t0, -20(fp)
+lw t0, 0(t0)
+sw t0, -24(fp)
+lw t0, -24(fp)
+lw t0, -20(t0)
+sw t0, -28(fp)
+jal Tree_Search_null_end821
+Tree_Search_null821:
+la a0, msg_1
+j error
+Tree_Search_null_end821:
+lw t0, -28(fp)
+sw t4, -176(fp)
+sw t3, -180(fp)
+sw s9, -188(fp)
+sw s10, -212(fp)
+lw a2, -20(fp)
+jalr t0
+mv t0, a0
+sw t0, -48(fp)
+lw t4, -176(fp)
+lw t3, -180(fp)
+lw s9, -188(fp)
+lw s10, -212(fp)
+lw t0, -48(fp)
+mv s9, t0
+mv t0, t4
+mv t0, t0
+sw t0, -52(fp)
+mv t0, s9
+mv t0, t0
+sw t0, -56(fp)
+lw t0, -52(fp)
+lw t1, -56(fp)
+slt t0, t0, t1
+sw t0, -60(fp)
+lw t0, -60(fp)
+beqz t0, Tree_Search_else827_1_90
+jal Tree_Search_else827_2_90
+Tree_Search_else827_1_90:
+jal Tree_Search_else827
+Tree_Search_else827_2_90:
+mv t0, s10
+mv t0, t0
+sw t0, -64(fp)
+lw t0, -64(fp)
+beqz t0, Tree_Search_null836_1_91
+jal Tree_Search_null836_2_91
+Tree_Search_null836_1_91:
+jal Tree_Search_null836
+Tree_Search_null836_2_91:
+lw t0, -64(fp)
+lw t0, 0(t0)
+sw t0, -68(fp)
+lw t0, -68(fp)
+lw t0, -32(t0)
+sw t0, -72(fp)
+jal Tree_Search_null_end836
+Tree_Search_null836:
+la a0, msg_1
+j error
+Tree_Search_null_end836:
+lw t0, -72(fp)
+sw t4, -176(fp)
+sw t3, -180(fp)
+sw s9, -188(fp)
+sw s10, -212(fp)
+lw a2, -64(fp)
+jalr t0
+mv t0, a0
+sw t0, -92(fp)
+lw t4, -176(fp)
+lw t3, -180(fp)
+lw s9, -188(fp)
+lw s10, -212(fp)
+lw t0, -92(fp)
+beqz t0, Tree_Search_else833_1_92
+jal Tree_Search_else833_2_92
+Tree_Search_else833_1_92:
+jal Tree_Search_else833
+Tree_Search_else833_2_92:
+mv t0, s10
+mv t0, t0
+sw t0, -96(fp)
+lw t0, -96(fp)
+beqz t0, Tree_Search_null844_1_93
+jal Tree_Search_null844_2_93
+Tree_Search_null844_1_93:
+jal Tree_Search_null844
+Tree_Search_null844_2_93:
+lw t0, -96(fp)
+lw t0, 0(t0)
+sw t0, -100(fp)
+lw t0, -100(fp)
+lw t0, -16(t0)
+sw t0, -104(fp)
+jal Tree_Search_null_end844
+Tree_Search_null844:
+la a0, msg_1
+j error
+Tree_Search_null_end844:
+lw t0, -104(fp)
+sw t4, -176(fp)
+sw t3, -180(fp)
+sw s9, -188(fp)
+sw s10, -212(fp)
+lw a2, -96(fp)
+jalr t0
+mv t0, a0
+sw t0, -124(fp)
+lw t4, -176(fp)
+lw t3, -180(fp)
+lw s9, -188(fp)
+lw s10, -212(fp)
+lw t0, -124(fp)
+mv s10, t0
+jal Tree_Search_end833
+Tree_Search_else833:
+li t0, 0
+sw t0, -128(fp)
+lw t0, -128(fp)
+mv t3, t0
+Tree_Search_end833:
+jal Tree_Search_end827
+Tree_Search_else827:
+mv t0, s9
+mv t0, t0
+sw t0, -132(fp)
+mv t0, t4
+mv t0, t0
+sw t0, -136(fp)
+lw t0, -132(fp)
+lw t1, -136(fp)
+slt t0, t0, t1
+sw t0, -140(fp)
+lw t0, -140(fp)
+beqz t0, Tree_Search_else851_1_94
+jal Tree_Search_else851_2_94
+Tree_Search_else851_1_94:
+jal Tree_Search_else851
+Tree_Search_else851_2_94:
+mv t0, s10
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_Search_null860_1_95
+jal Tree_Search_null860_2_95
+Tree_Search_null860_1_95:
+jal Tree_Search_null860
+Tree_Search_null860_2_95:
+mv t0, s11
+lw t2, 0(t0)
+mv t0, t2
+lw t5, -28(t0)
+jal Tree_Search_null_end860
+Tree_Search_null860:
+la a0, msg_1
+j error
+Tree_Search_null_end860:
+mv t0, t5
+sw t5, -172(fp)
+sw t4, -176(fp)
+sw t3, -180(fp)
+sw t2, -184(fp)
+sw s9, -188(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, s11
+jalr t0
+mv s8, a0
+lw t5, -172(fp)
+lw t4, -176(fp)
+lw t3, -180(fp)
+lw t2, -184(fp)
+lw s9, -188(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, s8
+beqz t0, Tree_Search_else857_1_96
+jal Tree_Search_else857_2_96
+Tree_Search_else857_1_96:
+jal Tree_Search_else857
+Tree_Search_else857_2_96:
+mv t0, s10
+mv s7, t0
+mv t0, s7
+beqz t0, Tree_Search_null868_1_97
+jal Tree_Search_null868_2_97
+Tree_Search_null868_1_97:
+jal Tree_Search_null868
+Tree_Search_null868_2_97:
+mv t0, s7
+lw s6, 0(t0)
+mv t0, s6
+lw s5, -12(t0)
+jal Tree_Search_null_end868
+Tree_Search_null868:
+la a0, msg_1
+j error
+Tree_Search_null_end868:
+mv t0, s5
+sw t5, -172(fp)
+sw t4, -176(fp)
+sw t3, -180(fp)
+sw t2, -184(fp)
+sw s9, -188(fp)
+sw s8, -192(fp)
+sw s7, -196(fp)
+sw s6, -200(fp)
+sw s5, -204(fp)
+sw s11, -208(fp)
+sw s10, -212(fp)
+mv a2, s7
+jalr t0
+mv s4, a0
+lw t5, -172(fp)
+lw t4, -176(fp)
+lw t3, -180(fp)
+lw t2, -184(fp)
+lw s9, -188(fp)
+lw s8, -192(fp)
+lw s7, -196(fp)
+lw s6, -200(fp)
+lw s5, -204(fp)
+lw s11, -208(fp)
+lw s10, -212(fp)
+mv t0, s4
+mv s10, t0
+jal Tree_Search_end857
+Tree_Search_else857:
+li s3, 0
+mv t0, s3
+mv t3, t0
+Tree_Search_end857:
+jal Tree_Search_end851
+Tree_Search_else851:
+li s2, 1
+mv t0, s2
+mv t0, t0
+sw t0, -216(fp)
+li s1, 0
+mv t0, s1
+mv t3, t0
+Tree_Search_end851:
+Tree_Search_end827:
+jal Tree_Search_loop816
+Tree_Search_end816:
+lw t0, -216(fp)
+mv s10, t0
+jal Tree_Search_Search_end
+Tree_Search_Search_end:
+sw s10, -220(fp)
+lw a0, -220(fp)
+addi sp, sp, 220
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_Print
+Tree_Print:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 16
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+li t4, 0
+mv t0, t4
+mv t3, t0
+li t2, 0
+mv t0, t2
+mv t3, t0
+mv t0, t5
+mv t3, t0
+mv t0, t3
+mv t4, t0
+mv t0, t5
+mv t5, t0
+mv t0, t5
+beqz t0, Tree_Print_null886_1_98
+jal Tree_Print_null886_2_98
+Tree_Print_null886_1_98:
+jal Tree_Print_null886
+Tree_Print_null886_2_98:
+mv t0, t5
+lw t3, 0(t0)
+mv t0, t3
+lw t3, -76(t0)
+jal Tree_Print_null_end886
+Tree_Print_null886:
+la a0, msg_1
+j error
+Tree_Print_null_end886:
+mv t0, t4
+mv t4, t0
+mv t0, t3
+sw t2, -12(fp)
+mv a2, t5
+mv a3, t4
+jalr t0
+mv t3, a0
+lw t2, -12(fp)
+mv t0, t3
+mv t2, t0
+li t3, 1
+jal Tree_Print_Print_end
+Tree_Print_Print_end:
+sw t3, -16(fp)
+lw a0, -16(fp)
+addi sp, sp, 16
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl Tree_RecPrint
+Tree_RecPrint:
+sw fp, -8(sp)
+mv fp, sp
+li t6, 96
+sub sp, sp, t6
+sw ra, -4(fp)
+mv t5, a2
+mv t4, a3
+li t3, 0
+mv t0, t3
+mv t2, t0
+mv t0, t4
+mv t2, t0
+mv t0, t2
+beqz t0, Tree_RecPrint_null899_1_99
+jal Tree_RecPrint_null899_2_99
+Tree_RecPrint_null899_1_99:
+jal Tree_RecPrint_null899
+Tree_RecPrint_null899_2_99:
+mv t0, t2
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -32(t0)
+jal Tree_RecPrint_null_end899
+Tree_RecPrint_null899:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end899:
+mv t0, s11
+sw t5, -68(fp)
+sw t4, -72(fp)
+sw t3, -92(fp)
+mv a2, t2
+jalr t0
+mv s11, a0
+lw t5, -68(fp)
+lw t4, -72(fp)
+lw t3, -92(fp)
+mv t0, s11
+beqz t0, Tree_RecPrint_else896_1_100
+jal Tree_RecPrint_else896_2_100
+Tree_RecPrint_else896_1_100:
+jal Tree_RecPrint_else896
+Tree_RecPrint_else896_2_100:
+mv t0, t5
+mv s11, t0
+mv t0, s11
+beqz t0, Tree_RecPrint_null907_1_101
+jal Tree_RecPrint_null907_2_101
+Tree_RecPrint_null907_1_101:
+jal Tree_RecPrint_null907
+Tree_RecPrint_null907_2_101:
+mv t0, s11
+lw t2, 0(t0)
+mv t0, t2
+lw t2, -76(t0)
+jal Tree_RecPrint_null_end907
+Tree_RecPrint_null907:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end907:
+mv t0, t4
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_RecPrint_null914_1_102
+jal Tree_RecPrint_null914_2_102
+Tree_RecPrint_null914_1_102:
+jal Tree_RecPrint_null914
+Tree_RecPrint_null914_2_102:
+mv t0, s10
+lw s9, 0(t0)
+mv t0, s9
+lw s9, -16(t0)
+jal Tree_RecPrint_null_end914
+Tree_RecPrint_null914:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end914:
+mv t0, s9
+sw t5, -68(fp)
+sw t4, -72(fp)
+sw t3, -92(fp)
+sw t2, -36(fp)
+sw s11, -40(fp)
+mv a2, s10
+jalr t0
+mv s10, a0
+lw t5, -68(fp)
+lw t4, -72(fp)
+lw t3, -92(fp)
+lw t2, -36(fp)
+lw s11, -40(fp)
+mv t0, t2
+sw t5, -68(fp)
+sw t4, -72(fp)
+sw t3, -92(fp)
+mv a2, s11
+mv a3, s10
+jalr t0
+mv s10, a0
+lw t5, -68(fp)
+lw t4, -72(fp)
+lw t3, -92(fp)
+mv t0, s10
+mv t3, t0
+jal Tree_RecPrint_end896
+Tree_RecPrint_else896:
+li s10, 1
+mv t0, s10
+mv t3, t0
+Tree_RecPrint_end896:
+mv t0, t4
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_RecPrint_null923_1_103
+jal Tree_RecPrint_null923_2_103
+Tree_RecPrint_null923_1_103:
+jal Tree_RecPrint_null923
+Tree_RecPrint_null923_2_103:
+mv t0, s10
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -20(t0)
+jal Tree_RecPrint_null_end923
+Tree_RecPrint_null923:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end923:
+mv t0, s11
+sw t5, -68(fp)
+sw t4, -72(fp)
+sw t3, -92(fp)
+mv a2, s10
+jalr t0
+mv s10, a0
+lw t5, -68(fp)
+lw t4, -72(fp)
+lw t3, -92(fp)
+mv t0, s10
+mv a1, t0
+li a0, @print_int
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+mv t0, t4
+mv s10, t0
+mv t0, s10
+beqz t0, Tree_RecPrint_null932_1_104
+jal Tree_RecPrint_null932_2_104
+Tree_RecPrint_null932_1_104:
+jal Tree_RecPrint_null932
+Tree_RecPrint_null932_2_104:
+mv t0, s10
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -28(t0)
+jal Tree_RecPrint_null_end932
+Tree_RecPrint_null932:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end932:
+mv t0, s11
+sw t5, -68(fp)
+sw t4, -72(fp)
+sw t3, -92(fp)
+mv a2, s10
+jalr t0
+mv s10, a0
+lw t5, -68(fp)
+lw t4, -72(fp)
+lw t3, -92(fp)
+mv t0, s10
+beqz t0, Tree_RecPrint_else929_1_105
+jal Tree_RecPrint_else929_2_105
+Tree_RecPrint_else929_1_105:
+jal Tree_RecPrint_else929
+Tree_RecPrint_else929_2_105:
+mv t0, t5
+mv t5, t0
+mv t0, t5
+beqz t0, Tree_RecPrint_null940_1_106
+jal Tree_RecPrint_null940_2_106
+Tree_RecPrint_null940_1_106:
+jal Tree_RecPrint_null940
+Tree_RecPrint_null940_2_106:
+mv t0, t5
+lw s10, 0(t0)
+mv t0, s10
+lw s10, -76(t0)
+jal Tree_RecPrint_null_end940
+Tree_RecPrint_null940:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end940:
+mv t0, t4
+mv t4, t0
+mv t0, t4
+beqz t0, Tree_RecPrint_null947_1_107
+jal Tree_RecPrint_null947_2_107
+Tree_RecPrint_null947_1_107:
+jal Tree_RecPrint_null947
+Tree_RecPrint_null947_2_107:
+mv t0, t4
+lw s11, 0(t0)
+mv t0, s11
+lw s11, -12(t0)
+jal Tree_RecPrint_null_end947
+Tree_RecPrint_null947:
+la a0, msg_1
+j error
+Tree_RecPrint_null_end947:
+mv t0, s11
+sw t5, -80(fp)
+sw t3, -92(fp)
+sw s10, -88(fp)
+mv a2, t4
+jalr t0
+mv s11, a0
+lw t5, -80(fp)
+lw t3, -92(fp)
+lw s10, -88(fp)
+mv t0, s10
+sw t3, -92(fp)
+mv a2, t5
+mv a3, s11
+jalr t0
+mv s10, a0
+lw t3, -92(fp)
+mv t0, s10
+mv t3, t0
+jal Tree_RecPrint_end929
+Tree_RecPrint_else929:
+li s10, 1
+mv t0, s10
+mv s10, t0
+Tree_RecPrint_end929:
+li t3, 1
+jal Tree_RecPrint_RecPrint_end
+Tree_RecPrint_RecPrint_end:
+sw t3, -96(fp)
+lw a0, -96(fp)
+addi sp, sp, 96
+lw ra, -4(fp)
+lw fp, -8(fp)
+jr ra
+
+.globl error
+error:
+mv a1, a0
+li a0, @print_string
+ecall
+li a1, 10
+li a0, @print_char
+ecall
+li a0, @exit
+ecall
+abort_17:
+j abort_17
+
+.globl alloc
+alloc:
+mv a1, a0
+li a0, @sbrk
+ecall
+jr ra
+
+.data
+
+.globl msg_0
+msg_0:
+.asciiz "null pointer"
+.align 2
+
+.globl msg_1
+msg_1:
+.asciiz "array index out of bounds"
+.align 2
+
+

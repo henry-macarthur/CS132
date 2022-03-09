@@ -1,0 +1,85 @@
+
+func Main() 
+t9 = 4
+t8 = alloc(t9)
+t11 = 8
+t12 = alloc(t11)
+t13 = @MT4_Start
+t14 = @MT4_Change
+[t12 + 0] = t13
+[t12 + 4] = t14
+[t8 + 0] = t12
+if0 t8 goto null8
+t17 = [t8 + 0]
+t18 = [t17 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t19 = 1
+t20 = 2
+t21 = 3
+t22 = 4
+t23 = 5
+t24 = 6
+t6 = call t18(t8 t19 t20 t21 t22 t23 t24)
+print(t6)
+t25 = 1
+goto main_end
+main_end:
+return t25
+
+func MT4_Start(this MT4_p1 MT4_p2 MT4_p3 MT4_p4 MT4_p5 MT4_p6)
+MT4_aux = 0
+t26 = MT4_aux
+t28 = MT4_p1
+print(t28)
+t30 = MT4_p2
+print(t30)
+t32 = MT4_p3
+print(t32)
+t34 = MT4_p4
+print(t34)
+t36 = MT4_p5
+print(t36)
+t38 = MT4_p6
+print(t38)
+t42 = this
+if0 t42 goto null42
+t45 = [t42 + 0]
+t46 = [t45 + 4]
+goto null_end42
+null42:
+error("null pointer")
+null_end42:
+t47 = MT4_p6
+t49 = MT4_p5
+t51 = MT4_p4
+t53 = MT4_p3
+t55 = MT4_p2
+t57 = MT4_p1
+t40 = call t46(t42 t47 t49 t51 t53 t55 t57)
+MT4_aux = t40
+t59 = MT4_aux
+goto Start_end
+Start_end:
+return t59
+
+func MT4_Change(this MT4_p1 MT4_p2 MT4_p3 MT4_p4 MT4_p5 MT4_p6)
+t61 = MT4_p1
+print(t61)
+t63 = MT4_p2
+print(t63)
+t65 = MT4_p3
+print(t65)
+t67 = MT4_p4
+print(t67)
+t69 = MT4_p5
+print(t69)
+t71 = MT4_p6
+print(t71)
+t73 = 0
+goto Change_end
+Change_end:
+return t73
+

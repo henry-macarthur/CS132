@@ -1,0 +1,125 @@
+fact = 
+    n -> 
+        n == ? 
+            1 
+            : n * Test.fact.apply(n-1);
+
+Tail Form : want the call at the end 
+    uses continuation passying stayle 
+
+    static BiFunction<Integer, Function<integer, integer>, integer> 
+    factCPS = 
+        (n, k) -> 
+            k.apply(1)
+            : Test.factCPS.apply(n-1, v -> k.apply(n * v))
+
+            both of the cases are a call in this form 
+                one arg is a constant 
+                the other is a lambda expression 
+                    v -> k applied to something 
+                    this is a value that can be passed around // nameless function 
+            
+            in both branches we have a call to a simple value 
+            Tail form : no matter the branch we go into, there is a call at the end 
+            what is k? gets called in at the end 
+
+How to call a function written in cps 
+
+factCPS.apply(4, v -> v)
+    * k starts as an identtity function 
+    * the identity takes whatever is there and it keeps returning what we get 
+
+    .....
+    factCPS.apply(3, v2 -> (v1 -> v1).apply(4 * v2))
+    ...
+    factCPS.apply(0, v5 -> (v4 -> (v3 -> (v2 -> (v1 -> v1).apply(4 *v2)).apply(3 * v3)).apply(2*v4)).apply(1 * v5))
+
+    then we take the whole thing and apply it to 1 and keep unraveling 
+
+
+Grammar 
+    Evaluation of a Tail form expression has one call which is the last operation 
+    Evaluation of a simple expression has no calls 
+
+
+Transformation Rules 
+
+------------24------------------|end->
+k is the rest of the computation between 24(now) and the end 
+    k.apply(24), need k to do all of the work we want 
+    we need to know what k is
+
+foo - 
+    x -> ---
+
+--> 
+
+fooCPS = 
+    (x, k) -> k.apply( --- )
+    //whoever calls foo needs to be able to pass a continuation that represents to rest of what we need 
+
+
+k.apply(foo.apply(a, n-1))  //have an an apply w/ immediate argument is apply 
+---> 
+fooCPS.apply(a, n-1, k)
+
+//we have no ... to fill 
+having a function that takes an argument v and applies k to v is just applying k 
+
+
+
+k.apply(----- (foo.apply(a, n-1)) ----)             //have a call with only simple parameters, not tail form, foo.apply gives us the value (24)
+-->
+fooCPS.apply(a, n-1, v -> k.apply(---- v ----))   the thing we had at the end becomes the first thing we call, execute it with only simple parameters, 
+                                                    pass the value to the continuation and 
+                                                    take 24, call it v, and we put it in our continuation 
+                                                    first do apply, then k.apply 
+                                                    took result of foo.apply and made it v, and then we continue using v 
+
+                
+k.apply(y ? --- : ---)
+--> 
+y ? k.apply(---) : k.apply(---)
+
+
+k.apply((foo.apply(x) ? --- : ---)
+-> 
+fooCPS(x, v -> k.apply(v ? ... : ...))
+--> 
+fooCPS(x, v -> v ? k.apply(---) : k.apply(---))
+
+
+1. add a continuation 
+2. lift out the inner call, and move continuation to be continuation argument 
+3. lift out an inner most call 
+
+
+Tail form to first order form 
+
+fact cps = 
+    (n, k) -> 
+        n== 0? 
+            k.apply(1)
+            : Test.factCPS.apply(n-1, v -> k.apply(n*v))
+
+Continuation ::= v -> v
+                | v -> Continuation.apply(n * v)
+
+what info do we need for the second part
+    we need continuation and v 
+
+Continuation as a datatype 
+
+interface Continuation { 
+    Integer apply(Integer a);
+}
+
+1.) need identity continuation 
+2.) FactRec 
+    need n and continuation k 
+        just sets n and k to its parameters 
+    
+    apply takes in v 
+        returns the variable k with apply called to n * v where v is a passed in integer
+
+        

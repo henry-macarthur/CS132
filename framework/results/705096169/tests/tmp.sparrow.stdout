@@ -1,0 +1,49 @@
+func Main()
+t5 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = 1
+t4 = @FacComputeFac
+v0 = t5
+return v0
+
+func FacComputeFac(FacComputeFac_f FacComputeFac_g FacComputeFac_h FacComputeFac_i FacComputeFac_j FacComputeFac_k FacComputeFac_l FacComputeFac_m FacComputeFac_n FacComputeFac_o FacComputeFac_p)
+t0 = a2
+FacComputeFac_this = a2
+t0 = a3
+FacComputeFac_a = a3
+s1 = a4
+s2 = a5
+s3 = a6
+s4 = a7
+s5 = FacComputeFac_f
+s6 = FacComputeFac_g
+s7 = FacComputeFac_h
+s8 = FacComputeFac_i
+s9 = FacComputeFac_j
+s10 = FacComputeFac_k
+s11 = FacComputeFac_l
+t2 = FacComputeFac_m
+t3 = FacComputeFac_n
+t4 = FacComputeFac_o
+t5 = FacComputeFac_p
+t0 = s1
+t5 = t0
+p = t5
+return p
+
+

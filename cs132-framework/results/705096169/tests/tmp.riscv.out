@@ -1,0 +1,9 @@
+Exception in thread "main" java.lang.IllegalArgumentException: venus.assembler.AssemblerError: instruction with name error! not found on line 1
+	at Venus.assembleAndLink(Venus.java:24)
+	at Venus.assembleLinkAndRun(Venus.java:34)
+	at Main.main(Main.java:13)
+Caused by: venus.assembler.AssemblerError: instruction with name error! not found on line 1
+	at venus.assembler.AssemblerPassTwo.run(Assembler.kt:275)
+	at venus.assembler.Assembler.assemble(Assembler.kt:29)
+	at Venus.assembleAndLink(Venus.java:21)
+	... 2 more

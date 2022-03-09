@@ -1,0 +1,319 @@
+
+func Main() 
+t9 = 12
+t8 = alloc(t9)
+t11 = 16
+t12 = alloc(t11)
+t13 = @LS_Start
+t14 = @LS_Print
+t15 = @LS_Search
+t16 = @LS_Init
+[t12 + 0] = t13
+[t12 + 4] = t14
+[t12 + 8] = t15
+[t12 + 12] = t16
+[t8 + 0] = t12
+if0 t8 goto null8
+t19 = [t8 + 0]
+t20 = [t19 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t21 = 10
+t6 = call t20(t8 t21)
+print(t6)
+t22 = 1
+goto main_end
+main_end:
+return t22
+
+func LS_Start(this LS_sz)
+LS_aux01 = 0
+t27 = LS_aux01
+LS_aux02 = 0
+t29 = LS_aux02
+t33 = this
+if0 t33 goto null33
+t36 = [t33 + 0]
+t37 = [t36 + 12]
+goto null_end33
+null33:
+error("null pointer")
+null_end33:
+t38 = LS_sz
+t31 = call t37(t33 t38)
+LS_aux01 = t31
+t42 = this
+if0 t42 goto null42
+t45 = [t42 + 0]
+t46 = [t45 + 4]
+goto null_end42
+null42:
+error("null pointer")
+null_end42:
+t40 = call t46(t42)
+LS_aux02 = t40
+t47 = 9999
+print(t47)
+t50 = this
+if0 t50 goto null50
+t53 = [t50 + 0]
+t54 = [t53 + 8]
+goto null_end50
+null50:
+error("null pointer")
+null_end50:
+t55 = 8
+t48 = call t54(t50 t55)
+print(t48)
+t58 = this
+if0 t58 goto null58
+t61 = [t58 + 0]
+t62 = [t61 + 8]
+goto null_end58
+null58:
+error("null pointer")
+null_end58:
+t63 = 12
+t56 = call t62(t58 t63)
+print(t56)
+t66 = this
+if0 t66 goto null66
+t69 = [t66 + 0]
+t70 = [t69 + 8]
+goto null_end66
+null66:
+error("null pointer")
+null_end66:
+t71 = 17
+t64 = call t70(t66 t71)
+print(t64)
+t74 = this
+if0 t74 goto null74
+t77 = [t74 + 0]
+t78 = [t77 + 8]
+goto null_end74
+null74:
+error("null pointer")
+null_end74:
+t79 = 50
+t72 = call t78(t74 t79)
+print(t72)
+t80 = 55
+goto Start_end
+Start_end:
+return t80
+
+func LS_Print(this)
+LS_j = 0
+t81 = LS_j
+t83 = 1
+LS_j = t83
+loop84:
+t86 = LS_j
+t88 = [this + 8]
+t85 = t86 < t88
+if0 t85 goto end84
+t101 = [this + 4]
+t103 = LS_j
+t99 = 1
+t100 = 4
+t91 = t103 + t99
+t92 = t91 * t100
+t93 = t101 + t92
+t94 = 1
+t98 = 2
+t98 = t94 - t98
+t95 = t98 < t103
+if0 t95 goto Error90
+t96 = [t101 + 0]
+t97 = t103 < t96
+if0 t97 goto Error90
+t90 = [t93 + 0]
+goto end90
+Error90:
+ error("array index out of bounds")
+end90:
+print(t90)
+t106 = LS_j
+t108 = 1
+t105 = t106 + t108
+LS_j = t105
+goto loop84
+end84:
+t109 = 0
+goto Print_end
+Print_end:
+return t109
+
+func LS_Search(this LS_num)
+LS_j = 0
+t110 = LS_j
+LS_ls01 = 0
+t112 = LS_ls01
+LS_ifound = 0
+t114 = LS_ifound
+LS_aux01 = 0
+t116 = LS_aux01
+LS_aux02 = 0
+t118 = LS_aux02
+LS_nt = 0
+t120 = LS_nt
+t122 = 1
+LS_j = t122
+t123 = 0
+LS_ls01 = t123
+t124 = 0
+LS_ifound = t124
+loop125:
+t127 = LS_j
+t129 = [this + 8]
+t126 = t127 < t129
+if0 t126 goto end125
+t142 = [this + 4]
+t144 = LS_j
+t140 = 1
+t141 = 4
+t132 = t144 + t140
+t133 = t132 * t141
+t134 = t142 + t133
+t135 = 1
+t139 = 2
+t139 = t135 - t139
+t136 = t139 < t144
+if0 t136 goto Error131
+t137 = [t142 + 0]
+t138 = t144 < t137
+if0 t138 goto Error131
+t131 = [t134 + 0]
+goto end131
+Error131:
+ error("array index out of bounds")
+end131:
+LS_aux01 = t131
+t147 = LS_num
+t149 = 1
+t146 = t147 + t149
+LS_aux02 = t146
+t152 = LS_aux01
+t154 = LS_num
+t151 = t152 < t154
+if0 t151 goto else150
+t156 = 0
+LS_nt = t156
+goto end150
+else150:
+t160 = LS_aux01
+t162 = LS_aux02
+t159 = t160 < t162
+if0 t159 goto else158
+t158 = 0
+goto end158
+else158:
+t158 = 1
+end158:
+if0 t158 goto else157
+t164 = 0
+LS_nt = t164
+goto end157
+else157:
+t165 = 1
+LS_ls01 = t165
+t166 = 1
+LS_ifound = t166
+t167 = [this + 8]
+LS_j = t167
+end157:
+end150:
+t170 = LS_j
+t172 = 1
+t169 = t170 + t172
+LS_j = t169
+goto loop125
+end125:
+t173 = LS_ifound
+goto Search_end
+Search_end:
+return t173
+
+func LS_Init(this LS_sz)
+LS_j = 0
+t175 = LS_j
+LS_k = 0
+t177 = LS_k
+LS_aux01 = 0
+t179 = LS_aux01
+LS_aux02 = 0
+t181 = LS_aux02
+t183 = LS_sz
+LS_size = t183
+[this + 8] = t183
+t188 = LS_sz
+t189 = 1
+t190 = 4
+t186 = t188 + t189
+t187 = t186 * t190
+t185 = alloc(t187)
+t186 = 0
+[t185 + 0] = t188
+LS_number = t185
+[this + 4] = t185
+t192 = 1
+LS_j = t192
+t194 = [this + 8]
+t196 = 1
+t193 = t194 + t196
+LS_k = t193
+loop197:
+t199 = LS_j
+t201 = [this + 8]
+t198 = t199 < t201
+if0 t198 goto end197
+t204 = 2
+t205 = LS_j
+t203 = t204 * t205
+LS_aux01 = t203
+t208 = LS_k
+t210 = 3
+t207 = t208 - t210
+LS_aux02 = t207
+t221 = [this + 4]
+t223 = LS_j
+t226 = LS_aux01
+t228 = LS_aux02
+t225 = t226 + t228
+t220 = 1
+t212 = t223 + t220
+t220 = 4
+t213 = t212 * t220
+t214 = t221 + t213
+t230 = [t221 + 0]
+t215 = 1
+t219 = 2
+t219 = t215 - t219
+t216 = t219 < t225
+if0 t216 goto Error211
+t217 = [t221 + 0]
+t218 = t223 < t230
+if0 t218 goto Error211
+[t214 + 0] = t225
+goto end211
+Error211:
+ error("array index out of bounds")
+end211:
+t232 = LS_j
+t234 = 1
+t231 = t232 + t234
+LS_j = t231
+t236 = LS_k
+t238 = 1
+t235 = t236 - t238
+LS_k = t235
+goto loop197
+end197:
+t239 = 0
+goto Init_end
+Init_end:
+return t239
+

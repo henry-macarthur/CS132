@@ -1,0 +1,761 @@
+
+func Main() 
+t9 = 12
+t8 = alloc(t9)
+t11 = 16
+t12 = alloc(t11)
+t13 = @QS_Start
+t14 = @QS_Sort
+t15 = @QS_Print
+t16 = @QS_Init
+[t12 + 0] = t13
+[t12 + 4] = t14
+[t12 + 8] = t15
+[t12 + 12] = t16
+[t8 + 0] = t12
+if0 t8 goto null8
+t19 = [t8 + 0]
+t20 = [t19 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t21 = 10
+t6 = call t20(t8 t21)
+print(t6)
+t22 = 1
+goto main_end
+main_end:
+return t22
+
+func QS_Start(this QS_sz)
+QS_aux01 = 0
+t27 = QS_aux01
+t31 = this
+if0 t31 goto null31
+t34 = [t31 + 0]
+t35 = [t34 + 12]
+goto null_end31
+null31:
+error("null pointer")
+null_end31:
+t36 = QS_sz
+t29 = call t35(t31 t36)
+QS_aux01 = t29
+t40 = this
+if0 t40 goto null40
+t43 = [t40 + 0]
+t44 = [t43 + 8]
+goto null_end40
+null40:
+error("null pointer")
+null_end40:
+t38 = call t44(t40)
+QS_aux01 = t38
+t45 = 9999
+print(t45)
+t47 = [this + 8]
+t49 = 1
+t46 = t47 - t49
+QS_aux01 = t46
+t52 = this
+if0 t52 goto null52
+t55 = [t52 + 0]
+t56 = [t55 + 4]
+goto null_end52
+null52:
+error("null pointer")
+null_end52:
+t57 = 0
+t58 = QS_aux01
+t50 = call t56(t52 t57 t58)
+QS_aux01 = t50
+t62 = this
+if0 t62 goto null62
+t65 = [t62 + 0]
+t66 = [t65 + 8]
+goto null_end62
+null62:
+error("null pointer")
+null_end62:
+t60 = call t66(t62)
+QS_aux01 = t60
+t67 = 0
+goto Start_end
+Start_end:
+return t67
+
+func QS_Sort(this QS_left QS_right)
+QS_v = 0
+t68 = QS_v
+QS_i = 0
+t70 = QS_i
+QS_j = 0
+t72 = QS_j
+QS_nt = 0
+t74 = QS_nt
+QS_t = 0
+t76 = QS_t
+QS_cont01 = 0
+t78 = QS_cont01
+QS_cont02 = 0
+t80 = QS_cont02
+QS_aux03 = 0
+t82 = QS_aux03
+t84 = 0
+QS_t = t84
+t87 = QS_left
+t89 = QS_right
+t86 = t87 < t89
+if0 t86 goto else85
+t102 = [this + 4]
+t104 = QS_right
+t100 = 1
+t101 = 4
+t92 = t104 + t100
+t93 = t92 * t101
+t94 = t102 + t93
+t95 = 1
+t99 = 2
+t99 = t95 - t99
+t96 = t99 < t104
+if0 t96 goto Error91
+t97 = [t102 + 0]
+t98 = t104 < t97
+if0 t98 goto Error91
+t91 = [t94 + 0]
+goto end91
+Error91:
+ error("array index out of bounds")
+end91:
+QS_v = t91
+t107 = QS_left
+t109 = 1
+t106 = t107 - t109
+QS_i = t106
+t110 = QS_right
+QS_j = t110
+t112 = 1
+QS_cont01 = t112
+loop113:
+t114 = QS_cont01
+if0 t114 goto end113
+t116 = 1
+QS_cont02 = t116
+loop117:
+t118 = QS_cont02
+if0 t118 goto end117
+t121 = QS_i
+t123 = 1
+t120 = t121 + t123
+QS_i = t120
+t135 = [this + 4]
+t137 = QS_i
+t133 = 1
+t134 = 4
+t125 = t137 + t133
+t126 = t125 * t134
+t127 = t135 + t126
+t128 = 1
+t132 = 2
+t132 = t128 - t132
+t129 = t132 < t137
+if0 t129 goto Error124
+t130 = [t135 + 0]
+t131 = t137 < t130
+if0 t131 goto Error124
+t124 = [t127 + 0]
+goto end124
+Error124:
+ error("array index out of bounds")
+end124:
+QS_aux03 = t124
+t142 = QS_aux03
+t144 = QS_v
+t141 = t142 < t144
+if0 t141 goto else140
+t140 = 0
+goto end140
+else140:
+t140 = 1
+end140:
+if0 t140 goto else139
+t146 = 0
+QS_cont02 = t146
+goto end139
+else139:
+t147 = 1
+QS_cont02 = t147
+end139:
+goto loop117
+end117:
+t148 = 1
+QS_cont02 = t148
+loop149:
+t150 = QS_cont02
+if0 t150 goto end149
+t153 = QS_j
+t155 = 1
+t152 = t153 - t155
+QS_j = t152
+t167 = [this + 4]
+t169 = QS_j
+t165 = 1
+t166 = 4
+t157 = t169 + t165
+t158 = t157 * t166
+t159 = t167 + t158
+t160 = 1
+t164 = 2
+t164 = t160 - t164
+t161 = t164 < t169
+if0 t161 goto Error156
+t162 = [t167 + 0]
+t163 = t169 < t162
+if0 t163 goto Error156
+t156 = [t159 + 0]
+goto end156
+Error156:
+ error("array index out of bounds")
+end156:
+QS_aux03 = t156
+t174 = QS_v
+t176 = QS_aux03
+t173 = t174 < t176
+if0 t173 goto else172
+t172 = 0
+goto end172
+else172:
+t172 = 1
+end172:
+if0 t172 goto else171
+t178 = 0
+QS_cont02 = t178
+goto end171
+else171:
+t179 = 1
+QS_cont02 = t179
+end171:
+goto loop149
+end149:
+t191 = [this + 4]
+t193 = QS_i
+t189 = 1
+t190 = 4
+t181 = t193 + t189
+t182 = t181 * t190
+t183 = t191 + t182
+t184 = 1
+t188 = 2
+t188 = t184 - t188
+t185 = t188 < t193
+if0 t185 goto Error180
+t186 = [t191 + 0]
+t187 = t193 < t186
+if0 t187 goto Error180
+t180 = [t183 + 0]
+goto end180
+Error180:
+ error("array index out of bounds")
+end180:
+QS_t = t180
+t205 = [this + 4]
+t207 = QS_i
+t220 = [this + 4]
+t222 = QS_j
+t218 = 1
+t219 = 4
+t210 = t222 + t218
+t211 = t210 * t219
+t212 = t220 + t211
+t213 = 1
+t217 = 2
+t217 = t213 - t217
+t214 = t217 < t222
+if0 t214 goto Error209
+t215 = [t220 + 0]
+t216 = t222 < t215
+if0 t216 goto Error209
+t209 = [t212 + 0]
+goto end209
+Error209:
+ error("array index out of bounds")
+end209:
+t204 = 1
+t196 = t207 + t204
+t204 = 4
+t197 = t196 * t204
+t198 = t205 + t197
+t224 = [t205 + 0]
+t199 = 1
+t203 = 2
+t203 = t199 - t203
+t200 = t203 < t209
+if0 t200 goto Error195
+t201 = [t205 + 0]
+t202 = t207 < t224
+if0 t202 goto Error195
+[t198 + 0] = t209
+goto end195
+Error195:
+ error("array index out of bounds")
+end195:
+t235 = [this + 4]
+t237 = QS_j
+t239 = QS_t
+t234 = 1
+t226 = t237 + t234
+t234 = 4
+t227 = t226 * t234
+t228 = t235 + t227
+t241 = [t235 + 0]
+t229 = 1
+t233 = 2
+t233 = t229 - t233
+t230 = t233 < t239
+if0 t230 goto Error225
+t231 = [t235 + 0]
+t232 = t237 < t241
+if0 t232 goto Error225
+[t228 + 0] = t239
+goto end225
+Error225:
+ error("array index out of bounds")
+end225:
+t244 = QS_j
+t247 = QS_i
+t249 = 1
+t246 = t247 + t249
+t243 = t244 < t246
+if0 t243 goto else242
+t250 = 0
+QS_cont01 = t250
+goto end242
+else242:
+t251 = 1
+QS_cont01 = t251
+end242:
+goto loop113
+end113:
+t262 = [this + 4]
+t264 = QS_j
+t277 = [this + 4]
+t279 = QS_i
+t275 = 1
+t276 = 4
+t267 = t279 + t275
+t268 = t267 * t276
+t269 = t277 + t268
+t270 = 1
+t274 = 2
+t274 = t270 - t274
+t271 = t274 < t279
+if0 t271 goto Error266
+t272 = [t277 + 0]
+t273 = t279 < t272
+if0 t273 goto Error266
+t266 = [t269 + 0]
+goto end266
+Error266:
+ error("array index out of bounds")
+end266:
+t261 = 1
+t253 = t264 + t261
+t261 = 4
+t254 = t253 * t261
+t255 = t262 + t254
+t281 = [t262 + 0]
+t256 = 1
+t260 = 2
+t260 = t256 - t260
+t257 = t260 < t266
+if0 t257 goto Error252
+t258 = [t262 + 0]
+t259 = t264 < t281
+if0 t259 goto Error252
+[t255 + 0] = t266
+goto end252
+Error252:
+ error("array index out of bounds")
+end252:
+t292 = [this + 4]
+t294 = QS_i
+t307 = [this + 4]
+t309 = QS_right
+t305 = 1
+t306 = 4
+t297 = t309 + t305
+t298 = t297 * t306
+t299 = t307 + t298
+t300 = 1
+t304 = 2
+t304 = t300 - t304
+t301 = t304 < t309
+if0 t301 goto Error296
+t302 = [t307 + 0]
+t303 = t309 < t302
+if0 t303 goto Error296
+t296 = [t299 + 0]
+goto end296
+Error296:
+ error("array index out of bounds")
+end296:
+t291 = 1
+t283 = t294 + t291
+t291 = 4
+t284 = t283 * t291
+t285 = t292 + t284
+t311 = [t292 + 0]
+t286 = 1
+t290 = 2
+t290 = t286 - t290
+t287 = t290 < t296
+if0 t287 goto Error282
+t288 = [t292 + 0]
+t289 = t294 < t311
+if0 t289 goto Error282
+[t285 + 0] = t296
+goto end282
+Error282:
+ error("array index out of bounds")
+end282:
+t322 = [this + 4]
+t324 = QS_right
+t326 = QS_t
+t321 = 1
+t313 = t324 + t321
+t321 = 4
+t314 = t313 * t321
+t315 = t322 + t314
+t328 = [t322 + 0]
+t316 = 1
+t320 = 2
+t320 = t316 - t320
+t317 = t320 < t326
+if0 t317 goto Error312
+t318 = [t322 + 0]
+t319 = t324 < t328
+if0 t319 goto Error312
+[t315 + 0] = t326
+goto end312
+Error312:
+ error("array index out of bounds")
+end312:
+t331 = this
+if0 t331 goto null331
+t334 = [t331 + 0]
+t335 = [t334 + 4]
+goto null_end331
+null331:
+error("null pointer")
+null_end331:
+t336 = QS_left
+t339 = QS_i
+t341 = 1
+t338 = t339 - t341
+t329 = call t335(t331 t336 t338)
+QS_nt = t329
+t344 = this
+if0 t344 goto null344
+t347 = [t344 + 0]
+t348 = [t347 + 4]
+goto null_end344
+null344:
+error("null pointer")
+null_end344:
+t350 = QS_i
+t352 = 1
+t349 = t350 + t352
+t353 = QS_right
+t342 = call t348(t344 t349 t353)
+QS_nt = t342
+goto end85
+else85:
+t355 = 0
+QS_nt = t355
+end85:
+t356 = 0
+goto Sort_end
+Sort_end:
+return t356
+
+func QS_Print(this)
+QS_j = 0
+t357 = QS_j
+t359 = 0
+QS_j = t359
+loop360:
+t362 = QS_j
+t364 = [this + 8]
+t361 = t362 < t364
+if0 t361 goto end360
+t377 = [this + 4]
+t379 = QS_j
+t375 = 1
+t376 = 4
+t367 = t379 + t375
+t368 = t367 * t376
+t369 = t377 + t368
+t370 = 1
+t374 = 2
+t374 = t370 - t374
+t371 = t374 < t379
+if0 t371 goto Error366
+t372 = [t377 + 0]
+t373 = t379 < t372
+if0 t373 goto Error366
+t366 = [t369 + 0]
+goto end366
+Error366:
+ error("array index out of bounds")
+end366:
+print(t366)
+t382 = QS_j
+t384 = 1
+t381 = t382 + t384
+QS_j = t381
+goto loop360
+end360:
+t385 = 0
+goto Print_end
+Print_end:
+return t385
+
+func QS_Init(this QS_sz)
+t386 = QS_sz
+QS_size = t386
+[this + 8] = t386
+t391 = QS_sz
+t392 = 1
+t393 = 4
+t389 = t391 + t392
+t390 = t389 * t393
+t388 = alloc(t390)
+t389 = 0
+[t388 + 0] = t391
+QS_number = t388
+[this + 4] = t388
+t405 = [this + 4]
+t407 = 0
+t408 = 20
+t404 = 1
+t396 = t407 + t404
+t404 = 4
+t397 = t396 * t404
+t398 = t405 + t397
+t409 = [t405 + 0]
+t399 = 1
+t403 = 2
+t403 = t399 - t403
+t400 = t403 < t408
+if0 t400 goto Error395
+t401 = [t405 + 0]
+t402 = t407 < t409
+if0 t402 goto Error395
+[t398 + 0] = t408
+goto end395
+Error395:
+ error("array index out of bounds")
+end395:
+t420 = [this + 4]
+t422 = 1
+t423 = 7
+t419 = 1
+t411 = t422 + t419
+t419 = 4
+t412 = t411 * t419
+t413 = t420 + t412
+t424 = [t420 + 0]
+t414 = 1
+t418 = 2
+t418 = t414 - t418
+t415 = t418 < t423
+if0 t415 goto Error410
+t416 = [t420 + 0]
+t417 = t422 < t424
+if0 t417 goto Error410
+[t413 + 0] = t423
+goto end410
+Error410:
+ error("array index out of bounds")
+end410:
+t435 = [this + 4]
+t437 = 2
+t438 = 12
+t434 = 1
+t426 = t437 + t434
+t434 = 4
+t427 = t426 * t434
+t428 = t435 + t427
+t439 = [t435 + 0]
+t429 = 1
+t433 = 2
+t433 = t429 - t433
+t430 = t433 < t438
+if0 t430 goto Error425
+t431 = [t435 + 0]
+t432 = t437 < t439
+if0 t432 goto Error425
+[t428 + 0] = t438
+goto end425
+Error425:
+ error("array index out of bounds")
+end425:
+t450 = [this + 4]
+t452 = 3
+t453 = 18
+t449 = 1
+t441 = t452 + t449
+t449 = 4
+t442 = t441 * t449
+t443 = t450 + t442
+t454 = [t450 + 0]
+t444 = 1
+t448 = 2
+t448 = t444 - t448
+t445 = t448 < t453
+if0 t445 goto Error440
+t446 = [t450 + 0]
+t447 = t452 < t454
+if0 t447 goto Error440
+[t443 + 0] = t453
+goto end440
+Error440:
+ error("array index out of bounds")
+end440:
+t465 = [this + 4]
+t467 = 4
+t468 = 2
+t464 = 1
+t456 = t467 + t464
+t464 = 4
+t457 = t456 * t464
+t458 = t465 + t457
+t469 = [t465 + 0]
+t459 = 1
+t463 = 2
+t463 = t459 - t463
+t460 = t463 < t468
+if0 t460 goto Error455
+t461 = [t465 + 0]
+t462 = t467 < t469
+if0 t462 goto Error455
+[t458 + 0] = t468
+goto end455
+Error455:
+ error("array index out of bounds")
+end455:
+t480 = [this + 4]
+t482 = 5
+t483 = 11
+t479 = 1
+t471 = t482 + t479
+t479 = 4
+t472 = t471 * t479
+t473 = t480 + t472
+t484 = [t480 + 0]
+t474 = 1
+t478 = 2
+t478 = t474 - t478
+t475 = t478 < t483
+if0 t475 goto Error470
+t476 = [t480 + 0]
+t477 = t482 < t484
+if0 t477 goto Error470
+[t473 + 0] = t483
+goto end470
+Error470:
+ error("array index out of bounds")
+end470:
+t495 = [this + 4]
+t497 = 6
+t498 = 6
+t494 = 1
+t486 = t497 + t494
+t494 = 4
+t487 = t486 * t494
+t488 = t495 + t487
+t499 = [t495 + 0]
+t489 = 1
+t493 = 2
+t493 = t489 - t493
+t490 = t493 < t498
+if0 t490 goto Error485
+t491 = [t495 + 0]
+t492 = t497 < t499
+if0 t492 goto Error485
+[t488 + 0] = t498
+goto end485
+Error485:
+ error("array index out of bounds")
+end485:
+t510 = [this + 4]
+t512 = 7
+t513 = 9
+t509 = 1
+t501 = t512 + t509
+t509 = 4
+t502 = t501 * t509
+t503 = t510 + t502
+t514 = [t510 + 0]
+t504 = 1
+t508 = 2
+t508 = t504 - t508
+t505 = t508 < t513
+if0 t505 goto Error500
+t506 = [t510 + 0]
+t507 = t512 < t514
+if0 t507 goto Error500
+[t503 + 0] = t513
+goto end500
+Error500:
+ error("array index out of bounds")
+end500:
+t525 = [this + 4]
+t527 = 8
+t528 = 19
+t524 = 1
+t516 = t527 + t524
+t524 = 4
+t517 = t516 * t524
+t518 = t525 + t517
+t529 = [t525 + 0]
+t519 = 1
+t523 = 2
+t523 = t519 - t523
+t520 = t523 < t528
+if0 t520 goto Error515
+t521 = [t525 + 0]
+t522 = t527 < t529
+if0 t522 goto Error515
+[t518 + 0] = t528
+goto end515
+Error515:
+ error("array index out of bounds")
+end515:
+t540 = [this + 4]
+t542 = 9
+t543 = 5
+t539 = 1
+t531 = t542 + t539
+t539 = 4
+t532 = t531 * t539
+t533 = t540 + t532
+t544 = [t540 + 0]
+t534 = 1
+t538 = 2
+t538 = t534 - t538
+t535 = t538 < t543
+if0 t535 goto Error530
+t536 = [t540 + 0]
+t537 = t542 < t544
+if0 t537 goto Error530
+[t533 + 0] = t543
+goto end530
+Error530:
+ error("array index out of bounds")
+end530:
+t545 = 0
+goto Init_end
+Init_end:
+return t545

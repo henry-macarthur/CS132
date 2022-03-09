@@ -1,0 +1,136 @@
+
+func Main()
+t5 = 4
+t0 = t5
+t5 = alloc(t0)
+t4 = 8
+t0 = t4
+t4 = alloc(t0)
+t3 = @A_run
+t2 = @A_helper
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+t1 = t2
+[t0 + 4] = t1
+t0 = t5
+t1 = t4
+[t0 + 0] = t1
+t0 = t5
+if0 t0 goto null8
+t0 = t5
+t4 = [t0 + 0]
+t0 = t4
+t4 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t0 = t4
+a2 = t5
+t4 = call t0()
+t0 = t4
+print(t0)
+t4 = 1
+goto main_end
+main_end:
+t19 = t4
+return t19
+
+func A_run()
+t5 = a2
+t4 = 0
+t0 = t4
+t3 = t0
+t2 = 0
+t0 = t2
+t3 = t0
+t0 = t5
+t3 = t0
+t0 = t3
+if0 t0 goto null26
+t0 = t3
+s11 = [t0 + 0]
+t0 = s11
+s11 = [t0 + 4]
+goto null_end26
+null26:
+error("null pointer")
+null_end26:
+s10 = 12
+t0 = s11
+A_run_this = t5
+A_run_A_a = t4
+A_run_A_b = t2
+a2 = t3
+a3 = s10
+s10 = call t0()
+t5 = A_run_this
+t4 = A_run_A_a
+t2 = A_run_A_b
+t0 = s10
+t4 = t0
+t0 = t5
+t5 = t0
+t0 = t5
+if0 t0 goto null34
+t0 = t5
+s10 = [t0 + 0]
+t0 = s10
+s10 = [t0 + 4]
+goto null_end34
+null34:
+error("null pointer")
+null_end34:
+s11 = 15
+t0 = s10
+A_run_A_a = t4
+A_run_A_b = t2
+a2 = t5
+a3 = s11
+s10 = call t0()
+t4 = A_run_A_a
+t2 = A_run_A_b
+t0 = s10
+t2 = t0
+t0 = t4
+t4 = t0
+t0 = t2
+t2 = t0
+t0 = t4
+t1 = t2
+t2 = t0 + t1
+goto run_end
+run_end:
+t40 = t2
+return t40
+
+func A_helper()
+t5 = a2
+t4 = a3
+t3 = 0
+t0 = t3
+t5 = t0
+t0 = t4
+t5 = t0
+t0 = t5
+t3 = t0
+t0 = t4
+t5 = t0
+t2 = 1
+t0 = t5
+t1 = t2
+t2 = t0 + t1
+t0 = t2
+t2 = t0
+t0 = t3
+t2 = t0
+t0 = t2
+print(t0)
+t0 = t3
+t3 = t0
+goto helper_end
+helper_end:
+t55 = t3
+return t55

@@ -1,0 +1,32 @@
+
+func Main() 
+t9 = 4
+t8 = alloc(t9)
+t11 = 4
+t12 = alloc(t11)
+t13 = @A_run
+[t12 + 0] = t13
+[t8 + 0] = t12
+if0 t8 goto null8
+t16 = [t8 + 0]
+t17 = [t16 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t6 = call t17(t8)
+print(t6)
+t18 = 1
+goto main_end
+main_end:
+return t18
+
+func A_run(this)
+t19 = 42
+print(t19)
+t20 = 99
+goto run_end
+run_end:
+return t20
+
+

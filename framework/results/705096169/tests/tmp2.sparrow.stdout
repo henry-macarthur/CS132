@@ -1,0 +1,15 @@
+func Main()
+t5 = 12
+t4 = 21
+t0 = t5
+t1 = t4
+t3 = t0 + t1
+t0 = t3
+print(t0)
+t3 = 1
+goto main_end
+main_end:
+t9 = t3
+return t9
+
+

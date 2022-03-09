@@ -1,0 +1,7 @@
+Starting a Gradle Daemon, 127 busy and 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.2/userguide/command_line_interface.html#sec:command_line_warnings

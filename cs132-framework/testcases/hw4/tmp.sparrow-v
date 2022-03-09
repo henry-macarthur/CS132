@@ -1,0 +1,171 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :run
+func Main()
+t5 = 1
+t4 = 1
+t3 = 3
+t2 = 1
+s11 = 1
+s10 = 1
+s9 = 1
+s8 = 1
+s7 = 1
+s6 = 1
+s5 = 1
+s4 = 1
+s3 = 1
+s2 = 1
+s1 = 1
+t0 = 1
+Main_v15 = t0
+t0 = 1
+Main_v16 = t0
+t0 = 1
+Main_v17 = t0
+t0 = @FacComputeFac
+Main_v18 = t0
+t0 = Main_v18
+Main_v0 = t5
+Main_v1 = t4
+Main_v2 = t3
+Main_v3 = t2
+Main_v6 = s9
+Main_v7 = s8
+Main_v8 = s7
+Main_v9 = s6
+Main_v10 = s5
+Main_v11 = s4
+Main_v12 = s3
+Main_v13 = s2
+Main_v4 = s11
+Main_v14 = s1
+Main_v5 = s10
+a2 = t4
+a3 = t3
+a4 = t2
+a5 = s11
+a6 = s10
+a7 = s9
+Main_v7 = s8
+Main_v8 = s7
+Main_v9 = s6
+Main_v10 = s5
+Main_v11 = s4
+Main_v12 = s3
+Main_v13 = s2
+Main_v14 = s1
+t0 = call t0(Main_v7 Main_v8 Main_v9 Main_v10 Main_v11 Main_v12 Main_v13 Main_v14 Main_v15 Main_v16 Main_v17)
+Main_v20 = t0
+t5 = Main_v0
+t4 = Main_v1
+t3 = Main_v2
+t2 = Main_v3
+s9 = Main_v6
+s8 = Main_v7
+s7 = Main_v8
+s6 = Main_v9
+s5 = Main_v10
+s4 = Main_v11
+s3 = Main_v12
+s2 = Main_v13
+s11 = Main_v4
+s1 = Main_v14
+s10 = Main_v5
+v0 = t5
+return v0
+
+func FacComputeFac(FacComputeFac_f FacComputeFac_g FacComputeFac_h FacComputeFac_i FacComputeFac_j FacComputeFac_k FacComputeFac_l FacComputeFac_m FacComputeFac_n FacComputeFac_o FacComputeFac_p)
+s2 = a2
+s3 = a3
+s4 = a4
+s5 = a5
+s6 = a6
+s7 = a7
+s8 = FacComputeFac_f
+s9 = FacComputeFac_g
+s10 = FacComputeFac_h
+s11 = FacComputeFac_i
+t2 = FacComputeFac_j
+t3 = FacComputeFac_k
+t4 = FacComputeFac_l
+t5 = FacComputeFac_m
+s1 = FacComputeFac_p
+t0 = s4
+s1 = t0
+t0 = s3
+s10 = t0
+t0 = s3
+print(t0)
+s10 = 1
+s4 = 1
+s6 = 3
+t2 = 1
+s11 = 1
+s8 = 1
+t4 = 1
+s2 = 1
+s7 = 1
+s9 = 1
+t3 = 1
+t5 = 1
+t0 = 1
+FacComputeFac_v12 = t0
+t0 = 1
+FacComputeFac_v13 = t0
+t0 = 1
+FacComputeFac_v14 = t0
+t0 = 1
+FacComputeFac_v15 = t0
+t0 = 1
+FacComputeFac_v16 = t0
+t0 = 1
+FacComputeFac_v17 = t0
+t0 = s3
+s5 = t0
+t0 = s5
+print(t0)
+s5 = FacComputeFac_v12
+s3 = FacComputeFac_v13
+
+s10 = 1
+s10 = FacComputeFac_v14
+
+s4 = 1
+s4 = FacComputeFac_v15
+
+s6 = 3
+s6 = FacComputeFac_v16
+
+t2 = 1
+t2 = FacComputeFac_v17
+
+s11 = 1
+s8 = 1
+t4 = 1
+s2 = 1
+s7 = 1
+s9 = 1
+t3 = 1
+t5 = 1
+s5 = 1
+s3 = 1
+s10 = 1
+s4 = 1
+s6 = 1
+t2 = 1
+p = s1
+return p
+
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 627ms
+2 actionable tasks: 1 executed, 1 up-to-date

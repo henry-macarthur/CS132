@@ -1,0 +1,2867 @@
+func Main()
+t5 = 4
+t0 = t5
+t4 = alloc(t0)
+t5 = 4
+t0 = t5
+t3 = alloc(t0)
+t5 = @LL_Start
+t0 = t3
+t1 = t5
+[t0 + 0] = t1
+t0 = t4
+t1 = t3
+[t0 + 0] = t1
+t0 = t4
+if0 t0 goto null8
+t0 = t4
+t3 = [t0 + 0]
+t0 = t3
+t5 = [t0 + 0]
+goto null_end8
+null8:
+error("null pointer")
+null_end8:
+t0 = t5
+Main_t17 = t5
+Main_t8 = t4
+a2 = t4
+t3 = call t0()
+t5 = Main_t17
+t4 = Main_t8
+t0 = t3
+print(t0)
+t3 = 1
+goto main_end
+main_end:
+t18 = t3
+return t18
+
+func Element_Init()
+t2 = a2
+t5 = a3
+t4 = a4
+t3 = a5
+t0 = t5
+s11 = t0
+t0 = s11
+t5 = t0
+t0 = t2
+t1 = s11
+[t0 + 4] = t1
+t0 = t4
+s11 = t0
+t0 = s11
+t4 = t0
+t0 = t2
+t1 = s11
+[t0 + 8] = t1
+t0 = t3
+s11 = t0
+t0 = s11
+t3 = t0
+t0 = t2
+t1 = s11
+[t0 + 12] = t1
+s11 = 1
+goto Init_end
+Init_end:
+t31 = s11
+return t31
+
+func Element_GetAge()
+t4 = a2
+t0 = t4
+t3 = [t0 + 4]
+goto GetAge_end
+GetAge_end:
+t32 = t3
+return t32
+
+func Element_GetSalary()
+t2 = a2
+t0 = t2
+s11 = [t0 + 8]
+goto GetSalary_end
+GetSalary_end:
+t34 = s11
+return t34
+
+func Element_GetMarried()
+s10 = a2
+t0 = s10
+s9 = [t0 + 12]
+goto GetMarried_end
+GetMarried_end:
+t36 = s9
+return t36
+
+func Element_Equal()
+s7 = a2
+s8 = a3
+s6 = 0
+t0 = s6
+s5 = t0
+s4 = 0
+t0 = s4
+s3 = t0
+s2 = 0
+t0 = s2
+s1 = t0
+t0 = 0
+Element_Equal_Element_nt = t0
+t0 = Element_Equal_Element_nt
+t0 = t0
+Element_Equal_t44 = t0
+t0 = 1
+Element_Equal_t46 = t0
+t0 = Element_Equal_t46
+s6 = t0
+t0 = s8
+t0 = t0
+Element_Equal_t49 = t0
+t0 = Element_Equal_t49
+if0 t0 goto null49
+t0 = Element_Equal_t49
+t0 = [t0 + 0]
+Element_Equal_t53 = t0
+t0 = Element_Equal_t53
+t0 = [t0 + 4]
+Element_Equal_t54 = t0
+goto null_end49
+null49:
+error("null pointer")
+null_end49:
+t0 = Element_Equal_t54
+Element_Init_t31 = t5
+Element_GetAge_this = t4
+Element_GetAge_t32 = t3
+Element_GetSalary_this = t2
+Element_GetMarried_t36 = s9
+Element_Equal_Element_other = s8
+Element_Equal_this = s7
+Element_Equal_Element_ret_val = s6
+Element_Equal_t38 = s5
+Element_Equal_Element_aux01 = s4
+Element_Equal_t40 = s3
+Element_Equal_Element_aux02 = s2
+Element_GetSalary_t34 = s11
+Element_Equal_t42 = s1
+Element_GetMarried_this = s10
+a2 = Element_Equal_t49
+t0 = call t0()
+Element_Equal_t47 = t0
+t5 = Element_Init_t31
+t4 = Element_GetAge_this
+t3 = Element_GetAge_t32
+t2 = Element_GetSalary_this
+s9 = Element_GetMarried_t36
+s8 = Element_Equal_Element_other
+s7 = Element_Equal_this
+s6 = Element_Equal_Element_ret_val
+s5 = Element_Equal_t38
+s4 = Element_Equal_Element_aux01
+s3 = Element_Equal_t40
+s2 = Element_Equal_Element_aux02
+s11 = Element_GetSalary_t34
+s1 = Element_Equal_t42
+s10 = Element_GetMarried_this
+t0 = Element_Equal_t47
+s4 = t0
+t0 = s7
+t0 = t0
+Element_Equal_t59 = t0
+t0 = Element_Equal_t59
+if0 t0 goto null59
+t0 = Element_Equal_t59
+t0 = [t0 + 0]
+Element_Equal_t62 = t0
+t0 = Element_Equal_t62
+t0 = [t0 + 20]
+Element_Equal_t63 = t0
+goto null_end59
+null59:
+error("null pointer")
+null_end59:
+t0 = s4
+t0 = t0
+Element_Equal_t64 = t0
+t0 = s7
+t0 = [t0 + 4]
+Element_Equal_t66 = t0
+t0 = Element_Equal_t63
+Element_Init_t31 = t5
+Element_GetAge_this = t4
+Element_GetAge_t32 = t3
+Element_GetSalary_this = t2
+Element_GetMarried_t36 = s9
+Element_Equal_Element_other = s8
+Element_Equal_this = s7
+Element_Equal_Element_ret_val = s6
+Element_Equal_t38 = s5
+Element_Equal_Element_aux01 = s4
+Element_Equal_t40 = s3
+Element_Equal_Element_aux02 = s2
+Element_GetSalary_t34 = s11
+Element_Equal_t42 = s1
+Element_GetMarried_this = s10
+a2 = Element_Equal_t59
+a3 = Element_Equal_t64
+a4 = Element_Equal_t66
+t0 = call t0()
+Element_Equal_t57 = t0
+t5 = Element_Init_t31
+t4 = Element_GetAge_this
+t3 = Element_GetAge_t32
+t2 = Element_GetSalary_this
+s9 = Element_GetMarried_t36
+s8 = Element_Equal_Element_other
+s7 = Element_Equal_this
+s6 = Element_Equal_Element_ret_val
+s5 = Element_Equal_t38
+s4 = Element_Equal_Element_aux01
+s3 = Element_Equal_t40
+s2 = Element_Equal_Element_aux02
+s11 = Element_GetSalary_t34
+s1 = Element_Equal_t42
+s10 = Element_GetMarried_this
+t0 = Element_Equal_t57
+if0 t0 goto else56
+t0 = 0
+Element_Equal_t56 = t0
+goto end56
+else56:
+t0 = 1
+Element_Equal_t56 = t0
+end56:
+t0 = Element_Equal_t56
+if0 t0 goto else55
+t0 = 0
+Element_Equal_t68 = t0
+t0 = Element_Equal_t68
+s6 = t0
+goto end55
+else55:
+t0 = s8
+t0 = t0
+Element_Equal_t71 = t0
+t0 = Element_Equal_t71
+if0 t0 goto null71
+t0 = Element_Equal_t71
+t0 = [t0 + 0]
+Element_Equal_t75 = t0
+t0 = Element_Equal_t75
+t0 = [t0 + 8]
+Element_Equal_t76 = t0
+goto null_end71
+null71:
+error("null pointer")
+null_end71:
+t0 = Element_Equal_t76
+Element_Init_t31 = t5
+Element_GetAge_this = t4
+Element_GetAge_t32 = t3
+Element_GetSalary_this = t2
+Element_GetMarried_t36 = s9
+Element_Equal_Element_other = s8
+Element_Equal_this = s7
+Element_Equal_Element_ret_val = s6
+Element_Equal_t38 = s5
+Element_Equal_Element_aux01 = s4
+Element_Equal_t40 = s3
+Element_Equal_Element_aux02 = s2
+Element_GetSalary_t34 = s11
+Element_Equal_t42 = s1
+Element_GetMarried_this = s10
+a2 = Element_Equal_t71
+t0 = call t0()
+Element_Equal_t69 = t0
+t5 = Element_Init_t31
+t4 = Element_GetAge_this
+t3 = Element_GetAge_t32
+t2 = Element_GetSalary_this
+s9 = Element_GetMarried_t36
+s8 = Element_Equal_Element_other
+s7 = Element_Equal_this
+s6 = Element_Equal_Element_ret_val
+s5 = Element_Equal_t38
+s4 = Element_Equal_Element_aux01
+s3 = Element_Equal_t40
+s2 = Element_Equal_Element_aux02
+s11 = Element_GetSalary_t34
+s1 = Element_Equal_t42
+s10 = Element_GetMarried_this
+t0 = Element_Equal_t69
+s2 = t0
+t0 = s7
+t0 = t0
+Element_Equal_t81 = t0
+t0 = Element_Equal_t81
+if0 t0 goto null81
+t0 = Element_Equal_t81
+t0 = [t0 + 0]
+Element_Equal_t84 = t0
+t0 = Element_Equal_t84
+t0 = [t0 + 20]
+Element_Equal_t85 = t0
+goto null_end81
+null81:
+error("null pointer")
+null_end81:
+t0 = s2
+t0 = t0
+Element_Equal_t86 = t0
+t0 = s7
+t0 = [t0 + 8]
+Element_Equal_t88 = t0
+t0 = Element_Equal_t85
+Element_Init_t31 = t5
+Element_GetAge_this = t4
+Element_GetAge_t32 = t3
+Element_GetSalary_this = t2
+Element_GetMarried_t36 = s9
+Element_Equal_Element_other = s8
+Element_Equal_this = s7
+Element_Equal_Element_ret_val = s6
+Element_Equal_t38 = s5
+Element_Equal_Element_aux01 = s4
+Element_Equal_t40 = s3
+Element_Equal_Element_aux02 = s2
+Element_GetSalary_t34 = s11
+Element_Equal_t42 = s1
+Element_GetMarried_this = s10
+a2 = Element_Equal_t81
+a3 = Element_Equal_t86
+a4 = Element_Equal_t88
+t0 = call t0()
+Element_Equal_t79 = t0
+t5 = Element_Init_t31
+t4 = Element_GetAge_this
+t3 = Element_GetAge_t32
+t2 = Element_GetSalary_this
+s9 = Element_GetMarried_t36
+s8 = Element_Equal_Element_other
+s7 = Element_Equal_this
+s6 = Element_Equal_Element_ret_val
+s5 = Element_Equal_t38
+s4 = Element_Equal_Element_aux01
+s3 = Element_Equal_t40
+s2 = Element_Equal_Element_aux02
+s11 = Element_GetSalary_t34
+s1 = Element_Equal_t42
+s10 = Element_GetMarried_this
+t0 = Element_Equal_t79
+if0 t0 goto else78
+t0 = 0
+Element_Equal_t78 = t0
+goto end78
+else78:
+t0 = 1
+Element_Equal_t78 = t0
+end78:
+t0 = Element_Equal_t78
+if0 t0 goto else77
+t0 = 0
+Element_Equal_t90 = t0
+t0 = Element_Equal_t90
+s6 = t0
+goto end77
+else77:
+t0 = s7
+t0 = [t0 + 12]
+Element_Equal_t92 = t0
+t0 = Element_Equal_t92
+if0 t0 goto else91
+t0 = s8
+t0 = t0
+Element_Equal_t98 = t0
+t0 = Element_Equal_t98
+if0 t0 goto null98
+t0 = Element_Equal_t98
+t0 = [t0 + 0]
+Element_Equal_t102 = t0
+t0 = Element_Equal_t102
+t0 = [t0 + 12]
+Element_Equal_t103 = t0
+goto null_end98
+null98:
+error("null pointer")
+null_end98:
+t0 = Element_Equal_t103
+Element_Init_t31 = t5
+Element_GetAge_this = t4
+Element_GetAge_t32 = t3
+Element_GetSalary_this = t2
+Element_GetMarried_t36 = s9
+Element_Equal_Element_other = s8
+Element_Equal_this = s7
+Element_Equal_Element_ret_val = s6
+Element_Equal_t38 = s5
+Element_Equal_Element_aux01 = s4
+Element_Equal_t40 = s3
+Element_Equal_Element_aux02 = s2
+Element_GetSalary_t34 = s11
+Element_Equal_t42 = s1
+Element_GetMarried_this = s10
+a2 = Element_Equal_t98
+t0 = call t0()
+Element_Equal_t96 = t0
+t5 = Element_Init_t31
+t4 = Element_GetAge_this
+t3 = Element_GetAge_t32
+t2 = Element_GetSalary_this
+s9 = Element_GetMarried_t36
+s8 = Element_Equal_Element_other
+s7 = Element_Equal_this
+s6 = Element_Equal_Element_ret_val
+s5 = Element_Equal_t38
+s4 = Element_Equal_Element_aux01
+s3 = Element_Equal_t40
+s2 = Element_Equal_Element_aux02
+s11 = Element_GetSalary_t34
+s1 = Element_Equal_t42
+s10 = Element_GetMarried_this
+t0 = Element_Equal_t96
+if0 t0 goto else95
+t0 = 0
+Element_Equal_t95 = t0
+goto end95
+else95:
+t0 = 1
+Element_Equal_t95 = t0
+end95:
+t0 = Element_Equal_t95
+if0 t0 goto else94
+t0 = 0
+Element_Equal_t104 = t0
+t0 = Element_Equal_t104
+s6 = t0
+goto end94
+else94:
+t0 = 0
+Element_Equal_t105 = t0
+t0 = Element_Equal_t105
+t0 = t0
+Element_Equal_Element_nt = t0
+end94:
+goto end91
+else91:
+t0 = s8
+t0 = t0
+Element_Equal_t109 = t0
+t0 = Element_Equal_t109
+if0 t0 goto null109
+t0 = Element_Equal_t109
+t0 = [t0 + 0]
+Element_Equal_t113 = t0
+t0 = Element_Equal_t113
+t0 = [t0 + 12]
+Element_Equal_t114 = t0
+goto null_end109
+null109:
+error("null pointer")
+null_end109:
+t0 = Element_Equal_t114
+Element_Init_t31 = t5
+Element_GetAge_this = t4
+Element_GetAge_t32 = t3
+Element_GetSalary_this = t2
+Element_GetMarried_t36 = s9
+Element_Equal_Element_other = s8
+Element_Equal_this = s7
+Element_Equal_Element_ret_val = s6
+Element_Equal_t38 = s5
+Element_Equal_Element_aux01 = s4
+Element_Equal_t40 = s3
+Element_Equal_Element_aux02 = s2
+Element_GetSalary_t34 = s11
+Element_Equal_t42 = s1
+Element_GetMarried_this = s10
+a2 = Element_Equal_t109
+t0 = call t0()
+Element_Equal_t107 = t0
+t5 = Element_Init_t31
+t4 = Element_GetAge_this
+t3 = Element_GetAge_t32
+t2 = Element_GetSalary_this
+s9 = Element_GetMarried_t36
+s8 = Element_Equal_Element_other
+s7 = Element_Equal_this
+s6 = Element_Equal_Element_ret_val
+s5 = Element_Equal_t38
+s4 = Element_Equal_Element_aux01
+s3 = Element_Equal_t40
+s2 = Element_Equal_Element_aux02
+s11 = Element_GetSalary_t34
+s1 = Element_Equal_t42
+s10 = Element_GetMarried_this
+t0 = Element_Equal_t107
+if0 t0 goto else106
+t0 = 0
+Element_Equal_t115 = t0
+t0 = Element_Equal_t115
+s6 = t0
+goto end106
+else106:
+t0 = 0
+Element_Equal_t116 = t0
+t0 = Element_Equal_t116
+t0 = t0
+Element_Equal_Element_nt = t0
+end106:
+end91:
+end77:
+end55:
+t0 = s6
+t0 = t0
+Element_Equal_t117 = t0
+goto Equal_end
+Equal_end:
+return Element_Equal_t117
+
+func Element_Compare()
+t0 = a2
+Element_Compare_this = a2
+t0 = a3
+Element_Compare_Element_num1 = a3
+t0 = a4
+Element_Compare_Element_num2 = a4
+t0 = 0
+Element_Compare_Element_retval = t0
+t0 = Element_Compare_Element_retval
+t0 = t0
+Element_Compare_t119 = t0
+t0 = 0
+Element_Compare_Element_aux02 = t0
+t0 = Element_Compare_Element_aux02
+t0 = t0
+Element_Compare_t121 = t0
+t0 = 0
+Element_Compare_t123 = t0
+t0 = Element_Compare_t123
+t0 = t0
+Element_Compare_Element_retval = t0
+t0 = Element_Compare_Element_num2
+t0 = t0
+Element_Compare_t125 = t0
+t0 = 1
+Element_Compare_t127 = t0
+t0 = Element_Compare_t125
+t1 = Element_Compare_t127
+t0 = t0 + t1
+Element_Compare_t124 = t0
+t0 = Element_Compare_t124
+t0 = t0
+Element_Compare_Element_aux02 = t0
+t0 = Element_Compare_Element_num1
+t0 = t0
+Element_Compare_t130 = t0
+t0 = Element_Compare_Element_num2
+t0 = t0
+Element_Compare_t132 = t0
+t0 = Element_Compare_t130
+t1 = Element_Compare_t132
+t0 = t0 < t1
+Element_Compare_t129 = t0
+t0 = Element_Compare_t129
+if0 t0 goto else128
+t0 = 0
+Element_Compare_t134 = t0
+t0 = Element_Compare_t134
+t0 = t0
+Element_Compare_Element_retval = t0
+goto end128
+else128:
+t0 = Element_Compare_Element_num1
+t0 = t0
+Element_Compare_t138 = t0
+t0 = Element_Compare_Element_aux02
+t0 = t0
+Element_Compare_t140 = t0
+t0 = Element_Compare_t138
+t1 = Element_Compare_t140
+t0 = t0 < t1
+Element_Compare_t137 = t0
+t0 = Element_Compare_t137
+if0 t0 goto else136
+t0 = 0
+Element_Compare_t136 = t0
+goto end136
+else136:
+t0 = 1
+Element_Compare_t136 = t0
+end136:
+t0 = Element_Compare_t136
+if0 t0 goto else135
+t0 = 0
+Element_Compare_t142 = t0
+t0 = Element_Compare_t142
+t0 = t0
+Element_Compare_Element_retval = t0
+goto end135
+else135:
+t0 = 1
+Element_Compare_t143 = t0
+t0 = Element_Compare_t143
+t0 = t0
+Element_Compare_Element_retval = t0
+end135:
+end128:
+t0 = Element_Compare_Element_retval
+t0 = t0
+Element_Compare_t144 = t0
+goto Compare_end
+Compare_end:
+return Element_Compare_t144
+
+func List_Init()
+t5 = a2
+t4 = 1
+t0 = t4
+t3 = t0
+t0 = t5
+t1 = t4
+[t0 + 12] = t1
+t2 = 1
+goto Init_end
+Init_end:
+t153 = t2
+return t153
+
+func List_InitNew()
+t5 = a2
+t3 = a3
+t4 = a4
+t2 = a5
+t0 = t2
+s11 = t0
+t0 = s11
+t2 = t0
+t0 = t5
+t1 = s11
+[t0 + 12] = t1
+t0 = t3
+s11 = t0
+t0 = s11
+t3 = t0
+t0 = t5
+t1 = s11
+[t0 + 4] = t1
+t0 = t4
+s11 = t0
+t0 = s11
+t4 = t0
+t0 = t5
+t1 = s11
+[t0 + 8] = t1
+s11 = 1
+goto InitNew_end
+InitNew_end:
+t160 = s11
+return t160
+
+func List_Insert()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+t0 = t4
+s10 = t0
+t0 = s10
+t2 = t0
+s10 = 16
+t0 = s10
+t4 = alloc(t0)
+s10 = 40
+t0 = s10
+s9 = alloc(t0)
+s10 = @List_Init
+s8 = @List_InitNew
+s7 = @List_Insert
+s6 = @List_SetNext
+s5 = @List_Delete
+s4 = @List_Search
+s3 = @List_GetEnd
+s2 = @List_GetElem
+s1 = @List_GetNext
+t0 = @List_Print
+List_Insert_t182 = t0
+t0 = s9
+t1 = s10
+[t0 + 0] = t1
+t0 = s9
+t1 = s8
+[t0 + 4] = t1
+t0 = s9
+t1 = s7
+[t0 + 8] = t1
+t0 = s9
+t1 = s6
+[t0 + 12] = t1
+t0 = s9
+t1 = s5
+[t0 + 16] = t1
+t0 = s9
+t1 = s4
+[t0 + 20] = t1
+t0 = s9
+t1 = s3
+[t0 + 24] = t1
+t0 = s9
+t1 = s2
+[t0 + 28] = t1
+t0 = s9
+t1 = s1
+[t0 + 32] = t1
+t0 = s9
+t1 = List_Insert_t182
+[t0 + 36] = t1
+t0 = t4
+t1 = s9
+[t0 + 0] = t1
+t0 = t4
+s11 = t0
+t0 = s11
+t4 = t0
+t0 = t4
+if0 t0 goto null185
+t0 = t4
+s2 = [t0 + 0]
+t0 = s2
+s6 = [t0 + 4]
+goto null_end185
+null185:
+error("null pointer")
+null_end185:
+t0 = t5
+s2 = t0
+t0 = t2
+t5 = t0
+t2 = 0
+t0 = s6
+List_Insert_t193 = t5
+List_Insert_t185 = t4
+List_Insert_List_ret_val = t3
+List_Insert_t195 = t2
+List_Insert_t190 = s6
+List_Insert_t191 = s2
+List_Insert_List_aux02 = s11
+a2 = t4
+a3 = s2
+a4 = t5
+a5 = t2
+s9 = call t0()
+t5 = List_Insert_t193
+t4 = List_Insert_t185
+t3 = List_Insert_List_ret_val
+t2 = List_Insert_t195
+s6 = List_Insert_t190
+s2 = List_Insert_t191
+s11 = List_Insert_List_aux02
+t0 = s9
+t3 = t0
+t0 = s11
+s9 = t0
+goto Insert_end
+Insert_end:
+t196 = s9
+return t196
+
+func List_SetNext()
+t5 = a2
+t4 = a3
+t0 = t4
+t3 = t0
+t0 = t3
+t4 = t0
+t0 = t5
+t1 = t3
+[t0 + 8] = t1
+t3 = 1
+goto SetNext_end
+SetNext_end:
+t200 = t3
+return t200
+
+func List_Delete()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 0
+t0 = s9
+s8 = t0
+s8 = 0
+t0 = s8
+s7 = t0
+s7 = 0
+t0 = s7
+s6 = t0
+s6 = 0
+t0 = s6
+s5 = t0
+s5 = 0
+t0 = s5
+s4 = t0
+t0 = t4
+s4 = t0
+t0 = s4
+t3 = t0
+s4 = 0
+t0 = s4
+t2 = t0
+s4 = 0
+s3 = 1
+t0 = s4
+t1 = s3
+s2 = t0 - t1
+t0 = s2
+s6 = t0
+t0 = t4
+s2 = t0
+t0 = s2
+s10 = t0
+t0 = t4
+s2 = t0
+t0 = s2
+s9 = t0
+t0 = t4
+s2 = [t0 + 12]
+t0 = s2
+s8 = t0
+t0 = t4
+s2 = [t0 + 4]
+t0 = s2
+s7 = t0
+loop230:
+t0 = s8
+s2 = t0
+t0 = s2
+if0 t0 goto else232
+t4 = 0
+goto end232
+else232:
+t4 = 1
+end232:
+t0 = t2
+s3 = t0
+t0 = s3
+if0 t0 goto else235
+s4 = 0
+goto end235
+else235:
+s4 = 1
+end235:
+t0 = t4
+if0 t0 goto else231
+t0 = s4
+if0 t0 goto else231
+s1 = 1
+goto if231_end
+else231:
+s1 = 0
+goto if231_end
+if231_end:
+t0 = s1
+if0 t0 goto end230
+t0 = t5
+t0 = t0
+List_Delete_t241 = t0
+t0 = List_Delete_t241
+if0 t0 goto null241
+t0 = List_Delete_t241
+t0 = [t0 + 0]
+List_Delete_t245 = t0
+t0 = List_Delete_t245
+t0 = [t0 + 16]
+List_Delete_t246 = t0
+goto null_end241
+null241:
+error("null pointer")
+null_end241:
+t0 = s7
+t0 = t0
+List_Delete_t247 = t0
+t0 = List_Delete_t246
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t241
+a3 = List_Delete_t247
+t0 = call t0()
+List_Delete_t239 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t239
+if0 t0 goto else238
+t0 = 1
+List_Delete_t249 = t0
+t0 = List_Delete_t249
+t2 = t0
+t0 = s6
+t0 = t0
+List_Delete_t252 = t0
+t0 = 0
+List_Delete_t254 = t0
+t0 = List_Delete_t252
+t1 = List_Delete_t254
+t0 = t0 < t1
+List_Delete_t251 = t0
+t0 = List_Delete_t251
+if0 t0 goto else250
+t0 = s10
+t0 = t0
+List_Delete_t257 = t0
+t0 = List_Delete_t257
+if0 t0 goto null257
+t0 = List_Delete_t257
+t0 = [t0 + 0]
+List_Delete_t261 = t0
+t0 = List_Delete_t261
+t0 = [t0 + 32]
+List_Delete_t262 = t0
+goto null_end257
+null257:
+error("null pointer")
+null_end257:
+t0 = List_Delete_t262
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t257
+t0 = call t0()
+List_Delete_t255 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t255
+t3 = t0
+goto end250
+else250:
+t0 = 0
+List_Delete_t264 = t0
+t0 = 555
+List_Delete_t265 = t0
+t0 = List_Delete_t264
+t1 = List_Delete_t265
+t0 = t0 - t1
+List_Delete_t263 = t0
+t0 = List_Delete_t263
+print(t0)
+t0 = s9
+t0 = t0
+List_Delete_t268 = t0
+t0 = List_Delete_t268
+if0 t0 goto null268
+t0 = List_Delete_t268
+t0 = [t0 + 0]
+List_Delete_t272 = t0
+t0 = List_Delete_t272
+t0 = [t0 + 12]
+List_Delete_t273 = t0
+goto null_end268
+null268:
+error("null pointer")
+null_end268:
+t0 = s10
+t0 = t0
+List_Delete_t276 = t0
+t0 = List_Delete_t276
+if0 t0 goto null276
+t0 = List_Delete_t276
+t0 = [t0 + 0]
+List_Delete_t280 = t0
+t0 = List_Delete_t280
+t0 = [t0 + 32]
+List_Delete_t281 = t0
+goto null_end276
+null276:
+error("null pointer")
+null_end276:
+t0 = List_Delete_t281
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t276
+t0 = call t0()
+List_Delete_t274 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t273
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t268
+a3 = List_Delete_t274
+t0 = call t0()
+List_Delete_t266 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t266
+s11 = t0
+t0 = 0
+List_Delete_t283 = t0
+t0 = 555
+List_Delete_t284 = t0
+t0 = List_Delete_t283
+t1 = List_Delete_t284
+t0 = t0 - t1
+List_Delete_t282 = t0
+t0 = List_Delete_t282
+print(t0)
+end250:
+goto end238
+else238:
+t0 = 0
+List_Delete_t285 = t0
+t0 = List_Delete_t285
+s5 = t0
+end238:
+t0 = t2
+t0 = t0
+List_Delete_t288 = t0
+t0 = List_Delete_t288
+if0 t0 goto else287
+t0 = 0
+List_Delete_t287 = t0
+goto end287
+else287:
+t0 = 1
+List_Delete_t287 = t0
+end287:
+t0 = List_Delete_t287
+if0 t0 goto else286
+t0 = s10
+t0 = t0
+List_Delete_t290 = t0
+t0 = List_Delete_t290
+s9 = t0
+t0 = s10
+t0 = t0
+List_Delete_t294 = t0
+t0 = List_Delete_t294
+if0 t0 goto null294
+t0 = List_Delete_t294
+t0 = [t0 + 0]
+List_Delete_t298 = t0
+t0 = List_Delete_t298
+t0 = [t0 + 32]
+List_Delete_t299 = t0
+goto null_end294
+null294:
+error("null pointer")
+null_end294:
+t0 = List_Delete_t299
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t294
+t0 = call t0()
+List_Delete_t292 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t292
+s10 = t0
+t0 = s10
+t0 = t0
+List_Delete_t302 = t0
+t0 = List_Delete_t302
+if0 t0 goto null302
+t0 = List_Delete_t302
+t0 = [t0 + 0]
+List_Delete_t306 = t0
+t0 = List_Delete_t306
+t0 = [t0 + 24]
+List_Delete_t307 = t0
+goto null_end302
+null302:
+error("null pointer")
+null_end302:
+t0 = List_Delete_t307
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t302
+t0 = call t0()
+List_Delete_t300 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t300
+s8 = t0
+t0 = s10
+t0 = t0
+List_Delete_t310 = t0
+t0 = List_Delete_t310
+if0 t0 goto null310
+t0 = List_Delete_t310
+t0 = [t0 + 0]
+List_Delete_t314 = t0
+t0 = List_Delete_t314
+t0 = [t0 + 28]
+List_Delete_t315 = t0
+goto null_end310
+null310:
+error("null pointer")
+null_end310:
+t0 = List_Delete_t315
+List_Delete_List_e = t5
+List_Delete_t232 = t4
+List_Delete_List_my_head = t3
+List_Delete_List_ret_val = t2
+List_Delete_List_prev = s9
+List_Delete_List_var_end = s8
+List_Delete_List_var_elem = s7
+List_Delete_List_aux04 = s6
+List_Delete_List_nt = s5
+List_Delete_t235 = s4
+List_Delete_t236 = s3
+List_Delete_t233 = s2
+List_Delete_List_aux05 = s11
+List_Delete_t231 = s1
+List_Delete_List_aux01 = s10
+a2 = List_Delete_t310
+t0 = call t0()
+List_Delete_t308 = t0
+t5 = List_Delete_List_e
+t4 = List_Delete_t232
+t3 = List_Delete_List_my_head
+t2 = List_Delete_List_ret_val
+s9 = List_Delete_List_prev
+s8 = List_Delete_List_var_end
+s7 = List_Delete_List_var_elem
+s6 = List_Delete_List_aux04
+s5 = List_Delete_List_nt
+s4 = List_Delete_t235
+s3 = List_Delete_t236
+s2 = List_Delete_t233
+s11 = List_Delete_List_aux05
+s1 = List_Delete_t231
+s10 = List_Delete_List_aux01
+t0 = List_Delete_t308
+s7 = t0
+t0 = 1
+List_Delete_t316 = t0
+t0 = List_Delete_t316
+s6 = t0
+goto end286
+else286:
+t0 = 0
+List_Delete_t317 = t0
+t0 = List_Delete_t317
+s5 = t0
+end286:
+goto loop230
+end230:
+t0 = t3
+s10 = t0
+goto Delete_end
+Delete_end:
+t318 = s10
+return t318
+
+func List_Search()
+t4 = a2
+t5 = a3
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 0
+t0 = s9
+s8 = t0
+s8 = 0
+t0 = s8
+t3 = t0
+t0 = t4
+s8 = t0
+t0 = s8
+t2 = t0
+t0 = t4
+s8 = [t0 + 12]
+t0 = s8
+s10 = t0
+t0 = t4
+s8 = [t0 + 4]
+t0 = s8
+s11 = t0
+loop336:
+t0 = s10
+s8 = t0
+t0 = s8
+if0 t0 goto else337
+t4 = 0
+goto end337
+else337:
+t4 = 1
+end337:
+t0 = t4
+if0 t0 goto end336
+t0 = t5
+s7 = t0
+t0 = s7
+if0 t0 goto null343
+t0 = s7
+s6 = [t0 + 0]
+t0 = s6
+s5 = [t0 + 16]
+goto null_end343
+null343:
+error("null pointer")
+null_end343:
+t0 = s11
+s4 = t0
+t0 = s5
+List_Search_List_e = t5
+List_Search_t337 = t4
+List_Search_List_int_ret_val = t3
+List_Search_List_aux01 = t2
+List_Search_List_nt = s9
+List_Search_t338 = s8
+List_Search_t343 = s7
+List_Search_t347 = s6
+List_Search_t348 = s5
+List_Search_t349 = s4
+List_Search_List_var_elem = s11
+List_Search_List_var_end = s10
+a2 = s7
+a3 = s4
+s3 = call t0()
+t5 = List_Search_List_e
+t4 = List_Search_t337
+t3 = List_Search_List_int_ret_val
+t2 = List_Search_List_aux01
+s9 = List_Search_List_nt
+s8 = List_Search_t338
+s7 = List_Search_t343
+s6 = List_Search_t347
+s5 = List_Search_t348
+s4 = List_Search_t349
+s11 = List_Search_List_var_elem
+s10 = List_Search_List_var_end
+t0 = s3
+if0 t0 goto else340
+s2 = 1
+t0 = s2
+t3 = t0
+goto end340
+else340:
+s1 = 0
+t0 = s1
+s9 = t0
+end340:
+t0 = t2
+t0 = t0
+List_Search_t355 = t0
+t0 = List_Search_t355
+if0 t0 goto null355
+t0 = List_Search_t355
+t0 = [t0 + 0]
+List_Search_t359 = t0
+t0 = List_Search_t359
+t0 = [t0 + 32]
+List_Search_t360 = t0
+goto null_end355
+null355:
+error("null pointer")
+null_end355:
+t0 = List_Search_t360
+List_Search_List_e = t5
+List_Search_t337 = t4
+List_Search_List_int_ret_val = t3
+List_Search_List_aux01 = t2
+List_Search_List_nt = s9
+List_Search_t338 = s8
+List_Search_t343 = s7
+List_Search_t347 = s6
+List_Search_t348 = s5
+List_Search_t349 = s4
+List_Search_t341 = s3
+List_Search_t351 = s2
+List_Search_List_var_elem = s11
+List_Search_t352 = s1
+List_Search_List_var_end = s10
+a2 = List_Search_t355
+t0 = call t0()
+List_Search_t353 = t0
+t5 = List_Search_List_e
+t4 = List_Search_t337
+t3 = List_Search_List_int_ret_val
+t2 = List_Search_List_aux01
+s9 = List_Search_List_nt
+s8 = List_Search_t338
+s7 = List_Search_t343
+s6 = List_Search_t347
+s5 = List_Search_t348
+s4 = List_Search_t349
+s3 = List_Search_t341
+s2 = List_Search_t351
+s11 = List_Search_List_var_elem
+s1 = List_Search_t352
+s10 = List_Search_List_var_end
+t0 = List_Search_t353
+t2 = t0
+t0 = t2
+t0 = t0
+List_Search_t363 = t0
+t0 = List_Search_t363
+if0 t0 goto null363
+t0 = List_Search_t363
+t0 = [t0 + 0]
+List_Search_t367 = t0
+t0 = List_Search_t367
+t0 = [t0 + 24]
+List_Search_t368 = t0
+goto null_end363
+null363:
+error("null pointer")
+null_end363:
+t0 = List_Search_t368
+List_Search_List_e = t5
+List_Search_t337 = t4
+List_Search_List_int_ret_val = t3
+List_Search_List_aux01 = t2
+List_Search_List_nt = s9
+List_Search_t338 = s8
+List_Search_t343 = s7
+List_Search_t347 = s6
+List_Search_t348 = s5
+List_Search_t349 = s4
+List_Search_t341 = s3
+List_Search_t351 = s2
+List_Search_List_var_elem = s11
+List_Search_t352 = s1
+List_Search_List_var_end = s10
+a2 = List_Search_t363
+t0 = call t0()
+List_Search_t361 = t0
+t5 = List_Search_List_e
+t4 = List_Search_t337
+t3 = List_Search_List_int_ret_val
+t2 = List_Search_List_aux01
+s9 = List_Search_List_nt
+s8 = List_Search_t338
+s7 = List_Search_t343
+s6 = List_Search_t347
+s5 = List_Search_t348
+s4 = List_Search_t349
+s3 = List_Search_t341
+s2 = List_Search_t351
+s11 = List_Search_List_var_elem
+s1 = List_Search_t352
+s10 = List_Search_List_var_end
+t0 = List_Search_t361
+s10 = t0
+t0 = t2
+t0 = t0
+List_Search_t371 = t0
+t0 = List_Search_t371
+if0 t0 goto null371
+t0 = List_Search_t371
+t0 = [t0 + 0]
+List_Search_t375 = t0
+t0 = List_Search_t375
+t0 = [t0 + 28]
+List_Search_t376 = t0
+goto null_end371
+null371:
+error("null pointer")
+null_end371:
+t0 = List_Search_t376
+List_Search_List_e = t5
+List_Search_t337 = t4
+List_Search_List_int_ret_val = t3
+List_Search_List_aux01 = t2
+List_Search_List_nt = s9
+List_Search_t338 = s8
+List_Search_t343 = s7
+List_Search_t347 = s6
+List_Search_t348 = s5
+List_Search_t349 = s4
+List_Search_t341 = s3
+List_Search_t351 = s2
+List_Search_List_var_elem = s11
+List_Search_t352 = s1
+List_Search_List_var_end = s10
+a2 = List_Search_t371
+t0 = call t0()
+List_Search_t369 = t0
+t5 = List_Search_List_e
+t4 = List_Search_t337
+t3 = List_Search_List_int_ret_val
+t2 = List_Search_List_aux01
+s9 = List_Search_List_nt
+s8 = List_Search_t338
+s7 = List_Search_t343
+s6 = List_Search_t347
+s5 = List_Search_t348
+s4 = List_Search_t349
+s3 = List_Search_t341
+s2 = List_Search_t351
+s11 = List_Search_List_var_elem
+s1 = List_Search_t352
+s10 = List_Search_List_var_end
+t0 = List_Search_t369
+s11 = t0
+goto loop336
+end336:
+t0 = t3
+s10 = t0
+goto Search_end
+Search_end:
+t377 = s10
+return t377
+
+func List_GetEnd()
+t5 = a2
+t0 = t5
+t4 = [t0 + 12]
+goto GetEnd_end
+GetEnd_end:
+t379 = t4
+return t379
+
+func List_GetElem()
+t5 = a2
+t0 = t5
+t4 = [t0 + 4]
+goto GetElem_end
+GetElem_end:
+t381 = t4
+return t381
+
+func List_GetNext()
+t5 = a2
+t0 = t5
+t4 = [t0 + 8]
+goto GetNext_end
+GetNext_end:
+t383 = t4
+return t383
+
+func List_Print()
+t5 = a2
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+t0 = t5
+s11 = t0
+t0 = s11
+t4 = t0
+t0 = t5
+s11 = [t0 + 12]
+t0 = s11
+t3 = t0
+t0 = t5
+s11 = [t0 + 4]
+t0 = s11
+t2 = t0
+loop396:
+t0 = t3
+s11 = t0
+t0 = s11
+if0 t0 goto else397
+t5 = 0
+goto end397
+else397:
+t5 = 1
+end397:
+t0 = t5
+if0 t0 goto end396
+t0 = t2
+s10 = t0
+t0 = s10
+if0 t0 goto null402
+t0 = s10
+s9 = [t0 + 0]
+t0 = s9
+s8 = [t0 + 4]
+goto null_end402
+null402:
+error("null pointer")
+null_end402:
+t0 = s8
+List_Print_t397 = t5
+List_Print_List_aux01 = t4
+List_Print_List_var_end = t3
+List_Print_List_var_elem = t2
+List_Print_t406 = s9
+List_Print_t407 = s8
+List_Print_t398 = s11
+List_Print_t402 = s10
+a2 = s10
+s7 = call t0()
+t5 = List_Print_t397
+t4 = List_Print_List_aux01
+t3 = List_Print_List_var_end
+t2 = List_Print_List_var_elem
+s9 = List_Print_t406
+s8 = List_Print_t407
+s11 = List_Print_t398
+s10 = List_Print_t402
+t0 = s7
+print(t0)
+t0 = t4
+s6 = t0
+t0 = s6
+if0 t0 goto null410
+t0 = s6
+s5 = [t0 + 0]
+t0 = s5
+s4 = [t0 + 32]
+goto null_end410
+null410:
+error("null pointer")
+null_end410:
+t0 = s4
+List_Print_t397 = t5
+List_Print_List_aux01 = t4
+List_Print_List_var_end = t3
+List_Print_List_var_elem = t2
+List_Print_t406 = s9
+List_Print_t407 = s8
+List_Print_t400 = s7
+List_Print_t410 = s6
+List_Print_t414 = s5
+List_Print_t415 = s4
+List_Print_t398 = s11
+List_Print_t402 = s10
+a2 = s6
+s3 = call t0()
+t5 = List_Print_t397
+t4 = List_Print_List_aux01
+t3 = List_Print_List_var_end
+t2 = List_Print_List_var_elem
+s9 = List_Print_t406
+s8 = List_Print_t407
+s7 = List_Print_t400
+s6 = List_Print_t410
+s5 = List_Print_t414
+s4 = List_Print_t415
+s11 = List_Print_t398
+s10 = List_Print_t402
+t0 = s3
+t4 = t0
+t0 = t4
+s2 = t0
+t0 = s2
+if0 t0 goto null418
+t0 = s2
+s1 = [t0 + 0]
+t0 = s1
+t0 = [t0 + 24]
+List_Print_t423 = t0
+goto null_end418
+null418:
+error("null pointer")
+null_end418:
+t0 = List_Print_t423
+List_Print_t397 = t5
+List_Print_List_aux01 = t4
+List_Print_List_var_end = t3
+List_Print_List_var_elem = t2
+List_Print_t406 = s9
+List_Print_t407 = s8
+List_Print_t400 = s7
+List_Print_t410 = s6
+List_Print_t414 = s5
+List_Print_t415 = s4
+List_Print_t408 = s3
+List_Print_t418 = s2
+List_Print_t398 = s11
+List_Print_t422 = s1
+List_Print_t402 = s10
+a2 = s2
+t0 = call t0()
+List_Print_t416 = t0
+t5 = List_Print_t397
+t4 = List_Print_List_aux01
+t3 = List_Print_List_var_end
+t2 = List_Print_List_var_elem
+s9 = List_Print_t406
+s8 = List_Print_t407
+s7 = List_Print_t400
+s6 = List_Print_t410
+s5 = List_Print_t414
+s4 = List_Print_t415
+s3 = List_Print_t408
+s2 = List_Print_t418
+s11 = List_Print_t398
+s1 = List_Print_t422
+s10 = List_Print_t402
+t0 = List_Print_t416
+t3 = t0
+t0 = t4
+t0 = t0
+List_Print_t426 = t0
+t0 = List_Print_t426
+if0 t0 goto null426
+t0 = List_Print_t426
+t0 = [t0 + 0]
+List_Print_t430 = t0
+t0 = List_Print_t430
+t0 = [t0 + 28]
+List_Print_t431 = t0
+goto null_end426
+null426:
+error("null pointer")
+null_end426:
+t0 = List_Print_t431
+List_Print_t397 = t5
+List_Print_List_aux01 = t4
+List_Print_List_var_end = t3
+List_Print_List_var_elem = t2
+List_Print_t406 = s9
+List_Print_t407 = s8
+List_Print_t400 = s7
+List_Print_t410 = s6
+List_Print_t414 = s5
+List_Print_t415 = s4
+List_Print_t408 = s3
+List_Print_t418 = s2
+List_Print_t398 = s11
+List_Print_t422 = s1
+List_Print_t402 = s10
+a2 = List_Print_t426
+t0 = call t0()
+List_Print_t424 = t0
+t5 = List_Print_t397
+t4 = List_Print_List_aux01
+t3 = List_Print_List_var_end
+t2 = List_Print_List_var_elem
+s9 = List_Print_t406
+s8 = List_Print_t407
+s7 = List_Print_t400
+s6 = List_Print_t410
+s5 = List_Print_t414
+s4 = List_Print_t415
+s3 = List_Print_t408
+s2 = List_Print_t418
+s11 = List_Print_t398
+s1 = List_Print_t422
+s10 = List_Print_t402
+t0 = List_Print_t424
+t2 = t0
+goto loop396
+end396:
+s10 = 1
+goto Print_end
+Print_end:
+t432 = s10
+return t432
+
+func LL_Start()
+t5 = a2
+t5 = 0
+t0 = t5
+t4 = t0
+t4 = 0
+t0 = t4
+t3 = t0
+t3 = 0
+t0 = t3
+t2 = t0
+t2 = 0
+t0 = t2
+s11 = t0
+s11 = 0
+t0 = s11
+s10 = t0
+s10 = 0
+t0 = s10
+s9 = t0
+s9 = 16
+t0 = s9
+s8 = alloc(t0)
+s9 = 40
+t0 = s9
+s7 = alloc(t0)
+s9 = @List_Init
+s6 = @List_InitNew
+s5 = @List_Insert
+s4 = @List_SetNext
+s3 = @List_Delete
+s2 = @List_Search
+s1 = @List_GetEnd
+t0 = @List_GetElem
+LL_Start_t457 = t0
+t0 = @List_GetNext
+LL_Start_t458 = t0
+t0 = @List_Print
+LL_Start_t459 = t0
+t0 = s7
+t1 = s9
+[t0 + 0] = t1
+t0 = s7
+t1 = s6
+[t0 + 4] = t1
+t0 = s7
+t1 = s5
+[t0 + 8] = t1
+t0 = s7
+t1 = s4
+[t0 + 12] = t1
+t0 = s7
+t1 = s3
+[t0 + 16] = t1
+t0 = s7
+t1 = s2
+[t0 + 20] = t1
+t0 = s7
+t1 = s1
+[t0 + 24] = t1
+t0 = s7
+t1 = LL_Start_t457
+[t0 + 28] = t1
+t0 = s7
+t1 = LL_Start_t458
+[t0 + 32] = t1
+t0 = s7
+t1 = LL_Start_t459
+[t0 + 36] = t1
+t0 = s8
+t1 = s7
+[t0 + 0] = t1
+t0 = s8
+t4 = t0
+t0 = t4
+s8 = t0
+t0 = s8
+if0 t0 goto null462
+t0 = s8
+s7 = [t0 + 0]
+t0 = s7
+s4 = [t0 + 0]
+goto null_end462
+null462:
+error("null pointer")
+null_end462:
+t0 = s4
+LL_Start_LL_head = t5
+LL_Start_LL_last_elem = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t462 = s8
+LL_Start_t467 = s4
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = s8
+s7 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_LL_last_elem
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t462
+s4 = LL_Start_t467
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = s7
+t3 = t0
+t0 = t4
+s7 = t0
+t0 = s7
+t5 = t0
+t0 = t5
+s7 = t0
+t0 = s7
+if0 t0 goto null472
+t0 = s7
+t4 = [t0 + 0]
+t0 = t4
+s4 = [t0 + 0]
+goto null_end472
+null472:
+error("null pointer")
+null_end472:
+t0 = s4
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t472 = s7
+LL_Start_t477 = s4
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = s7
+t4 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s7 = LL_Start_t472
+s4 = LL_Start_t477
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = t4
+t3 = t0
+t0 = t5
+t4 = t0
+t0 = t4
+if0 t0 goto null480
+t0 = t4
+s4 = [t0 + 0]
+t0 = s4
+s7 = [t0 + 36]
+goto null_end480
+null480:
+error("null pointer")
+null_end480:
+t0 = s7
+LL_Start_LL_head = t5
+LL_Start_t480 = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t485 = s7
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = t4
+s4 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_t480
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s7 = LL_Start_t485
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = s4
+t3 = t0
+s4 = 16
+t0 = s4
+s7 = alloc(t0)
+s4 = 24
+t0 = s4
+t4 = alloc(t0)
+s4 = @Element_Init
+s8 = @Element_GetAge
+s2 = @Element_GetSalary
+s6 = @Element_GetMarried
+s1 = @Element_Equal
+s3 = @Element_Compare
+t0 = t4
+t1 = s4
+[t0 + 0] = t1
+t0 = t4
+t1 = s8
+[t0 + 4] = t1
+t0 = t4
+t1 = s2
+[t0 + 8] = t1
+t0 = t4
+t1 = s6
+[t0 + 12] = t1
+t0 = t4
+t1 = s1
+[t0 + 16] = t1
+t0 = t4
+t1 = s3
+[t0 + 20] = t1
+t0 = s7
+t1 = t4
+[t0 + 0] = t1
+t0 = s7
+t2 = t0
+t0 = t2
+s7 = t0
+t0 = s7
+if0 t0 goto null499
+t0 = s7
+s6 = [t0 + 0]
+t0 = s6
+s3 = [t0 + 0]
+goto null_end499
+null499:
+error("null pointer")
+null_end499:
+s6 = 25
+s8 = 37000
+t4 = 0
+t0 = s3
+LL_Start_LL_head = t5
+LL_Start_t507 = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t506 = s8
+LL_Start_t499 = s7
+LL_Start_t505 = s6
+LL_Start_t504 = s3
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = s7
+a3 = s6
+a4 = s8
+a5 = t4
+s1 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_t507
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t506
+s7 = LL_Start_t499
+s6 = LL_Start_t505
+s3 = LL_Start_t504
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = s1
+t3 = t0
+t0 = t5
+s1 = t0
+t0 = s1
+if0 t0 goto null510
+t0 = s1
+s6 = [t0 + 0]
+t0 = s6
+s8 = [t0 + 8]
+goto null_end510
+null510:
+error("null pointer")
+null_end510:
+t0 = t2
+s6 = t0
+t0 = s8
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t515 = s8
+LL_Start_t516 = s6
+LL_Start_LL_el02 = s11
+LL_Start_t510 = s1
+LL_Start_LL_el03 = s10
+a2 = s1
+a3 = s6
+s3 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t515
+s6 = LL_Start_t516
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t510
+s10 = LL_Start_LL_el03
+t0 = s3
+t5 = t0
+t0 = t5
+s3 = t0
+t0 = s3
+if0 t0 goto null520
+t0 = s3
+s6 = [t0 + 0]
+t0 = s6
+s1 = [t0 + 36]
+goto null_end520
+null520:
+error("null pointer")
+null_end520:
+t0 = s1
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t520 = s3
+LL_Start_LL_el02 = s11
+LL_Start_t525 = s1
+LL_Start_LL_el03 = s10
+a2 = s3
+s6 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s3 = LL_Start_t520
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t525
+s10 = LL_Start_LL_el03
+t0 = s6
+t3 = t0
+s6 = 10000000
+t0 = s6
+print(t0)
+s6 = 16
+t0 = s6
+s1 = alloc(t0)
+s6 = 24
+t0 = s6
+s3 = alloc(t0)
+s6 = @Element_Init
+s8 = @Element_GetAge
+s7 = @Element_GetSalary
+t4 = @Element_GetMarried
+s2 = @Element_Equal
+s4 = @Element_Compare
+t0 = s3
+t1 = s6
+[t0 + 0] = t1
+t0 = s3
+t1 = s8
+[t0 + 4] = t1
+t0 = s3
+t1 = s7
+[t0 + 8] = t1
+t0 = s3
+t1 = t4
+[t0 + 12] = t1
+t0 = s3
+t1 = s2
+[t0 + 16] = t1
+t0 = s3
+t1 = s4
+[t0 + 20] = t1
+t0 = s1
+t1 = s3
+[t0 + 0] = t1
+t0 = s1
+t2 = t0
+t0 = t2
+s1 = t0
+t0 = s1
+if0 t0 goto null540
+t0 = s1
+t4 = [t0 + 0]
+t0 = t4
+s4 = [t0 + 0]
+goto null_end540
+null540:
+error("null pointer")
+null_end540:
+t4 = 39
+s8 = 42000
+s3 = 1
+t0 = s4
+LL_Start_LL_head = t5
+LL_Start_t546 = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t547 = s8
+LL_Start_t545 = s4
+LL_Start_t548 = s3
+LL_Start_LL_el02 = s11
+LL_Start_t540 = s1
+LL_Start_LL_el03 = s10
+a2 = s1
+a3 = t4
+a4 = s8
+a5 = s3
+s2 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_t546
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t547
+s4 = LL_Start_t545
+s3 = LL_Start_t548
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t540
+s10 = LL_Start_LL_el03
+t0 = s2
+t3 = t0
+t0 = t2
+s2 = t0
+t0 = s2
+s11 = t0
+t0 = t5
+s2 = t0
+t0 = s2
+if0 t0 goto null553
+t0 = s2
+s3 = [t0 + 0]
+t0 = s3
+s8 = [t0 + 8]
+goto null_end553
+null553:
+error("null pointer")
+null_end553:
+t0 = t2
+s3 = t0
+t0 = s8
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t558 = s8
+LL_Start_t559 = s3
+LL_Start_t553 = s2
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = s2
+a3 = s3
+s1 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t558
+s3 = LL_Start_t559
+s2 = LL_Start_t553
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = s1
+t5 = t0
+t0 = t5
+s1 = t0
+t0 = s1
+if0 t0 goto null563
+t0 = s1
+s3 = [t0 + 0]
+t0 = s3
+s2 = [t0 + 36]
+goto null_end563
+null563:
+error("null pointer")
+null_end563:
+t0 = s2
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t568 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t563 = s1
+LL_Start_LL_el03 = s10
+a2 = s1
+s3 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s2 = LL_Start_t568
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t563
+s10 = LL_Start_LL_el03
+t0 = s3
+t3 = t0
+s3 = 10000000
+t0 = s3
+print(t0)
+s3 = 16
+t0 = s3
+s1 = alloc(t0)
+s3 = 24
+t0 = s3
+s2 = alloc(t0)
+s3 = @Element_Init
+s8 = @Element_GetAge
+s4 = @Element_GetSalary
+t4 = @Element_GetMarried
+s7 = @Element_Equal
+s6 = @Element_Compare
+t0 = s2
+t1 = s3
+[t0 + 0] = t1
+t0 = s2
+t1 = s8
+[t0 + 4] = t1
+t0 = s2
+t1 = s4
+[t0 + 8] = t1
+t0 = s2
+t1 = t4
+[t0 + 12] = t1
+t0 = s2
+t1 = s7
+[t0 + 16] = t1
+t0 = s2
+t1 = s6
+[t0 + 20] = t1
+t0 = s1
+t1 = s2
+[t0 + 0] = t1
+t0 = s1
+t2 = t0
+t0 = t2
+s1 = t0
+t0 = s1
+if0 t0 goto null583
+t0 = s1
+t4 = [t0 + 0]
+t0 = t4
+s6 = [t0 + 0]
+goto null_end583
+null583:
+error("null pointer")
+null_end583:
+t4 = 22
+s8 = 34000
+s2 = 0
+t0 = s6
+LL_Start_LL_head = t5
+LL_Start_t589 = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t590 = s8
+LL_Start_t588 = s6
+LL_Start_t591 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t583 = s1
+LL_Start_LL_el03 = s10
+a2 = s1
+a3 = t4
+a4 = s8
+a5 = s2
+s7 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_t589
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t590
+s6 = LL_Start_t588
+s2 = LL_Start_t591
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t583
+s10 = LL_Start_LL_el03
+t0 = s7
+t3 = t0
+t0 = t5
+s7 = t0
+t0 = s7
+if0 t0 goto null594
+t0 = s7
+s2 = [t0 + 0]
+t0 = s2
+s8 = [t0 + 8]
+goto null_end594
+null594:
+error("null pointer")
+null_end594:
+t0 = t2
+s2 = t0
+t0 = s8
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t599 = s8
+LL_Start_t594 = s7
+LL_Start_t600 = s2
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = s7
+a3 = s2
+s1 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t599
+s7 = LL_Start_t594
+s2 = LL_Start_t600
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = s1
+t5 = t0
+t0 = t5
+s1 = t0
+t0 = s1
+if0 t0 goto null604
+t0 = s1
+s7 = [t0 + 0]
+t0 = s7
+s2 = [t0 + 36]
+goto null_end604
+null604:
+error("null pointer")
+null_end604:
+t0 = s2
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t609 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t604 = s1
+LL_Start_LL_el03 = s10
+a2 = s1
+s7 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s2 = LL_Start_t609
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t604
+s10 = LL_Start_LL_el03
+t0 = s7
+t3 = t0
+s7 = 16
+t0 = s7
+s1 = alloc(t0)
+s7 = 24
+t0 = s7
+s2 = alloc(t0)
+s7 = @Element_Init
+s8 = @Element_GetAge
+s6 = @Element_GetSalary
+t4 = @Element_GetMarried
+s4 = @Element_Equal
+s3 = @Element_Compare
+t0 = s2
+t1 = s7
+[t0 + 0] = t1
+t0 = s2
+t1 = s8
+[t0 + 4] = t1
+t0 = s2
+t1 = s6
+[t0 + 8] = t1
+t0 = s2
+t1 = t4
+[t0 + 12] = t1
+t0 = s2
+t1 = s4
+[t0 + 16] = t1
+t0 = s2
+t1 = s3
+[t0 + 20] = t1
+t0 = s1
+t1 = s2
+[t0 + 0] = t1
+t0 = s1
+s10 = t0
+t0 = s10
+s1 = t0
+t0 = s1
+if0 t0 goto null623
+t0 = s1
+t4 = [t0 + 0]
+t0 = t4
+s3 = [t0 + 0]
+goto null_end623
+null623:
+error("null pointer")
+null_end623:
+t4 = 27
+s8 = 34000
+s2 = 0
+t0 = s3
+LL_Start_LL_head = t5
+LL_Start_t629 = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t630 = s8
+LL_Start_t628 = s3
+LL_Start_t631 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t623 = s1
+LL_Start_LL_el03 = s10
+a2 = s1
+a3 = t4
+a4 = s8
+a5 = s2
+s4 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_t629
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t630
+s3 = LL_Start_t628
+s2 = LL_Start_t631
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t623
+s10 = LL_Start_LL_el03
+t0 = s4
+t3 = t0
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null634
+t0 = s4
+s2 = [t0 + 0]
+t0 = s2
+s8 = [t0 + 20]
+goto null_end634
+null634:
+error("null pointer")
+null_end634:
+t0 = s11
+s2 = t0
+t0 = s8
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t639 = s8
+LL_Start_t634 = s4
+LL_Start_t640 = s2
+LL_Start_LL_el02 = s11
+LL_Start_LL_el03 = s10
+a2 = s4
+a3 = s2
+s1 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s8 = LL_Start_t639
+s4 = LL_Start_t634
+s2 = LL_Start_t640
+s11 = LL_Start_LL_el02
+s10 = LL_Start_LL_el03
+t0 = s1
+print(t0)
+t0 = t5
+s1 = t0
+t0 = s1
+if0 t0 goto null644
+t0 = s1
+s4 = [t0 + 0]
+t0 = s4
+s2 = [t0 + 20]
+goto null_end644
+null644:
+error("null pointer")
+null_end644:
+t0 = s10
+s4 = t0
+t0 = s2
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t650 = s4
+LL_Start_t649 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t644 = s1
+a2 = s1
+a3 = s4
+s10 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s4 = LL_Start_t650
+s2 = LL_Start_t649
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t644
+t0 = s10
+print(t0)
+s10 = 10000000
+t0 = s10
+print(t0)
+s10 = 16
+t0 = s10
+s2 = alloc(t0)
+s10 = 24
+t0 = s10
+s1 = alloc(t0)
+s10 = @Element_Init
+s4 = @Element_GetAge
+s8 = @Element_GetSalary
+s3 = @Element_GetMarried
+t4 = @Element_Equal
+s6 = @Element_Compare
+t0 = s1
+t1 = s10
+[t0 + 0] = t1
+t0 = s1
+t1 = s4
+[t0 + 4] = t1
+t0 = s1
+t1 = s8
+[t0 + 8] = t1
+t0 = s1
+t1 = s3
+[t0 + 12] = t1
+t0 = s1
+t1 = t4
+[t0 + 16] = t1
+t0 = s1
+t1 = s6
+[t0 + 20] = t1
+t0 = s2
+t1 = s1
+[t0 + 0] = t1
+t0 = s2
+t2 = t0
+t0 = t2
+s2 = t0
+t0 = s2
+if0 t0 goto null666
+t0 = s2
+s3 = [t0 + 0]
+t0 = s3
+s6 = [t0 + 0]
+goto null_end666
+null666:
+error("null pointer")
+null_end666:
+s3 = 28
+s4 = 35000
+s1 = 0
+t0 = s6
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t671 = s6
+LL_Start_t673 = s4
+LL_Start_t672 = s3
+LL_Start_t666 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t674 = s1
+a2 = s2
+a3 = s3
+a4 = s4
+a5 = s1
+t4 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s6 = LL_Start_t671
+s4 = LL_Start_t673
+s3 = LL_Start_t672
+s2 = LL_Start_t666
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t674
+t0 = t4
+t3 = t0
+t0 = t5
+t4 = t0
+t0 = t4
+if0 t0 goto null677
+t0 = t4
+s2 = [t0 + 0]
+t0 = s2
+s4 = [t0 + 8]
+goto null_end677
+null677:
+error("null pointer")
+null_end677:
+t0 = t2
+s2 = t0
+t0 = s4
+LL_Start_LL_head = t5
+LL_Start_t677 = t4
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t682 = s4
+LL_Start_t683 = s2
+LL_Start_LL_el02 = s11
+a2 = t4
+a3 = s2
+s1 = call t0()
+t5 = LL_Start_LL_head
+t4 = LL_Start_t677
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s4 = LL_Start_t682
+s2 = LL_Start_t683
+s11 = LL_Start_LL_el02
+t0 = s1
+t5 = t0
+t0 = t5
+s1 = t0
+t0 = s1
+if0 t0 goto null687
+t0 = s1
+s4 = [t0 + 0]
+t0 = s4
+s2 = [t0 + 36]
+goto null_end687
+null687:
+error("null pointer")
+null_end687:
+t0 = s2
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t692 = s2
+LL_Start_LL_el02 = s11
+LL_Start_t687 = s1
+a2 = s1
+s4 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s2 = LL_Start_t692
+s11 = LL_Start_LL_el02
+s1 = LL_Start_t687
+t0 = s4
+t3 = t0
+s4 = 2220000
+t0 = s4
+print(t0)
+t0 = t5
+s4 = t0
+t0 = s4
+if0 t0 goto null696
+t0 = s4
+s1 = [t0 + 0]
+t0 = s1
+s2 = [t0 + 16]
+goto null_end696
+null696:
+error("null pointer")
+null_end696:
+t0 = s11
+s1 = t0
+t0 = s2
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t696 = s4
+LL_Start_t701 = s2
+LL_Start_t702 = s1
+a2 = s4
+a3 = s1
+s11 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s4 = LL_Start_t696
+s2 = LL_Start_t701
+s1 = LL_Start_t702
+t0 = s11
+t5 = t0
+t0 = t5
+s11 = t0
+t0 = s11
+if0 t0 goto null706
+t0 = s11
+s2 = [t0 + 0]
+t0 = s2
+s1 = [t0 + 36]
+goto null_end706
+null706:
+error("null pointer")
+null_end706:
+t0 = s1
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_LL_el01 = t2
+LL_Start_t706 = s11
+LL_Start_t711 = s1
+a2 = s11
+s2 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_LL_el01
+s11 = LL_Start_t706
+s1 = LL_Start_t711
+t0 = s2
+t3 = t0
+s2 = 33300000
+t0 = s2
+print(t0)
+t0 = t5
+s2 = t0
+t0 = s2
+if0 t0 goto null715
+t0 = s2
+s1 = [t0 + 0]
+t0 = s1
+s11 = [t0 + 16]
+goto null_end715
+null715:
+error("null pointer")
+null_end715:
+t0 = t2
+s1 = t0
+t0 = s11
+LL_Start_LL_head = t5
+LL_Start_LL_aux01 = t3
+LL_Start_t720 = s11
+LL_Start_t715 = s2
+LL_Start_t721 = s1
+a2 = s2
+a3 = s1
+t2 = call t0()
+t5 = LL_Start_LL_head
+t3 = LL_Start_LL_aux01
+s11 = LL_Start_t720
+s2 = LL_Start_t715
+s1 = LL_Start_t721
+t0 = t2
+t5 = t0
+t0 = t5
+t2 = t0
+t0 = t2
+if0 t0 goto null725
+t0 = t2
+t5 = [t0 + 0]
+t0 = t5
+s2 = [t0 + 36]
+goto null_end725
+null725:
+error("null pointer")
+null_end725:
+t0 = s2
+LL_Start_LL_aux01 = t3
+LL_Start_t725 = t2
+LL_Start_t730 = s2
+a2 = t2
+t5 = call t0()
+t3 = LL_Start_LL_aux01
+t2 = LL_Start_t725
+s2 = LL_Start_t730
+t0 = t5
+t3 = t0
+t5 = 44440000
+t0 = t5
+print(t0)
+t3 = 0
+goto Start_end
+Start_end:
+t732 = t3
+return t732
+
+
